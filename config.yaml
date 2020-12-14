@@ -1,0 +1,21 @@
+---
+baseURL: "./"
+languageCode: en-us
+title: Matúš Solčány portfolio
+theme:
+  - hugo-video
+  - matussolcany
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+params:
+    titleShort: Matúš Solčány
+    homeGridColumns: 3
+    projectCategories:
+    - dataviz
+    - interactive
+    - graphic
+---

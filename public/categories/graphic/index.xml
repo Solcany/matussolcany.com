@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>graphic on Matúš Solčány portfolio</title>
+    <link>https://matussolcany.com/beta/categories/graphic/</link>
+    <description>Recent content in graphic on Matúš Solčány portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 25 Nov 2020 01:46:19 +0100</lastBuildDate><atom:link href="https://matussolcany.com/beta/categories/graphic/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sublunary Excavations</title>
+      <link>https://matussolcany.com/beta/projects/sublunary-excavations/</link>
+      <pubDate>Wed, 25 Nov 2020 01:46:19 +0100</pubDate>
+      
+      <guid>https://matussolcany.com/beta/projects/sublunary-excavations/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pointfugue meetups</title>
+      <link>https://matussolcany.com/beta/projects/pointfugue-meetups/</link>
+      <pubDate>Sun, 15 Nov 2020 21:12:30 +0100</pubDate>
+      
+      <guid>https://matussolcany.com/beta/projects/pointfugue-meetups/</guid>
+      <description>     </description>
+    </item>
+    
+    <item>
+      <title>Hand of Ouroboros</title>
+      <link>https://matussolcany.com/beta/projects/hand-of-ouroboros/</link>
+      <pubDate>Sun, 15 Nov 2020 21:12:19 +0100</pubDate>
+      
+      <guid>https://matussolcany.com/beta/projects/hand-of-ouroboros/</guid>
+      <description>    </description>
+    </item>
+    
+  </channel>
+</rss>

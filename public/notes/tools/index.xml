@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tools on Matúš Solčány portfolio</title>
+    <link>https://matussolcany.com/beta/notes/tools/</link>
+    <description>Recent content in Tools on Matúš Solčány portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 20 Nov 2020 20:43:39 +0100</lastBuildDate><atom:link href="https://matussolcany.com/beta/notes/tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using Terminal with Aframe</title>
+      <link>https://matussolcany.com/beta/notes/tools/using-terminal-with-aframe/</link>
+      <pubDate>Fri, 20 Nov 2020 20:43:39 +0100</pubDate>
+      
+      <guid>https://matussolcany.com/beta/notes/tools/using-terminal-with-aframe/</guid>
+      <description>Terminal(also known as CLI, or command line interface) is a tool for controlling your computer and programs. Instead of using graphical icons to start and use programs it uses text commands to do the same. Some niche, open source and free software is often developed without a graphical front-end due to time, budget and people power constrains. Instead this software uses CLI for operation.
+Install aframe-watcher and Browser-sync One of these CLI tools is Aframe-watcher used for saving changes made in Aframe Inspector back to the html file.</description>
+    </item>
+    
+    <item>
+      <title>blender basics</title>
+      <link>https://matussolcany.com/beta/notes/tools/blender/blender_basics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://matussolcany.com/beta/notes/tools/blender/blender_basics/</guid>
+      <description>blender basics navigation (with magic mouse) zoom ctrl + mouse trackpad pan shift + mouse trackpad rotation mouse trackpad
+selection selection left click select everything a deselect everything alt + a edge loop select in the edge select mode, click on the edge loop while holding alt
+transformation extrusion e bevel ctrl + b translate g scale s rotation s
+make faces spherical mesh : transform : to sphere
+cutting loop cut ctrl + r</description>
+    </item>
+    
+  </channel>
+</rss>
