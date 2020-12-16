@@ -6,7 +6,7 @@ type: project
 layout: project
 categories:
   - interactive
-draft: false
+draft: true
 show_thumbnail_in_post: true
 position_in_projects_grid: 2
 position_in_column: 5

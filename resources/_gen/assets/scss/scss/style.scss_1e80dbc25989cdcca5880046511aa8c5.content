@@ -209,7 +209,7 @@
   font-family: 'hk_gothic_bold', avenir, 'helvetica neue', helvetica, sans-serif; }
 
 .gangster-regular {
-  font-family: 'gangster_grotesk_regular', avenir, 'helvetica neue', helvetica, sans-serif;
+  font-family: avenir, 'helvetica neue', helvetica, sans-serif;
   font-weight: normal;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -238,7 +238,7 @@ h2 {
   font-size: 1.1rem; }
 
 p {
-  font-family: 'gangster_grotesk_regular', avenir, 'helvetica neue', helvetica, sans-serif;
+  font-family: avenir, 'helvetica neue', helvetica, sans-serif;
   font-weight: normal;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -248,7 +248,7 @@ p {
     p {
       font-size: f6; } }
 a {
-  font-family: 'gangster_grotesk_regular', avenir, 'helvetica neue', helvetica, sans-serif;
+  font-family: avenir, 'helvetica neue', helvetica, sans-serif;
   font-weight: normal;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -273,7 +273,7 @@ figure {
     width: 100%;
     max-width: none; }
   figure figcaption {
-    font-family: 'gangster_grotesk_regular', avenir, 'helvetica neue', helvetica, sans-serif;
+    font-family: avenir, 'helvetica neue', helvetica, sans-serif;
     font-weight: normal;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
@@ -285,7 +285,7 @@ div[data-view] {
   max-width: none;
   display: inline-block; }
   div[data-view] button.control-view {
-    font-family: 'gangster_grotesk_regular', avenir, 'helvetica neue', helvetica, sans-serif;
+    font-family: avenir, 'helvetica neue', helvetica, sans-serif;
     font-weight: normal;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
@@ -382,7 +382,7 @@ div[data-view] {
   .introduction-with-title p.introduction {
     display: block;
     width: 100%;
-    font-family: 'gangster_grotesk_regular', avenir, 'helvetica neue', helvetica, sans-serif;
+    font-family: avenir, 'helvetica neue', helvetica, sans-serif;
     font-weight: normal;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
@@ -390,7 +390,7 @@ div[data-view] {
     font-size: 1.6rem; }
   .introduction-with-title span.year {
     display: block;
-    font-family: 'gangster_grotesk_regular', avenir, 'helvetica neue', helvetica, sans-serif;
+    font-family: avenir, 'helvetica neue', helvetica, sans-serif;
     font-weight: normal;
     font-style: normal;
     -webkit-font-smoothing: antialiased;

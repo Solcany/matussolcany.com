@@ -18,3 +18,6 @@ position_in_column: 4
 
 {{< img "image/subdigital_system3.jpg" "Very weird things" false false>}}
 
+{{< img "image/subdigital_system4.jpg" "Very weird things" false false>}}
+
+{{< img "image/subdigital_system5.jpg" "Very weird things" false false>}}

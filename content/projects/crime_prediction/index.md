@@ -8,8 +8,8 @@ categories:
   - interactive
 draft: false
 show_thumbnail_in_post: false
-position_in_projects_grid: 0
-position_in_column: 4
+position_in_projects_grid: 2
+position_in_column: 5
 ---
 {{< video src="video/precrime-video">}}
 
