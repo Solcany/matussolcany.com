@@ -9,15 +9,15 @@ categories:
 draft: false
 show_thumbnail_in_post: false
 position_in_projects_grid: 0
-position_in_column: 4
+position_in_column: 2
 ---
 
-{{< img "image/subdigital_system1.jpg" "Very weird things" false false>}}
+{{< img src="image/subdigital_system1.jpg">}}
 
-{{< img "image/subdigital_system2.jpg" "Very weird things" false false>}}
+{{< img src="image/subdigital_system2.jpg">}}
 
-{{< img "image/subdigital_system3.jpg" "Very weird things" false false>}}
+{{< img src="image/subdigital_system3.jpg">}}
 
-{{< img "image/subdigital_system4.jpg" "Very weird things" false false>}}
+{{< img src="image/subdigital_system4.jpg">}}
 
-{{< img "image/subdigital_system5.jpg" "Very weird things" false false>}}
+{{< img src="image/subdigital_system5.jpg">}}

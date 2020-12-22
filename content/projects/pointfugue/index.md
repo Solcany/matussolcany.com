@@ -8,13 +8,13 @@ categories:
   - graphic
 draft: false
 show_thumbnail_in_post: false
-position_in_projects_grid: 1
-position_in_column: 2
+position_in_projects_grid: 2
+position_in_column: 5
 
 ---
 
-{{< img "image/pf1.jpg" "Very weird things" false true>}}
-{{< img "image/pf2.jpg" "Very weird things" false true>}}
-{{< img "image/pf3.jpg" "Very weird things" false false>}}
-{{< img "image/pf4.jpg" "Very weird things" false true>}}
+{{< img src="image/pf1.jpg">}}
+{{< img src="image/pf2.jpg">}}
+{{< img src="image/pf3.jpg">}}
+{{< img src="image/pf4.jpg">}}
 

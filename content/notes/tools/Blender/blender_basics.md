@@ -8,6 +8,10 @@ Title: blender basics
 https://www.youtube.com/watch?v=elUJCEC06r8
 https://www.youtube.com/watch?v=fZSD7pVIUkY
 
+## character modelling
+https://www.youtube.com/watch?v=WlaMfIgS2ns
+
+
 # blender basics
 
 ## ui
@@ -41,6 +45,9 @@ methods to connect or bridge faces
 **bridge edge loop**
 makes a bridge between two edge loops. Select 2 faces to bridge : In the edge select mode, *Edge* tab : *bridge edge loop* 
  
+**edge/face between 2 vertices/edges** 
+ select the 2 vertices in vertices mode, press f
+ 
 ## transformation
 
 **extrusion** e
@@ -50,11 +57,19 @@ makes a bridge between two edge loops. Select 2 faces to bridge : In the edge se
 **rotation** s
 **inset** i
 
+**transformations while object is mirrored**
+while applying a transformation, press b to take mirroring into account
+
 **make faces spherical**
 *mesh* : *transform* : *to sphere*
 
 **proportional editing** o
 Neighboring vertices will be edit along with the edited vertex
+
+## snapping
+
+to project vertices onto another object allow snapping by clicking on a magnet icon in the center top part of the screen. Then change the settings right next to the magnet icon. 
+
 
 
 ## cutting
@@ -62,6 +77,8 @@ Neighboring vertices will be edit along with the edited vertex
 **loop cut** ctrl + r
 
 Use *mouse wheel* to increase the amount of cuts. Confirm with *left click* then press *right click* to center the cuts.
+
+**knife** k
 
 **dissolving faces**
 

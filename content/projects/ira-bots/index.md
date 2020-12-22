@@ -17,11 +17,11 @@ position_in_column: 1
 
 Hugo takes the parameters listed below into consideration when choosing a layout for a given page. They are listed in a priority order. This should feel natural, but look at the table below for concrete examples of the different parameter variations.
 
-{{< img "image/ira1.jpg" "Very weird things" >}}
-{{< img "image/ira2.jpg" "Very weird thing" >}}
-{{< img "image/ira3.jpg" "Very weird thing" >}}
-{{< img "image/ira4.jpg" "Very weird thing" >}}
-{{< img "image/ira5.jpg" "Very weird thing" >}}
-{{< img "image/ira6.jpg" "Very weird thing" >}}
+{{< img src="image/ira1.jpg">}}
+{{< img src="image/ira2.jpg">}}
+{{< img src="image/ira3.jpg">}}
+{{< img src="image/ira4.jpg">}}
+{{< img src="image/ira5.jpg">}}
+{{< img src="image/ira6.jpg">}}
 
 

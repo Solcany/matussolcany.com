@@ -9,14 +9,14 @@ categories:
 draft: false
 show_thumbnail_in_post: false
 position_in_projects_grid: 2
-position_in_column: 2
+position_in_column: 1
 ---
 
 {{< video src="video/unforgettable-video">}}
 
 Hugo takes the parameters listed below into consideration when choosing a layout for a given page. They are listed in a priority order. This should feel natural, but look at the table below for concrete examples of the different parameter variations.
 
-{{< img "image/unforgettable3.jpg" "Very weird things" >}}
-{{< img "image/unforgettable1.jpg" "Very weird things" >}}
-{{< img "image/unforgettable2.jpg" "Very weird things" >}}
+{{< img src="image/unforgettable3.jpg">}}
+{{< img src="image/unforgettable1.jpg">}}
+{{< img src="image/unforgettable2.jpg">}}
 

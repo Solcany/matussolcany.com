@@ -15,9 +15,9 @@ show_thumbnail_in_post: false
 
 Hugo takes the parameters listed below into consideration when choosing a layout for a given page. They are listed in a priority order. This should feel natural, but look at the table below for concrete examples of the different parameter variations.
 
-{{< img "image/triton1.jpg" "Very weird things" true true>}}
-{{< img "image/triton2.jpg" "Very weird things" true true>}}
-{{< img "image/triton3.jpg" "Very weird things" true true>}}
-{{< img "image/triton4.jpg" "Very weird things" true true>}}
+{{< img src="image/triton1.jpg">}}
+{{< img src="image/triton2.jpg">}}
+{{< img src="image/triton3.jpg">}}
+{{< img src="image/triton4.jpg">}}
 
 

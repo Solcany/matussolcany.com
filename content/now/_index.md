@@ -9,7 +9,7 @@ menu:
     identifier: now
     name: Now
     url: ./now/
-    weight: 2
+    weight: 1
 ---
  
 

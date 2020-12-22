@@ -8,11 +8,11 @@ categories:
   - graphic
 draft: false
 show_thumbnail_in_post: false
-position_in_projects_grid: 2
-position_in_column: 1
+position_in_projects_grid: 0
+position_in_column: 3
 ---
 
-{{< img "image/hacf1.jpg" "Very weird things" false false>}}
-{{< img "image/hacf4.jpg" "Very weird things" false false>}}
-{{< img "image/hacf3.jpg" "Very weird things" false false>}}
+{{< img src="image/hacf1.jpg">}}
+{{< img src="image/hacf4.jpg">}}
+{{< img src="image/hacf3.jpg">}}
 
