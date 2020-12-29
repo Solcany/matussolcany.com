@@ -21,7 +21,7 @@ Onleihe is online multimedia library of Goethe institut. Even though the library
 
 Instead of showing most recent instances of activity, we wanted to visualize the activity of the library as a living, breathing and growing system. Bloom is an ever growing animated spiral shaped branch, whenever a medium is returned to the library a new flower starts to bloom. Properties of the flower are parametrically defined by the medium’s metadata.
 
-I collaborated with Lucia Dubačová and [Philo Van Kemenade](https://phivk.com/). At the beginning i worked on the concept, later on I drew flower sketches which became foundations for their parametric versions. In the end I designed the face of the visualization.
+I collaborated with Lucia Dubačová and [Philo Van Kemenade](https://phivk.com/). At the beginning i worked on the concept, later on I drew flower sketches which became foundations for the parametric versions. In the end I designed the face of the visualization.
 
 {{<diptych src1="image/bloom2a.jpg" alt1="A graph showing the relationship between the amount of stamen and petals with photos of real flowers" src2="image/bloom2b.jpg" alt2="A graph with illustrations of generated flowers inspired by the flowers in the first graph">}}
 

@@ -47,3 +47,6 @@
 *unstage file* navigate the cursor on a staged file, press u
 *stage all* S
 *unstage all* U
+*commit* c + c
+*save commit* ctrl + c + ctrl + c
+*push* p

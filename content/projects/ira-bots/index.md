@@ -15,7 +15,13 @@ position_in_column: 1
 
 {{< video src="video/ira-video">}}
 
-Hugo takes the parameters listed below into consideration when choosing a layout for a given page. They are listed in a priority order. This should feel natural, but look at the table below for concrete examples of the different parameter variations.
+Internet Research Agency is a Russian institution responsible for the trolls and bots that consolidated tribalism and polarisation of the US population before and during the 2016 elections. The agency’s medium of the greatest influence were the popular social networks. 
+
+My website asks visitors to remix the data from the agency’s bots's twitter profiles to create new fictional Twitter bots. 
+
+
+By providing a hands-on experience on the processes of the agency i hope to make people better prepared to recognise the real malicious bots.
+
 
 {{< img src="image/ira1.jpg">}}
 {{< img src="image/ira2.jpg">}}

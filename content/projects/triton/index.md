@@ -13,7 +13,8 @@ show_thumbnail_in_post: false
 ---
 {{< video src="video/triton-video">}}
 
-Hugo takes the parameters listed below into consideration when choosing a layout for a given page. They are listed in a priority order. This should feel natural, but look at the table below for concrete examples of the different parameter variations.
+Industrial sites around the world are nowadays controlled and monitored by centralised computer systems that are directly or indirectly connected to Internet. This makes the whole operation more convenient and efficient but at the same poses a considerable risk for the security of the site. In 2017 an undisclosed oil refinery in Saudi Arabia shut down twice due to a targeted software attack. Unprecedented in the history, the attackers compromised safety systems that are responsible for preventing any physical damage to the people and the equipment – should a machine deviate from its regular course of operation. In my project i present the attacker’s actions that led to the shutdowns in 3 different points of view – emphasising that the naive belief that actions in the virtual space cannot considerably affect the physical world, leaves us with inadequately secured fragile machines with a potential to harm people.
+
 
 {{< img src="image/triton1.jpg">}}
 {{< img src="image/triton2.jpg">}}
