@@ -9,7 +9,7 @@ categories:
 competences:
  - a
  - b
-draft: false
+draft: true
 show_thumbnail_in_post: false
 position_in_projects_grid: 0
 position_in_column: 5

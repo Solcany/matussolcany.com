@@ -1,7 +1,8 @@
 ---
-title: Graphical system for interactive urban presentation
-slug: 
+title: "Bratislava 2022 Model: Graphical system"
+slug: bratislava-2022-model
 date: 2020-11-23T21:13:13+01:00
+year: 2018
 type: project
 layout: project
 categories:

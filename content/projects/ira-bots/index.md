@@ -16,7 +16,9 @@ position_in_column: 1
 ---
 
 {{< video src="video/ira-video">}}
+
 {{< competences >}}
+
 Internet Research Agency is a Russian institution responsible for the trolls and bots that consolidated tribalism and polarisation of the US population before and during the 2016 elections. The agency’s medium of the greatest influence were the popular social networks. 
 
 The Remixer website asks visitors to remix the twitter bots's profile images, names and their profile descriptions to create new profiles of fictional bots. This hands-on experience aims to make the database accessible and familiarise the audience with the characteristics of these bots.
