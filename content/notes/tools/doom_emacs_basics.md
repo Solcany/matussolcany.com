@@ -20,6 +20,10 @@
 *bookmarks terminal* space + return
 *creating a new bookmark* while in a buffer, open the bookmarks terminal and type the bookmark's name
 
+# dired
+*rename* R
+*new folder* +
+
 # sidebar
 *open sidebar* space + o + p
 

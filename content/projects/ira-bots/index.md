@@ -6,7 +6,7 @@ type: project
 layout: project
 categories:
   - interactive
-competences:
+competencies:
   - a
   - b
 draft: false
@@ -17,7 +17,7 @@ position_in_column: 1
 
 {{< video src="video/ira-video">}}
 
-{{< competences >}}
+{{< competencies >}}
 
 Internet Research Agency is a Russian institution responsible for the trolls and bots that consolidated tribalism and polarisation of the US population before and during the 2016 elections. The agency’s medium of the greatest influence were the popular social networks. 
 
