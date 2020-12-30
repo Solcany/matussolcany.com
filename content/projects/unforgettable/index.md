@@ -14,7 +14,7 @@ position_in_column: 1
 
 {{< video src="video/unforgettable-video">}}
 
-Hugo takes the parameters listed below into consideration when choosing a layout for a given page. They are listed in a priority order. This should feel natural, but look at the table below for concrete examples of the different parameter variations.
+Unforgettable is an interactive installation. 
 
 {{< img src="image/unforgettable3.jpg">}}
 {{< img src="image/unforgettable1.jpg">}}

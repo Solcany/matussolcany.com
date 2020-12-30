@@ -1,23 +1,21 @@
 ---
-title: "Bratislava 2022 Model: Graphical system"
+title: "Graphical system: Bratislava 2022 Model"
 slug: bratislava-2022-model
 date: 2020-11-23T21:13:13+01:00
 year: 2018
 type: project
+layout: project
 categories:
   - interactive
 competencies:
   - graphic design
   - UX design
 draft: false
-show_thumbnail_in_post: false
 position_in_projects_grid: 0
 position_in_column: 2
 ---
 
 {{< img src="image/subdigital_system1.jpg">}}
-
-{{< competencies >}}
 
 Bratislava 2022 Model is an interactive model of a region of Bratislava. The model represents the future real estate developments of Nivy region on a interactive map.
 
