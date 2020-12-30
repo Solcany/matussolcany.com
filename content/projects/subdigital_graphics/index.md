@@ -14,6 +14,8 @@ position_in_column: 2
 
 {{< img src="image/subdigital_system1.jpg">}}
 
+za nas je to ok, ale prosim uved hlavneho realizatora (mozes to nazvat vlastnymi slovami): Subdigital (aj s linkom) a klienta a rok.
+
 {{< img src="image/subdigital_system2.jpg">}}
 
 {{< img src="image/subdigital_system3.jpg">}}

@@ -2,6 +2,9 @@
 
 *help* space + h
 
+# workspace / work session
+*save session to file* space + q + S
+
 # search
 *search terminal* spcae + s
 *search current buffer*
