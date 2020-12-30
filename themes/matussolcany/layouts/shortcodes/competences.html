@@ -1,0 +1,10 @@
+{{ if isset $.Page.Params "competences" }}
+    <h3> Competences </h3>
+    <ul>
+        {{range $competence := $.Page.Params.competences}}
+        <li class="dib"> {{ $competence }} </li>
+        {{ end }}
+    </ul>
+    {{ else }}
+    {{ errorf "Missing competences in the front matter. You should add 'competences' array in the front matter of the project: %q" $.Page.Params.title}}
+{{ end }}

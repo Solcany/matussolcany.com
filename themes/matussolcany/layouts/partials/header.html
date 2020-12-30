@@ -1,0 +1,18 @@
+<header class="w-100 flex flex-column flex-row-l items-start justify-between-l pt2 pb0 pb3-l ph2 ph3-l">
+	<a class="black gothic-bold f5 no-underline dib tc tl-l pb2 pb0-l"href="{{ .Site.BaseURL }}">{{ .Site.Params.titleShort }}</a>
+	{{ $currentPage := . }}
+	<nav class="border-box">
+		<ul class="flex justify-between dib-ns tc  border-box tr-ns">
+			{{ range $index, $nav_element := .Site.Menus.main }}
+			{{ $active := or ($currentPage.IsMenuCurrent "main" $nav_element) ($currentPage.HasMenuCurrent "main" $nav_element) }}
+			{{ $active = or $active (eq $nav_element.Name $currentPage.Title) }}
+			{{ $active = or $active (and (eq $nav_element.Name "projects") (eq $currentPage.Section "projects")) }}
+			<li class="tl tr-l {{if gt $index 0}} pl4 {{ end }}">
+				<a class="f5 black gothic-bold no-underline dib {{ if $active }} nav_active {{ end }}" href="{{ .URL | relURL }}">
+					{{ $nav_element.Name }}
+				</a>
+			</li>
+			{{ end }}
+		</ul>
+	</nav>
+</header>

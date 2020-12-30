@@ -1,0 +1,16 @@
+{{ define "main" }}
+<main aria-role="main" class="ph2 ph3-l">
+    <h1 class="mt3"> {{.Params.titleshort}} </h1>
+    {{ .Content }}
+    {{ range .Sections }}
+    {{ $section := . }}
+    <h2 class="mt3">{{ $section.Title }} </h2>
+
+    {{ range $section.RegularPages }}
+    <a href="{{.Page.Permalink }}"> {{.Page.Title}} </a>
+    {{ end }}
+    <!-- <li><a href="{{ .Permalink }}">{{ .Params.title | humanize | title }}</a></li>
+    -->
+    {{ end }}
+</main>
+{{ end }}

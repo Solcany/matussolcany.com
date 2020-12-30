@@ -1,0 +1,55 @@
+
+@font-face {
+    font-family: 'hk_gothic_bold';
+    src: url('../fonts/HK-gothic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gangster_grotesk_regular';
+    src: url('../fonts/GangsterGrotesk-Regular.otf') format('opentype');
+}
+
+
+.gothic-bold {
+    font-family: 'hk_gothic_bold',
+                 avenir,
+                 'helvetica neue', helvetica,
+                 sans-serif;
+
+}
+
+@mixin gothic-bold {
+    font-family: 'hk_gothic_bold',
+                 avenir,
+                 'helvetica neue', helvetica,
+                 sans-serif;
+        font-weight: normal;
+        font-style: normal;
+}
+
+
+
+.gangster-regular {
+    font-family: //'gangster_grotesk_regular',
+                 avenir,
+                 'helvetica neue', helvetica,
+                 sans-serif;
+        font-weight: normal;
+        font-style: normal;
+                -webkit-font-smoothing:antialiased;
+    font-smoothing: antialiased;
+}
+
+@mixin gangster-regular {
+    font-family: //'gangster_grotesk_regular',
+                 avenir,
+                 'helvetica neue', helvetica,
+                 sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    -webkit-font-smoothing:antialiased;
+    font-smoothing: antialiased;
+}

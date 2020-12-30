@@ -1,0 +1,11 @@
+{{ $img := $.Page.Resources.GetMatch (.Get "src") }}
+{{ $caption := (.Get "caption") }}
+{{ $alt := (.Get "alt") }}
+{{ $is_zoomable := (cond (ne (.Get "is_zoomable") nil) (.Get "is_zoomable") false) }}
+
+{{if (ne $img nil) }}
+<figure class="w-100">
+	<img loading="lazy" {{if $is_zoomable }} data-zoomable="basic-view" {{ end }} src="{{ $img.RelPermalink }}" {{if (ne $alt nil) }} alt="{{ $alt }}" {{ end }} />
+	{{if (ne $caption nil) }}<figcaption>{{ $caption }}</figcaption> {{ end }}
+</figure>
+{{ end }}

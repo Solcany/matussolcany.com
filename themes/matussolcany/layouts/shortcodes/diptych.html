@@ -1,0 +1,18 @@
+{{ $img1 := $.Page.Resources.GetMatch (.Get "src1") }}
+{{ $caption1 := (.Get "caption1") }}
+{{ $alt1 := (.Get "alt1") }}
+
+{{ $img2 := $.Page.Resources.GetMatch (.Get "src2") }}
+{{ $caption2 := (.Get "caption2") }}
+{{ $alt2 := (.Get "alt2") }}
+
+<div class="w-100 border-box flex flex-column flex-row-l">
+	<figure class="w-100 w-50-l dib mr0 pr0 pr2-ns">
+		<img loading="lazy" src="{{ $img1.RelPermalink }}" {{if (ne $alt1 nil) }} alt="{{ $alt1 }}" {{ end }}/>
+		{{if (ne $caption1 nil) }}<figcaption>{{ $caption1 }}</figcaption> {{ end }}
+	</figure>
+	<figure class="w-100 w-50-l dib mr0">
+		<img loading="lazy" src="{{ $img2.RelPermalink }}" {{if (ne $alt2 nil) }} alt="{{ $alt2 }}" {{ end }} />
+		{{if (ne $caption2 nil) }} <figcaption>{{ $caption2 }}</figcaption> {{ end }}
+	</figure>
+</div>

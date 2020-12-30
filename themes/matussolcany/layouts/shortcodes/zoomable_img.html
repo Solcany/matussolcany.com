@@ -1,0 +1,12 @@
+{{ $img := $.Page.Resources.GetMatch (.Get 0) }}
+{{ $hq_img_src := (.Get 1) }}
+{{ $caption := (.Get 2) }}
+{{ $render_caption := (.Get 3) }}
+
+<div data-view="basic-view" data-hq-src="{{$hq_img_src}}">
+<button class="control-view" type="button"></button>
+<figure class="expandable">
+	<img loading="lazy" src="{{ $img.RelPermalink }}" data-lq alt="{{ $caption }}" />
+	{{if $render_caption}}<figcaption>{{ $caption }}</figcaption> {{ end }}
+</figure>
+</div>

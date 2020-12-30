@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en-us" }}">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>{{ .Title }}</title>
+	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+	<link rel="stylesheet" href="{{ "css/normalize.css" | relURL }}">
+	<link rel="stylesheet" href="{{ "css/tachyons.css" | relURL }}">
+
+	{{ $scss := resources.Get "scss/style.scss" }}
+	{{ $style := $scss | resources.ToCSS (dict "targetPath" "./css/style.css") }}
+	<link rel="stylesheet" href="{{ $style.Permalink }}">
+
+     {{/* load projects grid organizer on home page */}}
+	 {{ if eq .IsHome true}}
+	 {{ $home_js := resources.Get "./js/home.js" }}
+	 <script src="{{ $home_js.Permalink }}"></script>
+	 {{ end }}
+
+     {{/* load image zooming on all pages but home */}}
+	 {{ if eq .IsHome false }}
+	 <script>
+	  {{ $image_zoom_js := resources.Get "./js/trigger_dragscroll.js" }}
+	  if (!navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i)) {
+		  var script = document.createElement('script');
+		  script.src = '{{ $image_zoom_js.Permalink }}';
+		  var ref = document.querySelector('script');
+		  ref.parentNode.insertBefore(script, ref);
+	  }
+	 </script>
+	 {{ end }}
+
+     {{/* load dragscroll.js lib for the software leaks project */}}
+     {{ if eq .Page.Title "Software Weapons Leaks" }}
+        {{ $dragscroll_js := resources.Get "./js/dragscroll.js" }}
+	    <!-- <script src="{{ $dragscroll_js.Permalink }}"></script> -->
+     {{ end }}
+
+</head>
+<body>
+	{{ partial "header" . }}
+	{{ block "main" . }}{{ end }}
+	{{ partial "footer" . }}
+</body>
+</html>

@@ -1,0 +1,49 @@
+<section id="works" name="works" class="w-100 mb2 mb5-l">
+    <div id="content_filter" class="ph2 ph3-l pt3 pb1 pb0-l">
+    <h1 class="mt1 mt3-l mb2"> {{.Params.titleshort}} </h1>
+        <form>
+        {{range $category := .Site.Params.projectCategories }}
+        {{ $checkboxId := (print "checkbox-" $category )}}
+            <div class="container dib gangster-regular f6 pr3">
+                <input class="" type="checkbox" data-category="{{$category}}" id="{{ $checkboxId }}" name="category" checked="true">
+                <span class="checkmark"></span>
+                <label for="{{ $checkboxId }}"> {{ $category }} </label>
+        </div>
+        {{end}}
+
+        </form>
+    </div>
+
+    <div class="grid w-100 flex flex-wrap flex-nowrap-l justify-between ph2 ph3-l">
+        <!-- amount of columns in projects loop -->
+        {{ $columns := .Site.Params.homeGridColumns }}
+        {{ range $index, $_ := (seq $columns) }}
+        <!-- include padding right for every project loop column but the last one -->
+        {{ $include_padding := (lt $index (sub $columns 1)) }}
+        <ul style="flex-basis: 1; flex-grow: 1; flex-shrink: 1;" class="{{if $include_padding}} pr2 {{end}} pt2 pt3-l theborder border-box">
+            <!-- sort the projects array by position_in_column property in each projects's front matter -->
+        {{ $projects := (where $.Site.RegularPages "Section" "projects")}}
+        {{ $projects := (where $projects "Params.draft" false)}}
+        {{ $projects := (sort $projects "Params.position_in_column" "asc")}}
+        {{ range $projects }}
+        {{ if eq .Params.position_in_projects_grid $index }}
+                {{ $thumbnail := .Resources.GetMatch "image/thumbnail.jpg" }}
+                <!-- ! only the first category of categories is taken into account for now ! -->
+               {{ $category := index (.Params.Categories) 0}}
+               {{ $categoryCss := (print "post-category-" $category )}}
+	            <li id="{{ .Title }}" class="{{ $categoryCss }} post border-box pb1 pb3-l">
+
+		            <div name="content">
+                        <h2><a class="text-link f6 gothic-bold pb1 db tl black pointer no-underline" href="{{ .Permalink }}" title="{{ .Title }}"> {{ .Title }} </a></h2>
+			            <a href= "{{ .Permalink }}" class="image-link dib">
+                            <img src="{{ $thumbnail.RelPermalink }}" class="thumbnail z-4 pointer">
+			            </a>
+		            </div>
+	            </li>
+                {{ end }}
+                {{ end }}
+            </ul>
+            {{ end }}
+        </ul>
+    </div>
+</section>
