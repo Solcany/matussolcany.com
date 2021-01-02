@@ -42,6 +42,19 @@ h1 {
 h2 {
     @include gothic-bold;
     font-size: $f6;
+    color: black;
+}
+
+h3 {
+    @include gothic-bold;
+    font-size: $f7;
+    color: black;
+}
+
+h4 {
+    @include gangster-regular;
+    font-size: $f6;
+    color: black;
 }
 
 p {
@@ -300,7 +313,7 @@ section#works {
 
                             &.inactive {
                                 filter: grayscale(100%);
-                                opacity: 0.4;
+                                opacity: 0.2;
                             }
 
                             &.active {

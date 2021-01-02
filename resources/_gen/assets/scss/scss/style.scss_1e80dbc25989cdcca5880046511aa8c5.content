@@ -107,6 +107,9 @@
 .f6 {
   font-size: 1.1rem; }
 
+.f7 {
+  font-size: 0.9rem; }
+
 @media screen and (min-width: 30em) {
   .f-6-ns,
   .f-headline-ns {
@@ -209,7 +212,7 @@
   font-family: 'hk_gothic_bold', avenir, 'helvetica neue', helvetica, sans-serif; }
 
 .gangster-regular {
-  font-family: avenir, 'helvetica neue', helvetica, sans-serif;
+  font-family: 'gangster_grotesk_regular', avenir, 'helvetica neue', helvetica, sans-serif;
   font-weight: normal;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -235,10 +238,27 @@ h2 {
   font-family: 'hk_gothic_bold', avenir, 'helvetica neue', helvetica, sans-serif;
   font-weight: normal;
   font-style: normal;
-  font-size: 1.1rem; }
+  font-size: 1.1rem;
+  color: black; }
+
+h3 {
+  font-family: 'hk_gothic_bold', avenir, 'helvetica neue', helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 0.9rem;
+  color: black; }
+
+h4 {
+  font-family: 'gangster_grotesk_regular', avenir, 'helvetica neue', helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  font-size: 1.1rem;
+  color: black; }
 
 p {
-  font-family: avenir, 'helvetica neue', helvetica, sans-serif;
+  font-family: 'gangster_grotesk_regular', avenir, 'helvetica neue', helvetica, sans-serif;
   font-weight: normal;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -248,7 +268,7 @@ p {
     p {
       font-size: f6; } }
 a {
-  font-family: avenir, 'helvetica neue', helvetica, sans-serif;
+  font-family: 'gangster_grotesk_regular', avenir, 'helvetica neue', helvetica, sans-serif;
   font-weight: normal;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -273,7 +293,7 @@ figure {
     width: 100%;
     max-width: none; }
   figure figcaption {
-    font-family: avenir, 'helvetica neue', helvetica, sans-serif;
+    font-family: 'gangster_grotesk_regular', avenir, 'helvetica neue', helvetica, sans-serif;
     font-weight: normal;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
@@ -285,7 +305,7 @@ div[data-view] {
   max-width: none;
   display: inline-block; }
   div[data-view] button.control-view {
-    font-family: avenir, 'helvetica neue', helvetica, sans-serif;
+    font-family: 'gangster_grotesk_regular', avenir, 'helvetica neue', helvetica, sans-serif;
     font-weight: normal;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
@@ -382,7 +402,7 @@ div[data-view] {
   .introduction-with-title p.introduction {
     display: block;
     width: 100%;
-    font-family: avenir, 'helvetica neue', helvetica, sans-serif;
+    font-family: 'gangster_grotesk_regular', avenir, 'helvetica neue', helvetica, sans-serif;
     font-weight: normal;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
@@ -390,7 +410,7 @@ div[data-view] {
     font-size: 1.6rem; }
   .introduction-with-title span.year {
     display: block;
-    font-family: avenir, 'helvetica neue', helvetica, sans-serif;
+    font-family: 'gangster_grotesk_regular', avenir, 'helvetica neue', helvetica, sans-serif;
     font-weight: normal;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
@@ -422,7 +442,7 @@ section#works div.grid ul li.post div a.image-link {
     display: block; }
     section#works div.grid ul li.post div a.image-link img.thumbnail.inactive {
       filter: grayscale(100%);
-      opacity: 0.4; }
+      opacity: 0.2; }
     section#works div.grid ul li.post div a.image-link img.thumbnail.active {
       filter: none;
       opacity: 1.0; }

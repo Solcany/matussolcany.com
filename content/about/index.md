@@ -21,7 +21,27 @@ menu:
 
 </div>
 
-<section  class="mt3 mt4-l pb2 w-100 ph2 ph3-l flex flex-wrap justify-center bt thegray">
+<section  class="mt3 mt4-l pb2 w-100 ph2 ph3-l flex flex-wrap justify-center">
+    <div class="w-100 mt4-l flex flex-column flex-row-l justify-center justify-start-l">
+        <div name="education_wrapper" class="w-auto-ns w-100 w-25-l dib pr6-l">
+            <h2 name="headline" class="w-100 f6 tl gothic-bold black mb1 mb4-l mt3 mt2-l mt0-l"> Services </h2>
+            <p class="f6 gangster-grotesk black">
+             interactive design, information design, interactive design, digital prototyping, static web development, processing and p5.js development
+            </p>
+        </div>
+        <div name="tools_wrapper" class="w-100 w-25-l pr6-l w-auto-ns">
+                <h2 name="headline" class="w-100 f6 tl gothic-bold black mb1 mb4-l mt3 mt2-l"> Tools </h2>
+                <h3>Visual, prototyping</h3>
+                    <p class="f6 gangster-grotesk black">I'm proficient with Figma, Sketch, Adobe Creative Suite and Metashape. I have intermediate experience with QGIS and Blender.</p>
+                <h3>Development</h3>
+                    <p class="f6 gangster-grotesk black">I have extensively worked with html, css, javascript, Processing, P5.js. I've been enjoying working with Godot game engine recently. In the past i worked with Clojure, Quil and Arduino IDE. My code editor of choice is Doom Emacs</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section  class="mt3 mt4-l pb2 w-100 ph2 ph3-l flex flex-wrap justify-center">
     <div class="w-100 mt4-l flex flex-column flex-row-l justify-center justify-start-l">
         <div name="education_wrapper" class="w-auto-ns w-100 w-25-l dib pr6-l">
             <h2 name="headline" class="w-100 f6 tl gothic-bold black mb1 mb4-l mt3 mt2-l mt0-l">Education & courses</h2>
@@ -30,42 +50,42 @@ menu:
                         <span class="db f6 pr3 black pb1">2007–2011</span>
                         <div class="db">
                             <p class="ma0 gangster-regular f6 dib db-l black">Secondary school of animation, Bratislava(SK)</p>
-                            <span class="black f6 pt2 db gothic-bold">Graphic design</span>
+                            <span class="black f6 pt1 db gangster-regular">Graphic design</span>
                         </div>
                     </li>
                     <li name="education" class="gangster-regular db mb2 mb4-l mt3 mt0-l">
                         <span class="db f6 pr3 black pb1">2011–2015</span>
                         <div class="db">
                             <p class="ma0 gangster-regular f6 dib db-l black">Tomas Bata university, Zlín(CZ)</p>
-                            <span class="black f6 pt2 db gothic-bold">BA digital design</span>
+                                                        <span class="black f6 pt1 db gangster-regular">BA Digital Design</span>
                         </div>
                     </li>
                     <li name="education" class="gangster-regular db mb2 mb4-l mt3 mt0-l">
                         <span class="db f6 pr3 black pb1">2016</span>
                         <div class="db">
                             <p class="ma0 gangster-regular f6 dib db-l black">taught by Karsten Schmidt, London(UK)</p>
-                            <span class="black f6 pt2 db gothic-bold">Data visualization with Clojure and Thi.ng</span>
+<span class="black f6 pt1 db gangster-regular">Data visualization with Clojure and Thi.ng</span>                            
                         </div>
                     </li>
                     <li name="education" class="gangster-regular db mb2 mb4-l mt3 mt0-l">
                         <span class="db f6 pr3 black pb1">2017</span>
                         <div class="db">
                             <p class="ma0 gangster-regular f6 dib db-l black">Copenhagen Institute of Interactive design (DK), summer school, taught by Shruti Ramiah and Momo Miyazaki</p>
-                            <span class="black f6 pt2 db gothic-bold">People centred research</span>
-                        </div>
+<span class="black f6 pt1 db gangster-regular">People centred research</span>                                
+                     </div>
                     </li>
                     <li name="education" class="gangster-regular db mb2 mb4-l mt3 mt0-l">
                         <span class="db f6 pr3 black pb1">2017</span>
                         <div class="db">
                             <p class="ma0 gangster-regular f6 dib db-l black">Copenhagen Institute of Interactive design (DK), summer school, taught by Kevin Cannon and Ulrik Hogrebe</p>
-                            <span class="black f6 pt2 db gothic-bold">Artefacts from the future</span>
+<span class="black f6 pt1 db gangster-regular">Artefacts from the future</span>                            
                         </div>
                     </li>
                     <li name="education" class="gangster-regular db mb2 mb4-l mt3 mt0-l">
                         <span class="db f6 pr3 black pb1">2018–2020</span>
                         <div class="db">
                             <p class="ma0 gangster-regular f6 dib db-l black">Design Academy Eindhoven(NL)</p>
-                            <span class="black f6 pt2 db gothic-bold">MA Information design</span>
+                            <span class="black f6 pt1 db gangster-regular">MA Information Design</span>
                         </div>
                     </li>
                 </ul>
@@ -77,53 +97,35 @@ menu:
                         <span class="db f6 pr3 black pb1">2016</span>
                         <div class="db">
                             <p class="ma0 gangster-regular f6 dib db-l black">Slovak National Gallery art & data hackathon</p>
-                            <span class="black f6 pt2 db gothic-bold">Klima App, Best prototype</span>
+                            <span class="black f6 pt1 db gangster-regular">Klima App, Best prototype</span>
                         </div>
                     </li>
                     <li name="prize" class="gangster-regular db mb2 mb4-l mt3 mt0-l">
                         <span class="db f6 pr3 black pb1">2016</span>
                         <div class="db">
                             <p class="ma0 gangster-regular f6 dib db-l black">Resco MadHack</p>
-                            <span class="black f6 pt2 db gothic-bold">BureauBot, Audience prize</span>
+                            <span class="black f6 pt1 db gangster-regular">BureauBot, Audience prize</span>
                         </div>
                     </li>
                     <li name="prize" class="gangster-regular db mb2 mb4-l mt3 mt0-l">
                         <span class="db f6 pr3 black pb1">2017</span>
                         <div class="db">
                             <p class="ma0 gangster-regular f6 dib db-l black">Bratislava Gamejam</p>
-                            <span class="black f6 pt2 db gothic-bold">Follower VR, Honorary recognition</span>
+                            <span class="black f6 pt1 db gangster-regular">Follower VR, Honorary recognition</span>
                         </div>
                     </li>
                     <li name="prize" class="gangster-regular db mb2 mb4-l mt3 mt0-l">
                         <span class="db f6  pr3 black pb1">2017</span>
                         <div class="db">
                             <p class="ma0 gangster-regular f6 dib db-l black">Biela Kocka</p>
-                            <span class="black f6 pt2 db gothic-bold">Dream x Reality, Honorary recognition</span>
+                            <span class="black f6 pt1 db gangster-regular">Dream x Reality, Honorary recognition</span>
                         </div>
                     </li>
                     <li name="prize" class="gangster-regular db mb2 mb4-l mt3 mt0-l">
                         <span class="db f6 pr3 black pb1">2019</span>
                         <div class="db">
                             <p class="ma0 gangster-regular f6 dib db-l black">HackaLOD</p>
-                            <span class="black f6 pt2 db gothic-bold">Verget Te Niet, Audience prize</span>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div name="work_wrapper" class="w-auto-ns w-25-l dib">
-                <h2 name="headline" class="w-100 f6 tl gothic-bold black mb1 mb4-l mt3 mt2-l">Work experience</h2>
-                <ul class="w-100 wrap flex flex-column items-start">
-                    <li name="work" class="gangster-regular db mb2 mb4-l mt3 mt0-l">
-                        <span class="db f6 pr3 black pb1">2015–2016</span>
-                        <div class="db">
-                            <p class="ma0 gangster-regular f6 dib db-l black">Zaraguza </p>
-                            <span class="black f6 pt2 db gothic-bold">Digital designer</span>
-                        </div>
-                    </li>
-                    <li name="work" class="gangster-regular db mb2 mb4-l mt3 mt0-l">
-                        <span class="db f6 pr3 black pb1">2017–2020</span>
-                        <div class="db">
-                            <span class="black pt2 f6 gothic-bold">Freelance digital designer</span>
+                            <span class="black f6 pt1 db gangster-regular">Verget Te Niet, Audience prize</span>
                         </div>
                     </li>
                 </ul>

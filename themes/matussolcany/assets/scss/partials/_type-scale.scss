@@ -50,7 +50,7 @@ $f3: 1.8rem;
 $f4: 1.6rem;
 $f5: 1.3rem;
 $f6: 1.1rem;
-
+$f7: 0.9rem;
 
 
 /* original non-linear scale
@@ -71,6 +71,7 @@ $f6: 1.1rem;
 .f4 { font-size: $f4; }
 .f5 { font-size: $f5; }
 .f6 { font-size: $f6; }
+.f7 { font-size: $f7; }
 
 @media #{$breakpoint-not-small}{
   .f-6-ns,

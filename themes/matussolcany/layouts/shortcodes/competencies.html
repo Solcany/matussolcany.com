@@ -1,7 +1,7 @@
 {{ if isset $.Page.Params "competencies" }}
     <h3> Competences </h3>
     <ul>
-        {{range $competence := $.Page.Params.competences}}
+        {{range $competence := $.Page.Params.competencies}}
         <li class="dib"> {{ $competence }} </li>
         {{ end }}
     </ul>

@@ -1,15 +1,15 @@
 <!-- some pages need a footer that's attached to the bottom of the screen -->
-<footer  class="{{if or (eq .Page.Type "now") (eq .Page.Type "contact") (eq .Page.Type "notes")}} absolute-footer {{ end }} pv2 ph2 ph3-l w-100">
-	<ul>
-		<li class="db dib-l pr0 pr3-l">
+<footer  class="{{if or (eq .Page.Type "now") (eq .Page.Type "contact") (eq .Page.Type "notes")}} absolute-footer {{ end }} pv2 ph2 ph3-l w-100 bt thegray">
+	<ul class="flex flex-column flex-row-l justify-between-l">
+		<li class="db dib-l pr0 w-100 w-30-l">
 			<a class="dib gangster-regular f6 black bot-protect" href="&#109;&#097;&#105;&#108;&#116;&#111;:&#109;&#097;&#116;&#117;&#115;&#046;&#115;&#111;&#108;&#099;&#097;&#110;&#121;&#064;&#112;&#114;&#111;&#116;&#111;&#110;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">&#109;&#111;&#099;&#046;&#108;&#105;&#097;&#109;&#110;&#111;&#116;&#111;&#114;&#112;&#064;&#121;&#110;&#097;&#099;&#108;&#111;&#115;&#046;&#115;&#117;&#116;&#097;&#109;</a>
 		</li>       
-		<li class="db dib-l pr3-l">
-			<span class="pt2 pt0-l"> Matúš Solčány © {{ now.Year }}</span>
+		<li class="db dib-l pv2 pv0-l self-center w-100 w-30-l tl tc-l">
+			<span class="pt2 pt0-l black"> Matúš Solčány © {{ now.Year }}</span>
 		</li>
- 		<li class="db dib-l pv2 pv0-l pr0">
+ 		<li class="db dib-l pr0 w-100 w-30-l">
 			{{ $merveilles_svg := resources.Get "./icons/merveilles.svg" }}
-			<a href="https://merveilles.town/@matsol">
+			<a href="https://merveilles.town/@matsol" class="fr-l">
 				<img class="link-icon" src="{{ $merveilles_svg.Permalink }}">
 			</a>
 		</li>   
