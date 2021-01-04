@@ -2,15 +2,17 @@
 title: Internet Research Agency Bot Remixer
 slug: internet-research-agency-bot-remixer
 date: 2020-11-15T21:09:00+01:00
+year: 2019
 type: project
 layout: project
 categories:
-  - interactive
+  - informative
 competencies:
-  - a
-  - b
+  - ui ux design
+  - graphic design
+  - research
+  - front end development
 draft: false
-show_thumbnail_in_post: false
 position_in_projects_grid: 0
 position_in_column: 1
 ---
@@ -19,17 +21,17 @@ position_in_column: 1
 
 {{< competencies >}}
 
-Internet Research Agency is a Russian institution responsible for the trolls and bots that consolidated tribalism and polarisation of the US population before and during the 2016 elections. The agency’s medium of the greatest influence were the popular social networks. 
+Internet Research Agency is a Russian institution responsible for the bots that consolidated tribalism and polarisation of the US population before and during the US 2016 elections. [The agency’s medium of the greatest influence were the popular social networks like Twitter and Facebook.](https://int.nyt.com/data/documenthelper/533-read-report-internet-research-agency/7871ea6d5b7bedafbf19/optimized/full.pdf) 
 
-The Remixer website asks visitors to remix the twitter bots's profile images, names and their profile descriptions to create new profiles of fictional bots. This hands-on experience aims to make the database accessible and familiarise the audience with the characteristics of these bots.
+The Remixer website asks visitors to remix the twitter bots's profile images, names and their profile descriptions to create new profiles of fictional bots. This hands on experience aims to make the database accessible and familiarise the audience with the characteristics of these bots.
 
-The databse used comes from the [Twitter 2016 elections integrity  release](https://blog.twitter.com/official/en_us/topics/company/2018/2016-election-update.html). The music for this project was composed by Ondrej Solcany.
+The database used comes from the [Twitter 2016 elections integrity  release](https://blog.twitter.com/official/en_us/topics/company/2018/2016-election-update.html). The music for this project was composed by Ondrej Solčány.
 
-{{< img src="image/ira1.jpg">}}
-{{< img src="image/ira2.jpg">}}
-{{< img src="image/ira3.jpg">}}
-{{< img src="image/ira4.jpg">}}
-{{< img src="image/ira5.jpg">}}
-{{< img src="image/ira6.jpg">}}
+{{< img src="image/ira1.jpg" alt="Illustration of enlarged busts covered with the russian flag sitting on the map of the US. Each head has a text bubble with tweets of the russian twitter bots">}}
+{{< img src="image/ira2.jpg" alt="Illustration of enlarged busts covered with the american flag sitting on the map of the US">}}
+{{< img src="image/ira3.jpg" alt="Illustration of enlarged busts covered with the american flag sitting on the map of the US. Each head has a text bubble with tweets of the russian twitter bots">}}
+{{< img src="image/ira4.jpg" alt="a large bot profile image is surrounded by smaller profile images" caption="Choosing the bot's profile image">}}
+{{< img src="image/ira5.jpg" alt="the large bot profile image is surrounded by bots names" caption="Choosing the bot's profile name">}}
+{{< img src="image/ira6.jpg" alt="the large bot profile image is surrounded by bots profile descriptions" caption="Choosing the bot's profile description">}}
 
 

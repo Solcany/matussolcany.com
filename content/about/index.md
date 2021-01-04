@@ -16,9 +16,6 @@ menu:
 
 <img src="image/id.jpg" alt="matus solcany portrait" class="object-cover pt2 db w-40 w-10-l cover">
 
-<p class="gangster-regular db w-100 w-50-l">I designed this book as a reminder of my family's trip to Iceland. The photos in the book were taken by my brother. Some of the graphic assets were generated in Processing, using an algorithm created by studio Onformative.
-</p>
-
 </div>
 
 <section  class="mt3 mt4-l pb2 w-100 ph2 ph3-l flex flex-wrap justify-center">
@@ -26,15 +23,19 @@ menu:
         <div name="education_wrapper" class="w-auto-ns w-100 w-25-l dib pr6-l">
             <h2 name="headline" class="w-100 f6 tl gothic-bold black mb1 mb4-l mt3 mt2-l mt0-l"> Services </h2>
             <p class="f6 gangster-grotesk black">
-             interactive design, information design, interactive design, digital prototyping, static web development, processing and p5.js development
+             interaction design, information design, motion design, digital prototyping, web development, Processing and P5.js development
             </p>
         </div>
         <div name="tools_wrapper" class="w-100 w-25-l pr6-l w-auto-ns">
                 <h2 name="headline" class="w-100 f6 tl gothic-bold black mb1 mb4-l mt3 mt2-l"> Tools </h2>
                 <h3>Visual, prototyping</h3>
-                    <p class="f6 gangster-grotesk black">I'm proficient with Figma, Sketch, Adobe Creative Suite and Metashape. I have intermediate experience with QGIS and Blender.</p>
+                    <p class="f6 gangster-grotesk black">I'm proficient with Figma, Sketch, Adobe Creative Suite(Indesign, After Effects, Illustrator, Photoshop).</p>
                 <h3>Development</h3>
-                    <p class="f6 gangster-grotesk black">I have extensively worked with html, css, javascript, Processing, P5.js. I've been enjoying working with Godot game engine recently. In the past i worked with Clojure, Quil and Arduino IDE. My code editor of choice is Doom Emacs</p>
+                    <p class="f6 gangster-grotesk black">I develop static websites with Hugo framework. I have extensive experience with javascript, html and css. I create  images and prototypes with Processing, p5.js and their Clojure port Quil. My recent obsession is Godot game engine. My code editor of choice is Doom Emacs </p> 
+                <h3> Miscellaneous </h3>
+                    <p class="f6 gangster-grostesk black">
+                        I'm proficient with photogrammetric 3D scanning and Metashape. I have intermediate experience with QGIS and Blender.
+                    </p>
             </div>
         </div>
     </div>

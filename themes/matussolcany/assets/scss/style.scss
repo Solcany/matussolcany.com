@@ -29,6 +29,7 @@ $l-width: 60em;
 // @media screen and (min-width: 60em) {
 
 $thegrey: #C5C5C5;//#383838;
+$thedarkgray: #4d4d4d;
 
 .text-shadow {
 	text-shadow: rgba(0, 0, 0, 0.9) 0 0 10px;
@@ -41,13 +42,13 @@ h1 {
 
 h2 {
     @include gothic-bold;
-    font-size: $f6;
+    font-size: $f5;
     color: black;
 }
 
 h3 {
     @include gothic-bold;
-    font-size: $f7;
+    font-size: $f6;
     color: black;
 }
 
@@ -87,15 +88,17 @@ nav ul li a.nav_active {
 figure {
     margin-left: 0;
     padding-left: 0;
+    padding-bottom: $offset1;
 
     img {
         width: 100%;
         max-width: none;
+        display: block;
     }
 
     figcaption {
-		    @include gangster-regular;
-		    font-size: $f5;
+		@include gangster-regular;
+		font-size: $f6;
 	    }
     }
 
@@ -399,6 +402,10 @@ div#content_filter {
 
 .thegray {
     color: $thegrey;
+}
+
+.thedarkgray {
+    color: $thedarkgray;
 }
 
 main#now {
