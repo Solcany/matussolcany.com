@@ -9,26 +9,23 @@ categories:
   - interactive
 competencies:
   - graphic design
-  - UX design
+  - information design
 draft: false
 position_in_projects_grid: 0
 position_in_column: 2
 ---
 
-{{< img src="image/subdigital_system1.jpg">}}
+{{< img src="image/subdigital_system1.jpg" alt="a photo of the model with multiple urban elements highlighted in mostly green, orange and purple">}}
 
-Bratislava 2022 Model is an interactive model of a region of Bratislava. The model represents the future real estate developments of Nivy region on a interactive map.
+Bratislava 2022 Model is an interactive model of the Nove Nivy downtown area of Bratislava. It is a tool for presentation of the real estate developments of this area commissioned by HB Reavis real estate developer.
 
-I was commissione by [Subdigital](https://www.sub.digital/project02/) studio in 2018 to develop a graphical system for this model. The model is used by the developer to interactively highlight urban elements like: points of interests, transporation, transporation stops, utilities roads, greenery, the client's new developments, the functions of areas of the city. 
+I was commissioned by [Subdigital](https://www.sub.digital/project02/) studio in 2017 to develop a graphical system for this model. The model allows to highlight various urban elements: offices, apartments, restaurants, schools, public transport roads & stops, streets, direction, points of interests and more. The challenge of this task was to develop an iconic and color systems that would support multiple combinations of the highlighted urban elements while maintaining visual clarity. 
 
-This was a challenging task due to the amount of possible combinations of
 
-za nas je to ok, ale prosim uved hlavneho realizatora (mozes to nazvat vlastnymi slovami): Subdigital (aj s linkom) a klienta a rok.
+{{< img src="image/subdigital_system2.jpg" alt="a sketch of the graphical system showing a region of the city covered with various geometrical textures and solid colors">}}
 
-{{< img src="image/subdigital_system2.jpg">}}
+{{< img src="image/subdigital_system3.jpg" alt="a sketch of transporation systems, roads in grey, red, green, yellow and purple">}}
 
-{{< img src="image/subdigital_system3.jpg">}}
+{{< img src="image/subdigital_system4.jpg" alt="a photo of the whole model with multiple urban elements highlighted" >}}
 
-{{< img src="image/subdigital_system4.jpg">}}
-
-{{< img src="image/subdigital_system5.jpg">}}
+{{< img src="image/subdigital_system5.jpg" alt="a photo detail of a region of the model with multiple urban elements highlighted mostly in blue, green and red">}}
