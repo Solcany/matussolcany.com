@@ -16,7 +16,7 @@ position_in_projects_grid: 2
 position_in_column: 2
 
 ---
-{{< zoomable_img src="image/leaks1.jpg" hq_src="image/leaks1-hq.jpg" caption="Very weird things" alt="ff" >}}
+{{< zoomable_img src="image/leaks1.jpg" hq_src="image/leaks1-hq.jpg" alt="a mostly black and white map of relationships between governments and the software weapons that were leaked" >}}
 {{< competencies >}}
 
 
