@@ -1,12 +1,13 @@
-{{ $img := $.Page.Resources.GetMatch (.Get 0) }}
-{{ $hq_img_src := (.Get 1) }}
-{{ $caption := (.Get 2) }}
-{{ $render_caption := (.Get 3) }}
-
+{{ $img := $.Page.Resources.GetMatch (.Get "src") }}
+{{ $hq_img_src := (.Get "hq_src") }}
+{{ $caption := (.Get "caption") }}
+{{ $alt := (.Get "alt") }}
+{{if (and (ne $img nil) (ne $hq_img_src nil)) }}
 <div data-view="basic-view" data-hq-src="{{$hq_img_src}}">
 <button class="control-view" type="button"></button>
 <figure class="expandable">
-	<img loading="lazy" src="{{ $img.RelPermalink }}" data-lq alt="{{ $caption }}" />
-	{{if $render_caption}}<figcaption>{{ $caption }}</figcaption> {{ end }}
+	<img loading="lazy" src="{{ $img.RelPermalink }}" data-lq {{if (ne $alt nil) }} alt="{{ $alt }}" {{ end }}/>
+	{{if (ne $caption nil)}}<figcaption>{{ $caption }}</figcaption> {{ end }}
 </figure>
 </div>
+{{ end }}
