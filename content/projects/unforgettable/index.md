@@ -9,7 +9,7 @@ categories:
   - interactive
 competencies:
   - ideation
-  - ui ux design
+  - ui, ux design
 draft: false
 position_in_projects_grid: 2
 position_in_column: 1
