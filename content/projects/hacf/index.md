@@ -10,7 +10,7 @@ categories:
 competencies:
   - graphic design
   - Processing development
-  - 3D modelling
+  - 3d modelling
 draft: false
 show_thumbnail_in_post: false
 position_in_projects_grid: 0
