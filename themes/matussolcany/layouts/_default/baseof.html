@@ -32,12 +32,6 @@
 	 </script>
 	 {{ end }}
 
-     {{/* load dragscroll.js lib for the software leaks project */}}
-     {{ if eq .Page.Title "Software Weapons Leaks" }}
-        {{ $dragscroll_js := resources.Get "./js/dragscroll.js" }}
-	    <!-- <script src="{{ $dragscroll_js.Permalink }}"></script> -->
-     {{ end }}
-
 </head>
 <body>
 	{{ partial "header" . }}
