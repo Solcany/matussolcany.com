@@ -7,7 +7,7 @@ type: project
 layout: project
 categories:
   - interactive
-competences:
+competencies:
   - ui ux design
   - conceptualization
 draft: false
@@ -16,15 +16,12 @@ position_in_column: 1
 ---
 
 {{< video src="video/unforgettable-video">}}
+{{< competencies >}}
 
-Unforgettable is an interactive installation meant for exploration and audience curation of the vast and often forgotten archives of digitized artworks of galleries. 
-
-The installation puts the audience member in the position of a curator, over the time they get to decide which artworks will stay and which won't.
-
-Unforgettable won an audience prize of HackaLOD hackathon in 2019. And is a creation of Ben, Jorim, [Philo](https://phivk.com/), Edward and myself.
+Unfortgattable is an interactive installation to let museum visitors explore the long tail of scarcely visited artworks. Unforgettable won an audience prize of HackaLOD hackathon in 2019 and is a result of collaboration of ExpLOD team: Edward, Jorim, [Philo](https://phivk.com/), Ben and myself.
 
 
-{{< img src="image/unforgettable3.jpg">}}
-{{< img src="image/unforgettable1.jpg">}}
-{{< img src="image/unforgettable2.jpg">}}
+{{< img src="image/unforgettable3.jpg" alt="3D rendered illustration of a figure standing in front of a touch screen, on the screen there's a collection of artworks with blue borders. Under the touch screen there's a projector projecting a mirror image of the screen on the wall">}}
+{{< img src="image/unforgettable1.jpg" alt="A screenshot of the screen with a collection of artworks with blue borders">}}
+{{< img src="image/unforgettable2.jpg" alt="A photo of the ExpLOD team holding the audience prize trophy" >}}
 
