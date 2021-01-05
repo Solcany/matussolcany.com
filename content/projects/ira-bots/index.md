@@ -17,7 +17,7 @@ position_in_projects_grid: 0
 position_in_column: 1
 ---
 
-{{< video src="video/ira-video">}}
+{{< video src="video/ira-video" alt="Internet Research Agency Remixer web demo">}}
 
 {{< competencies >}}
 
