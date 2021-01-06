@@ -19,19 +19,10 @@
 	 <script src="{{ $home_js.Permalink }}"></script>
 	 {{ end }}
 
-     {{/* load image zooming on all pages but home */}}
-	 {{ if eq .IsHome false }}
-	 <script>
-	  {{ $image_zoom_js := resources.Get "./js/trigger_dragscroll.js" }}
-	  if (!navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i)) {
-		  var script = document.createElement('script');
-		  script.src = '{{ $image_zoom_js.Permalink }}';
-		  var ref = document.querySelector('script');
-		  ref.parentNode.insertBefore(script, ref);
-	  }
-	 </script>
-	 {{ end }}
-
+     {{ if and (isset .Page.Params "has_zoomable_images") (eq .Page.Params.has_zoomable_images true)}}
+	 {{ $image_zoom_js := resources.Get "./js/trigger_dragscroll.js" }}
+     <script src="{{ $image_zoom_js.Permalink }}"></script>
+     {{ end }}
 </head>
 <body>
 	{{ partial "header" . }}
