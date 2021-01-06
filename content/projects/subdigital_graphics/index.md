@@ -29,3 +29,5 @@ I was commissioned by [Subdigital](https://www.sub.digital/project02/) studio in
 {{< img src="image/subdigital_system4.jpg" alt="a photo of the whole model with multiple urban elements highlighted" >}}
 
 {{< img src="image/subdigital_system5.jpg" alt="a photo detail of a region of the model with multiple urban elements highlighted mostly in blue, green and red">}}
+
+Photos by Matej Hakár, Andrej Cíger, Radovan Dranga 

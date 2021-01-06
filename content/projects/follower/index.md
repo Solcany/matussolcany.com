@@ -1,5 +1,5 @@
 ---
-title: Follower 
+title: "Follower: Social VR Experience"
 slug: follower
 date: 2020-11-23T21:09:02+01:00
 year: 2017
