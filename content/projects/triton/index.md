@@ -9,13 +9,12 @@ categories:
   - informative
 competencies:
   - research
-  - ui ux design
+  - ui,ux design
   - graphic design
   - front end development
 draft: false
 position_in_projects_grid: 1
 position_in_column: 1
-show_thumbnail_in_post: false
 ---
 {{< video src="video/triton-video">}}
 

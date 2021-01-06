@@ -1,6 +1,6 @@
 ---
 title: Pointfugue Meetups posters
-slug: pointfugue-meetups
+slug: pointfugue-meetups-posters
 date: 2020-11-15T21:12:30+01:00
 year: 2019
 type: project

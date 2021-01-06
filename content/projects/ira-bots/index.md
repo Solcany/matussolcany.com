@@ -8,7 +8,7 @@ layout: project
 categories:
   - informative
 competencies:
-  - ui ux design
+  - ui, ux design
   - graphic design
   - research
   - front end development

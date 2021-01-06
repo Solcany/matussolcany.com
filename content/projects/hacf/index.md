@@ -1,6 +1,6 @@
 ---
 title: Halt And Catch Fire posters 
-slug: hand-of-ouroboros
+slug: halt-and-catch-fire-posters
 date: 2020-11-15T21:12:19+01:00
 year: 2017
 type: project

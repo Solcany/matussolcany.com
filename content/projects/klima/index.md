@@ -11,7 +11,6 @@ competencies:
   - ideation
   - ui, ux design
 draft: false
-show_thumbnail_in_post: false
 position_in_projects_grid: 2
 position_in_column: 3
 
