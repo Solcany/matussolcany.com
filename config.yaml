@@ -15,7 +15,7 @@ params:
     titleShort: Matúš Solčány
     homeGridColumns: 3
     projectCategories:
-    - dataviz
+    - visual
     - interactive
-    - graphic
+    - informative
 ---
