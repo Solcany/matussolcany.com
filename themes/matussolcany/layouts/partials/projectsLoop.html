@@ -10,10 +10,8 @@
                 <label for="{{ $checkboxId }}"> {{ $category }} </label>
         </div>
         {{end}}
-
         </form>
     </div>
-
     <div class="grid w-100 flex flex-wrap flex-nowrap-l justify-between ph2 ph3-l">
         <!-- amount of columns in projects loop -->
         {{ $columns := .Site.Params.homeGridColumns }}
@@ -31,7 +29,7 @@
                 <!-- ! only the first category of categories is taken into account for now ! -->
                {{ $category := index (.Params.Categories) 0}}
                {{ $categoryCss := (print "post-category-" $category )}}
-	            <li id="{{ .Title }}" class="{{ $categoryCss }} post border-box pb1 pb3-l">
+	            <li id="{{ .Title }}" class="{{ $categoryCss }} post border-box pb1 pb4-l">
 
 		            <div name="content">
                         <h2><a class="text-link f6 gothic-bold pb1 db tl black pointer no-underline" href="{{ .Permalink }}" title="{{ .Title }}"> {{ .Title }} </a></h2>

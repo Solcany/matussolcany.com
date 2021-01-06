@@ -18,11 +18,11 @@ position_in_column: 5
 ---
 {{< video src="video/precrime-video">}}
 
-{{< competencies >}}
-
 [visit the website](https://crimeprediction.info)
 
 I made this website to host an online version of my written graduation thesis, done at Information Design Masters at Design Academy Eindhoven. 
+
+{{< competencies >}}
 
 {{< img src="image/precrime1.jpg" alt="a screenshot of the landing page of the website with a render of 3d face, a half of the face is covered with blue texture made of letters. The button on the left reads: read the thesis">}}
 {{< img src="image/precrime2.jpg" alt="a screenshot of the black, blue, gray and white content page, chapter 2: The prediction machine" >}}

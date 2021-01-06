@@ -17,8 +17,6 @@ position_in_column: 2
 
 ---
 {{< zoomable_img src="image/leaks1.jpg" hq_src="image/leaks1-hq.jpg" alt="a mostly black and white map showing relationships between governments and the software weapons they produced and were leaked" caption="click on the + icon to enlarge the image">}}
-{{< competencies >}}
-
 
 In 2010 a software weapon known as [Stuxnet](https://en.wikipedia.org/wiki/Stuxnet) was developed in collaboration between the [USA and Israel](https://arstechnica.com/tech-policy/2012/06/confirmed-us-israel-created-stuxnet-lost-control-of-it/). The weapon temporarily halted uranium enrichment process in the iranian nuclear Natanz facility by damaging the enrichment centrifuges. This event marked the beginning of government funded large scale development of software weapons.
 
@@ -26,3 +24,4 @@ Since then other governments started developing their own software weapons. Some
 
 This project maps all the major leaks of software weapons, their documentation and links them back to the governments that developed them. Information in this document comes from [Edward Snowden](https://www.theguardian.com/world/2013/jul/31/nsa-top-secret-program-online-data), [Wiki Leaks Vault 7 release](https://wikileaks.org/ciav7p1/) and from the [leakers themselves](https://medium.com/@shadowbrokerss).
 
+{{< competencies >}}

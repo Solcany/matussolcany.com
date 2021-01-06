@@ -238,7 +238,7 @@ h2 {
   font-family: 'hk_gothic_bold', avenir, 'helvetica neue', helvetica, sans-serif;
   font-weight: normal;
   font-style: normal;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: black; }
 
 h3 {
@@ -295,6 +295,7 @@ figure {
     max-width: none;
     display: block; }
   figure figcaption {
+    padding-top: 0.25rem;
     font-family: avenir, 'helvetica neue', helvetica, sans-serif;
     font-weight: normal;
     font-style: normal;
@@ -312,7 +313,7 @@ div[data-view] {
     font-style: normal;
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     position: absolute;
     border: none;
     background-color: black;
@@ -341,7 +342,7 @@ div[data-view] {
       cursor: zoom-in; }
     div[data-view][data-view="basic-view"] button.control-view:after {
       left: 7px;
-      top: -3px;
+      top: 0;
       content: "+"; }
   div[data-view][data-view="basic-view"] figure.expandable div.img-container {
     display: none;
@@ -365,8 +366,8 @@ div[data-view] {
       div[data-view][data-view="expanded-view"] button.control-view {
         right: 0; } }
     div[data-view][data-view="expanded-view"] button.control-view:after {
-      left: 9px;
-      top: -3px;
+      left: 11px;
+      top: -2px;
       content: "-"; }
   div[data-view][data-view="expanded-view"] figure.expandable {
     display: block; }
@@ -421,19 +422,6 @@ div[data-view] {
     font-size: 1.3rem;
     padding-top: 0.5rem; }
 
-.f-subheadline-gray {
-  color: #ff0000; }
-
-.text-lineheight {
-  line-height: 1.4em; }
-
-.small-caps {
-  font-variant: small-caps; }
-
-.cover {
-  object-fit: cover; }
-
-/* ––– color variables ––– */
 body {
   min-width: 320px; }
 
@@ -495,6 +483,12 @@ div#content_filter form div.container {
 
 .thegray {
   color: #C5C5C5; }
+
+.graytest {
+  color: #a6a6a6; }
+
+.thegray_bg {
+  background-color: #C5C5C5; }
 
 .thedarkgray {
   color: #4d4d4d; }

@@ -4977,3 +4977,14 @@ code, .code {
 
 .z-unset {
   z-index: unset; }
+
+
+/*
+
+   custom
+
+*/
+
+.black {
+  color: black;
+}

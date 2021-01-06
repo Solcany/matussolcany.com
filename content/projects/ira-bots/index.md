@@ -19,13 +19,13 @@ position_in_column: 1
 
 {{< video src="video/ira-video" alt="Internet Research Agency Remixer web demo">}}
 
-{{< competencies >}}
-
 Internet Research Agency is a Russian institution responsible for the bots that consolidated tribalism and polarisation of the US population before and during the US 2016 elections. [The agency’s medium of the greatest influence were the popular social networks like Twitter and Facebook.](https://int.nyt.com/data/documenthelper/533-read-report-internet-research-agency/7871ea6d5b7bedafbf19/optimized/full.pdf) 
 
 The Remixer website asks visitors to remix the twitter bots's profile images, names and their profile descriptions to create new profiles of fictional bots. This hands on experience aims to make the database accessible and familiarise the audience with the characteristics of these bots.
 
 The database used comes from the [Twitter 2016 elections integrity  release](https://blog.twitter.com/official/en_us/topics/company/2018/2016-election-update.html). The music for this project was composed by Ondrej Solčány.
+
+{{< competencies >}}
 
 {{< img src="image/ira1.jpg" alt="Illustration of enlarged busts covered with the russian flag sitting on the map of the US. Each head has a text bubble with tweets of the russian twitter bots">}}
 {{< img src="image/ira2.jpg" alt="Illustration of enlarged busts covered with the american flag sitting on the map of the US">}}

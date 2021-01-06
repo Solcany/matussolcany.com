@@ -1,10 +1,10 @@
 {{ if isset $.Page.Params "competencies" }}
-    <h3> Competencies </h3>
-    <ul class="gangster-regular f6 pb2">
+    <h3 class="pt2 pb1 f6"> Competencies </h3>
+    <ul class="gangster-regular f6 pb3">
         {{ $competencies := $.Page.Params.competencies }}
         {{ $arr_len := (sub (len $competencies) 1) }}
         {{range $index, $competence := $competencies}}
-        <li class="dib pa0 ma0"> {{$competence}}{{if lt $index $arr_len}}, {{ end }} </li>
+        <li class="dib pa0 ma0" style=""> {{$competence}}{{if lt $index $arr_len}}, {{ end }} </li>
         {{ end }}
     </ul>
     {{ else }}

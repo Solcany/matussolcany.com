@@ -17,7 +17,6 @@ position_in_column: 3
 ---
 
 {{< img src="image/follower0.jpg" alt="Follower start game screen with purple facebook login window on purple background">}}
-{{< competencies >}}
 
 ### Follower is a shooter game which makes social pressure palpable in VR environment
 
@@ -25,6 +24,8 @@ In the age of social media, the constant stream of likes, requests and notificat
 At the start the player logs into their Facebook account. The player's friendlist will then become the source of social pressure. The more friends the player has the harder the game will become. Each friend becomes a projectile, [a frenemy](https://en.wikipedia.org/wiki/Frenemy) gravitating towards the player. the player has to use their guns to fend them off. The more time passes, the more friends will be spawned. 
 
 Follower is result of joint effort of [Philo van Kemenade](https://phivk.com/), [Jan Kováříček](https://kovaricek.tumblr.com/) and myself at Bratislava Gamejam 2017 where it received honorary mention.
+
+{{< competencies >}}
 
 {{< img src="image/follower1.jpg" caption="The player stands in the middle, their frenemies are closing in... How long can they survive?" alt="An overview of the game's 3d purple and blue arena with the player model in the center">}}
 

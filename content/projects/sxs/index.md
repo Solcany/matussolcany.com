@@ -11,18 +11,20 @@ competencies:
   - ui, ux design
   - information design
 draft: false
-show_thumbnail_in_post: false
 position_in_projects_grid: 1
 position_in_column: 2
 
 ---
+
 {{< img src="image/sxs1.jpg" alt="landing page of the sxs website with the president Tiso and Hitler on the background">}}
-{{< competencies >}}
-[visit the live website](https://senxskutocnost.sng.sk/en)
+
+[visit the website](https://senxskutocnost.sng.sk/en)
 
 This website tells a story of the fascist Slovak State spanning years 1939-1945 in 4 chapters. This website was created in the time when a slovak neo nazi party ’Naše Slovensko’(Our Slovakia) won 8.06 % in the 2016 parliamentary elections. The website supported Slovak National Gallery’s exhibition of the same name and provided wider context. I was commisioned by [lab.SNG](https://lab.sng.sk/) to collaborate on this project. 
 
 In 2017 this project won Biela Kocka award for the best educational project.
+
+{{< competencies >}}
 
 {{< img src="image/sxs2.jpg" caption="Landing screen of a content page of chapter 1" alt="sxs website, chapter 1 landing page with Tiso's face in the background" >}}
 

@@ -42,7 +42,7 @@ h1 {
 
 h2 {
     @include gothic-bold;
-    font-size: $f5;
+    font-size: $f6;
     color: black;
 }
 
@@ -97,6 +97,7 @@ figure {
     }
 
     figcaption {
+        padding-top: $offset1;
 		@include gangster-regular;
 		font-size: $f6;
 	    }
@@ -109,7 +110,7 @@ div[data-view] {
 
     button.control-view {
         @include gangster-regular
-        font-size: 1.6rem;
+        font-size: 1.5rem;
         position: absolute;
         border: none;
         //border: solid 1px $thegrey;
@@ -151,7 +152,7 @@ div[data-view] {
 
             &:after {
                 left: 7px;
-                top: -3px;
+                top: 0;
                 content: "+"
 
             }
@@ -196,8 +197,8 @@ div[data-view] {
             right: -29px;
 
             &:after {
-                left: 9px;
-                top: -3px;
+                left: 11px;
+                top: -2px;
                 content: "-"
             }
         }
@@ -266,34 +267,6 @@ div[data-view] {
 			padding-top: $offset2;
 		}
 }
-
-
-
-
-.f-subheadline-gray {
-  color: #ff0000;
-}
-
-.text-lineheight {
-	line-height: 1.4em;
-}
-
-.small-caps {
-	font-variant: small-caps;
-}
-
-.cover {
-  object-fit: cover;
-}
-
-/* ––– color variables ––– */
-$transition-time: 0.0s;
-$quick-transition: 0.075s;
-$fast-transition: 0.125s;
-$medium-trasition: 0.275s;
-$long-transition: 0.4s;
-
-$arrow-back-forth-transition: 0.5s;
 
 body {
 	min-width: 320px;
@@ -402,6 +375,14 @@ div#content_filter {
 
 .thegray {
     color: $thegrey;
+}
+
+.graytest {
+    color: #a6a6a6;
+}
+
+.thegray_bg {
+    background-color: #C5C5C5;
 }
 
 .thedarkgray {
