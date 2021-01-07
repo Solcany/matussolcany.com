@@ -58,7 +58,7 @@
      5 = 5th step in size scale
      6 = 6th step in size scale
 
-   Media Query Extensions:
+   Media Query Extensons:
      -ns = not-small
      -m  = medium
      -l  = large
@@ -96,16 +96,19 @@
   font-size: 2.8rem; }
 
 .f3 {
-  font-size: 2.4rem; }
+  font-size: 1.8rem; }
 
 .f4 {
   font-size: 1.6rem; }
 
 .f5 {
-  font-size: 1.25rem; }
+  font-size: 1.3rem; }
 
 .f6 {
   font-size: 1.1rem; }
+
+.f7 {
+  font-size: 0.9rem; }
 
 @media screen and (min-width: 30em) {
   .f-6-ns,
@@ -121,11 +124,11 @@
   .f2-ns {
     font-size: 2.8rem; }
   .f3-ns {
-    font-size: 2.4rem; }
+    font-size: 1.8rem; }
   .f4-ns {
     font-size: 1.6rem; }
   .f5-ns {
-    font-size: 1.25rem; }
+    font-size: 1.3rem; }
   .f6-ns {
     font-size: 1.1rem; } }
 
@@ -143,11 +146,11 @@
   .f2-m {
     font-size: 2.8rem; }
   .f3-m {
-    font-size: 2.4rem; }
+    font-size: 1.8rem; }
   .f4-m {
     font-size: 1.6rem; }
   .f5-m {
-    font-size: 1.25rem; }
+    font-size: 1.3rem; }
   .f6-m {
     font-size: 1.1rem; } }
 
@@ -165,11 +168,11 @@
   .f2-l {
     font-size: 2.8rem; }
   .f3-l {
-    font-size: 2.4rem; }
+    font-size: 1.8rem; }
   .f4-l {
     font-size: 1.6rem; }
   .f5-l {
-    font-size: 1.25rem; }
+    font-size: 1.3rem; }
   .f6-l {
     font-size: 1.1rem; } }
 
@@ -187,13 +190,29 @@
   .f2-vl {
     font-size: 2.8rem; }
   .f3-vl {
-    font-size: 2.4rem; }
+    font-size: 1.8rem; }
   .f4-vl {
     font-size: 1.6rem; }
   .f5-vl {
-    font-size: 1.25rem; }
+    font-size: 1.3rem; }
   .f6-vl {
     font-size: 1.1rem; } }
+
+@font-face {
+  font-family: 'hk_gothic_bold';
+  src: url("../fonts/hk-gothic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+.gothic-bold {
+  font-family: 'hk_gothic_bold', avenir, 'helvetica neue', helvetica, sans-serif; }
+
+.gangster-regular {
+  font-family: avenir, 'helvetica neue', helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased; }
 
 /* 
 
@@ -202,45 +221,164 @@ A file for individual classes of complex elements. (i. e. buttons with complex e
 – Individual classes are always last in markup.
 
 */
-@font-face {
-  font-family: 'hk_gothic_bold';
-  src: url("../fonts/HK-gothic.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'gangster_grotesk_regular';
-  src: url("../fonts/GangsterGrotesk-Regular.otf") format("opentype"); }
-
-.gothic-bold {
-  font-family: 'hk_gothic_bold', avenir, 'helvetica neue', helvetica, sans-serif; }
-
-.gangster-regular {
-  font-family: 'gangster_grotesk_regular', avenir, 'helvetica neue', helvetica, sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased; }
-
 .text-shadow {
   text-shadow: rgba(0, 0, 0, 0.9) 0 0 10px; }
 
 h1 {
-  line-height: 0.7em; }
+  font-family: 'hk_gothic_bold', avenir, 'helvetica neue', helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.3rem; }
 
-/* ––– ! WORDPRESS OVERRIDES ! ––– */
-figure.wp-block-video {
-  width: 100%; }
+h2 {
+  font-family: 'hk_gothic_bold', avenir, 'helvetica neue', helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.1rem;
+  color: black; }
+
+h3 {
+  font-family: 'hk_gothic_bold', avenir, 'helvetica neue', helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 0.9rem;
+  color: black; }
+
+h4 {
+  font-family: avenir, 'helvetica neue', helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  font-size: 1.1rem;
+  color: black; }
+
+p {
+  font-family: avenir, 'helvetica neue', helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  font-size: 1.1rem; }
   @media screen and (min-width: 60em) {
-    figure.wp-block-video {
-      width: 60%; } }
-  figure.wp-block-video figcaption {
-    margin-top: 0;
-    padding-top: 0;
-    font-family: 'gangster_grotesk_regular';
-    text-align: left;
-    color: black;
-    font-size: 1rem; }
+    p {
+      font-size: f6; } }
+a {
+  font-family: avenir, 'helvetica neue', helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  font-size: 1.1rem;
+  color: black; }
+
+header {
+  border-bottom: 1px solid #C5C5C5; }
+  @media screen and (min-width: 60em) {
+    header {
+      border-bottom: none; } }
+  header nav ul li a.nav_active {
+    text-decoration: underline; }
+
+.link-icon {
+  width: 20px; }
+
+.bot-protect {
+  unicode-bidi: bidi-override;
+  direction: rtl; }
+
+figure {
+  padding-left: 0;
+  margin: 0;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem; }
+  figure img {
+    width: 100%;
+    max-width: none;
+    display: block; }
+  figure figcaption {
+    padding-top: 0.25rem;
+    font-family: avenir, 'helvetica neue', helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    font-size: 1.1rem; }
+
+div[data-view] {
+  position: relative;
+  max-width: none;
+  display: inline-block; }
+  div[data-view] button.control-view {
+    font-family: avenir, 'helvetica neue', helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    font-size: 1.5rem;
+    position: absolute;
+    border: none;
+    background-color: black;
+    color: white;
+    width: 30px;
+    height: 30px;
+    z-index: 10000;
+    top: 4px; }
+    div[data-view] button.control-view:after {
+      position: absolute; }
+  div[data-view] figure.expandable {
+    margin: 0;
+    padding-left: 0;
+    position: relative;
+    box-sizing: border-box; }
+    div[data-view] figure.expandable div.img-container {
+      height: 70vh;
+      overflow: auto;
+      border: 1px solid #C5C5C5; }
+  div[data-view][data-view="basic-view"] button.control-view {
+    right: -30px; }
+    @media screen and (max-width: 30em) {
+      div[data-view][data-view="basic-view"] button.control-view {
+        right: 0; } }
+    div[data-view][data-view="basic-view"] button.control-view:hover {
+      cursor: zoom-in; }
+    div[data-view][data-view="basic-view"] button.control-view:after {
+      left: 7px;
+      top: 0;
+      content: "+"; }
+  div[data-view][data-view="basic-view"] figure.expandable div.img-container {
+    display: none;
+    height: auto;
+    width: 100%; }
+    div[data-view][data-view="basic-view"] figure.expandable div.img-container img {
+      max-width: 100%; }
+      div[data-view][data-view="basic-view"] figure.expandable div.img-container img[data-lq] {
+        display: block; }
+      div[data-view][data-view="basic-view"] figure.expandable div.img-container img[data-hq] {
+        display: none; }
+  div[data-view][data-view="expanded-view"]:hover {
+    cursor: grab; }
+  div[data-view][data-view="expanded-view"]:hover:active {
+    cursor: grabbing; }
+  div[data-view][data-view="expanded-view"] button.control-view {
+    right: -29px; }
+    div[data-view][data-view="expanded-view"] button.control-view:hover {
+      cursor: zoom-out; }
+    @media screen and (max-width: 30em) {
+      div[data-view][data-view="expanded-view"] button.control-view {
+        right: 0; } }
+    div[data-view][data-view="expanded-view"] button.control-view:after {
+      left: 11px;
+      top: -2px;
+      content: "-"; }
+  div[data-view][data-view="expanded-view"] figure.expandable {
+    display: block; }
+    div[data-view][data-view="expanded-view"] figure.expandable img {
+      max-width: none; }
+      div[data-view][data-view="expanded-view"] figure.expandable img[data-lq] {
+        display: none; }
+      div[data-view][data-view="expanded-view"] figure.expandable img[data-hq] {
+        display: block; }
 
 .introduction-with-title {
   width: 100%;
@@ -262,14 +400,14 @@ figure.wp-block-video {
     font-weight: normal;
     font-style: normal;
     box-sizing: border-box;
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding-top: 0.5rem;
     margin: 0;
     margin-bottom: 0.25rem; }
   .introduction-with-title p.introduction {
     display: block;
     width: 100%;
-    font-family: 'gangster_grotesk_regular', avenir, 'helvetica neue', helvetica, sans-serif;
+    font-family: avenir, 'helvetica neue', helvetica, sans-serif;
     font-weight: normal;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
@@ -277,95 +415,31 @@ figure.wp-block-video {
     font-size: 1.6rem; }
   .introduction-with-title span.year {
     display: block;
-    font-family: 'gangster_grotesk_regular', avenir, 'helvetica neue', helvetica, sans-serif;
+    font-family: avenir, 'helvetica neue', helvetica, sans-serif;
     font-weight: normal;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
     box-sizing: border-box;
-    font-size: 1rem;
+    font-size: 1.3rem;
     padding-top: 0.5rem; }
 
-figure.fullwidth-image {
-  width: 100%;
-  margin: 0;
-  margin-bottom: 1rem; }
-  @media screen and (min-width: 60em) {
-    figure.fullwidth-image {
-      width: 60%; } }
-  figure.fullwidth-image img {
-    width: 100%;
-    box-sizing: border-box; }
-  figure.fullwidth-image figcaption {
-    width: 100%;
-    font-size: 1rem;
-    text-align: left;
-    font-family: 'gangster_grotesk_regular', avenir, 'helvetica neue', helvetica, sans-serif;
-    font-weight: normal;
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
-    font-smoothing: antialiased; }
-
-.f-subheadline-gray {
-  color: #ff0000; }
-
-.text-lineheight {
-  line-height: 1.4em; }
-
-.small-caps {
-  font-variant: small-caps; }
-
-.cover {
-  object-fit: cover; }
-
-/* ––– color variables ––– */
 body {
   min-width: 320px; }
 
-.sc {
-  font-variant-caps: small-caps;
-  -moz-font-feature-settings: "smcp";
-  -webkit-font-feature-settings: "smcp";
-  font-feature-settings: "smcp"; }
-
-nav {
-  -webkit-transition: all 0.275s;
-  -moz-transition: all 0.275s;
-  transition: all 0.275s; }
-  nav.nav-up {
-    -webkit-transform: translateY(-101%);
-    transform: translateY(-101%); }
-  nav.nav-down {
-    -webkit-transform: translateY(0);
-    transform: translateY(0); }
-
-body.home nav ul li#Projects a {
-  text-decoration: underline; }
-
-body.single-post nav ul li#Projects a {
-  text-decoration: underline; }
-
-body.page-template-now-page nav ul li#Now a {
-  text-decoration: underline; }
-
-body.page-template-about-page nav ul li#About a {
-  text-decoration: underline; }
-
-body.page-template-contact-page nav ul li#Contact a {
-  text-decoration: underline; }
-
 section#works div.grid ul li.post div a.image-link {
   position: relative; }
-  section#works div.grid ul li.post div a.image-link div.placeholder {
-    top: 0;
-    left: 0;
-    border: 1px dashed #C5C5C5;
-    display: none; }
   section#works div.grid ul li.post div a.image-link img.thumbnail {
-    visibility: visible;
+    opacity: 1;
     display: block; }
+    section#works div.grid ul li.post div a.image-link img.thumbnail.inactive {
+      filter: grayscale(100%);
+      opacity: 0.2; }
+    section#works div.grid ul li.post div a.image-link img.thumbnail.active {
+      filter: none;
+      opacity: 1.0; }
 
-ul#content_filter form li.container {
+div#content_filter form div.container {
   position: relative;
   cursor: pointer;
   -webkit-user-select: none;
@@ -373,24 +447,24 @@ ul#content_filter form li.container {
   -ms-user-select: none;
   user-select: none;
   height: 15px; }
-  ul#content_filter form li.container input[type=checkbox] {
+  div#content_filter form div.container input[type=checkbox] {
     position: absolute;
     top: 0;
     left: 0;
     opacity: 0;
     cursor: pointer;
-    height: 15px;
-    width: 15px;
+    height: 18px;
+    width: 22px;
     z-index: 10000; }
-    ul#content_filter form li.container input[type=checkbox]:checked ~ span.checkmark:after {
+    div#content_filter form div.container input[type=checkbox]:checked ~ span.checkmark:after {
       display: block; }
-  ul#content_filter form li.container span.checkmark {
+  div#content_filter form div.container span.checkmark {
     position: relative;
     display: inline-block;
     height: 15px;
     width: 15px;
     border: solid 1px #C5C5C5; }
-    ul#content_filter form li.container span.checkmark:after {
+    div#content_filter form div.container span.checkmark:after {
       content: "";
       position: absolute;
       display: none;
@@ -399,7 +473,7 @@ ul#content_filter form li.container {
       width: 11px;
       height: 11px;
       background-color: black; }
-  ul#content_filter form li.container label {
+  div#content_filter form div.container label {
     position: relative;
     bottom: 2px;
     display: inline-block;
@@ -412,108 +486,27 @@ ul#content_filter form li.container {
 .thegray {
   color: #C5C5C5; }
 
-.scroll_top_button {
-  width: 50px;
-  height: 50px;
+.graytest {
+  color: #a6a6a6; }
+
+.thegray_bg {
+  background-color: #C5C5C5; }
+
+.thedarkgray {
+  color: #4d4d4d; }
+
+main#now section#past ul li span {
   display: block;
-  position: relative;
-  border-radius: 0 !important;
-  background: none;
-  border-style: solid;
-  border-width: 3px;
-  text-align: center;
-  border-color: #00F782;
-  color: #000;
-  overflow: hidden;
-  cursor: pointer; }
-  .scroll_top_button:focus {
-    outline: 0; }
-  .scroll_top_button:after {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 1;
-    content: "";
-    background-color: #00F782;
-    transition: transform 0.125s;
-    transform: translateY(100%); }
-  .scroll_top_button:hover {
-    color: #000;
-    transition: color 0.125s; }
-    .scroll_top_button:hover:after {
-      transform: translateY(0); }
-  .scroll_top_button .arrow {
-    display: block;
-    font-size: 1.1em;
-    height: 18px;
-    margin: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 2; }
+  font-size: 1.1rem; }
 
-/* ––– button styles ––– */
-.i-scroll-down-button {
-  bottom: -36px; }
+main#now section#past ul li p {
+  font-size: 1.3rem;
+  margin-bottom: 0.25rem; }
 
-.i-case-study-button {
-  width: 10em;
-  height: 3em;
-  display: inline-block;
-  text-decoration: none;
-  position: relative;
-  cursor: pointer;
-  color: #454545;
-  border-style: solid;
-  border-color: #454545;
-  border-width: 1px;
-  background: none;
-  box-sizing: border-box;
-  float: right; }
-  .i-case-study-button .i-button-wrapper {
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%); }
-  .i-case-study-button:hover {
-    background-color: #000;
-    border-style: none;
-    color: #fff; }
+footer.absolute-footer {
+  position: absolute;
+  bottom: 0; }
 
-.more_work_h1 {
-  top: 3rem;
-  font-size: 4.2rem; }
-  @media screen and (min-width: 30em) and (max-width: 60em) {
-    .more_work_h1 {
-      top: 4rem;
-      font-size: 5.2rem; } }
-  @media screen and (min-width: 60em) {
-    .more_work_h1 {
-      top: 6rem;
-      font-size: 9rem; } }
-  @media screen and (min-width: 100em) {
-    .more_work_h1 {
-      top: 4.5rem;
-      font-size: 11rem; } }
-.more_work_list {
-  padding-top: 12rem;
-  padding-bottom: 10rem; }
-  @media screen and (min-width: 30em) and (max-width: 60em) {
-    .more_work_list {
-      padding-top: 7rem;
-      padding-bottom: 6rem; } }
-  @media screen and (min-width: 60em) {
-    .more_work_list {
-      padding-top: 12rem;
-      padding-bottom: 10rem; } }
 .center-horizontal {
   left: 50%;
   transform: translate(-50%, 0); }

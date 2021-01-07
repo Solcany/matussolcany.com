@@ -2,7 +2,6 @@
 baseURL: "./"
 languageCode: en-us
 Title: Matúš Solčány
-Author: Matúš Solčány
 theme:
   - hugo-video
   - matussolcany
@@ -13,6 +12,8 @@ markup:
       unsafe: true
 
 params:
+    Author: Matúš Solčány
+    Description: The portfolio of digital designer and developer Matus Solcany
     titleShort: Matúš Solčány
     homeGridColumns: 3
     projectCategories:

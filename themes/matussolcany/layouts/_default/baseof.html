@@ -5,25 +5,25 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>{{ .Site.Title }}</title>
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon.png">
 	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
-	<link rel="stylesheet" href="{{ "css/tachyons.css" | relURL }}">
+    {{ $favicon := resources.Get "favicon.png" }}
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ $favicon.RelPermalink }}">
 
-	{{ $scss := resources.Get "scss/style.scss" }}
-	{{ $style := $scss | resources.ToCSS (dict "targetPath" "./css/style.css") }}
-	<link rel="stylesheet" href="{{ $style.Permalink }}">
+    {{ $tachyons_css := resources.Get "css/tachyons.css" | minify}}
+	{{ $custom_css := resources.Get "scss/style.scss" | toCSS | minify}}
+    {{ $bundle_css := slice $tachyons_css $custom_css | resources.Concat "css/bundle.min.css"}}
+	<link rel="stylesheet" href="{{ $bundle_css.RelPermalink }}">
 
-     {{/* load projects grid organizer on home page */}}
-	 {{ if eq .IsHome true}}
-	 {{ $home_js := resources.Get "./js/home.js" }}
-	 <script src="{{ $home_js.Permalink }}"></script>
-	 {{ end }}
+	{{ if eq .IsHome true}}
+	    {{ $home_js := resources.Get "./js/home.js" | minify }}
+	    <script src="{{ $home_js.RelPermalink }}"></script>
+	{{ end }}
 
-     {{ if and (isset .Page.Params "has_zoomable_images") (eq .Page.Params.has_zoomable_images true)}}
-	 {{ $image_zoom_js := resources.Get "./js/trigger_dragscroll.js" }}
-     <script src="{{ $image_zoom_js.Permalink }}"></script>
-     {{ end }}
+    {{ if and (isset .Page.Params "has_zoomable_images") (eq .Page.Params.has_zoomable_images true)}}
+	    {{ $image_zoom_js := resources.Get "./js/trigger_dragscroll.js" | minify}}
+        <script src="{{ $image_zoom_js.Permalink }}"></script>
+    {{ end }}
 </head>
 <body>
 	{{ partial "header" . }}

@@ -49,7 +49,7 @@ const init_thumbnails = function() {
 	const categorized_thumbnails = categories.map(function(category) {
 		return filter_by_css_class(thumbnails_arr, "post-category-" + category)
 	})
-	console.log(categorized_thumbnails)
+
 	toggle_thumbnails(categorized_thumbnails, checkboxes_arr);
 	for(let i = 0; i < checkboxes_arr.length; i++) {
 		const checkbox = checkboxes_arr[i]

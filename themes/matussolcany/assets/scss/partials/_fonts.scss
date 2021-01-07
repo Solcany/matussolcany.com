@@ -1,17 +1,11 @@
 
 @font-face {
     font-family: 'hk_gothic_bold';
-    src: url('../fonts/HK-gothic.ttf') format('truetype');
+    src: url('../fonts/hk-gothic.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
 }
-
-@font-face {
-    font-family: 'gangster_grotesk_regular';
-    src: url('../fonts/GangsterGrotesk-Regular.otf') format('opentype');
-}
-
 
 .gothic-bold {
     font-family: 'hk_gothic_bold',
@@ -29,8 +23,6 @@
         font-weight: normal;
         font-style: normal;
 }
-
-
 
 .gangster-regular {
     font-family: //'gangster_grotesk_regular',
