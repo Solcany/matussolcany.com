@@ -245,7 +245,7 @@ h3 {
   font-family: 'hk_gothic_bold', avenir, 'helvetica neue', helvetica, sans-serif;
   font-weight: normal;
   font-style: normal;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   color: black; }
 
 h4 {

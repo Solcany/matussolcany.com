@@ -7,6 +7,7 @@
         <!-- show only the latest post -->
         {{ $latest := index .Pages.ByDate.Reverse 0}}
         {{ $latest.Content }}
+        <span class="db f6 gangster-grotesk">{{ $latest.PublishDate.Format "January, 2006" }}</span>
     </section>
 
     <!-- only show the past section if there's a past -->
