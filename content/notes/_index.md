@@ -7,7 +7,7 @@ draft: true
 
 menu:
   main:
-    identifier: notes
+    identifier: Notes
     name: Notes
     url: ./notes
     weight: 5

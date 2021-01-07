@@ -73,8 +73,18 @@ a {
     color: black;
 }
 
-nav ul li a.nav_active {
-    text-decoration: underline;
+header {
+    border-bottom: 1px solid $thegrey;
+
+    @media screen and (min-width: $l-width) {
+	    border-bottom: none;
+	}
+
+    nav {
+        ul li a.nav_active {
+            text-decoration: underline;
+        }
+    }
 }
 
 .link-icon {
@@ -86,8 +96,9 @@ nav ul li a.nav_active {
 }
 
 figure {
-    margin-left: 0;
     padding-left: 0;
+    margin: 0;
+    padding-top: $offset1;
     padding-bottom: $offset1;
 
     img {
@@ -119,7 +130,7 @@ div[data-view] {
         width: 30px;
         height: 30px;
         z-index: $z-top;
-        top: 0;
+        top: 4px;
 
         &:after {
             position: absolute;
@@ -345,7 +356,7 @@ div#content_filter {
                 height: $checkbox-w;
                 width: $checkbox-w;
                 border: solid 1px $thegrey;
-                
+
                 &:after {
                     content: "";
                     position: absolute;
@@ -408,13 +419,8 @@ main#now {
 }
 
 footer.absolute-footer {
-    position: static;
-
-    @media screen and (min-width: $l-width) {
-        position: absolute;
-        bottom: 0;
-	}
-
+    position: absolute;
+    bottom: 0;
 }
 
 

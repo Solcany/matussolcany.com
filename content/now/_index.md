@@ -6,9 +6,9 @@ layout: now
 
 menu:
   main:
-    identifier: now
+    identifier: Now
     name: Now
-    url: ./now/
+    url: ./now
     weight: 1
 ---
  

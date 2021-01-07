@@ -1,7 +1,7 @@
 const CONTENT_HORIZONTAL_PADDING = 32; // left + right padding, the val comes from scss $offset3 variable
 const VIEW_CONTROL_BUTTON_WIDTH = 30;
 
-const PADDING_MOBILE = CONTENT_HORIZONTAL_PADDING
+const PADDING_MOBILE = CONTENT_HORIZONTAL_PADDING - VIEW_CONTROL_BUTTON_WIDTH/2 + 2
 const PADDING_DESKTOP = CONTENT_HORIZONTAL_PADDING +  VIEW_CONTROL_BUTTON_WIDTH
 
 const MEDIA_QUERY = window.matchMedia( "(max-width: 959px)" );
@@ -198,15 +198,14 @@ const init = function() {
     //disable_zoom_on_mobile_width(zoomable_images);
 
     // if the user resizes their window...
-    window.addEventListener('resize', function(){
+    //window.addEventListener('resize', function(){
        // ...resize all expanded images to fit the new width
       // debounce(resize_fullscreen_images(zoomable_images), 250)
        // ...if the screen is resized to mobile, disable the zoom
       // debounce(disable_zoom_on_mobile_width(zoomable_images), 250)
-    })
+    //})
 }
 
 window.addEventListener('load', function() {
     init();
-    //dragscroll();
 })

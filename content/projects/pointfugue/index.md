@@ -20,7 +20,6 @@ position_in_column: 5
 Pointfugue Meetups was a series of weekly coding meetups focused on making generative imagery with [Quil](http://quil.info/) (A Processing port) and [Clojure](https://clojure.org/) that I hosted at Design Academy Eindhoven in 2019. Leading up to the first meetup 5 unique posters were designed. I generated the whirlpool elements with Quil and the layout was done in collaboration with [Cinzia Bongino](https://www.cinziabongino.com/).
 
 {{< competencies >}}
-
 {{< img src="image/pf2.jpg" alt="2 more pointfugue posters with unique blue and red whirlpool elements">}}
 {{< img src="image/pf3.jpg" alt="a single pointfugue poster">}}
 {{< img src="image/pf4.jpg" alt="3 isolated whirlpool elements extracted from the pointfugue posters">}}

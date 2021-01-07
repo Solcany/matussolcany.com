@@ -1,12 +1,12 @@
 ---
-title: Matúš Solčány - Portfolio
+title: Matúš Solčány
 titleshort: Projects
 kind: home
 slug: landing-page
 
 menu:
   main:
-    identifier: home
+    identifier: Home
     name: Projects
     url: ./
     weight: 1

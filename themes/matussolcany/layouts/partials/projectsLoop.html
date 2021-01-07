@@ -1,5 +1,5 @@
 <section id="works" name="works" class="w-100 mb2">
-    <div id="content_filter" class="ph2 ph3-l pt3 pb1 pb0-l">
+    <div id="content_filter" class="ph2 ph3-l pt1 pt3-l pb1 pb0-l">
     <h1 class="mt1 mt3-l mb2"> {{.Params.titleshort}} </h1>
         <form>
         {{range $category := .Site.Params.projectCategories }}
@@ -20,7 +20,7 @@
         {{ $include_padding := (lt $index (sub $columns 1)) }}
         <ul style="flex-basis: 1; flex-grow: 1; flex-shrink: 1;" class="{{if $include_padding}} pr2 {{end}} pt2 pt3-l theborder border-box">
             <!-- sort the projects array by position_in_column property in each projects's front matter -->
-        {{ $projects := (where $.Site.RegularPages "Section" "projects")}}
+        {{ $projects := (where $.Site.RegularPages "Section" "Projects")}}
         {{ $projects := (where $projects "Params.draft" false)}}
         {{ $projects := (sort $projects "Params.position_in_column" "asc")}}
         {{ range $projects }}

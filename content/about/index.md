@@ -6,7 +6,7 @@ layout: about
 
 menu:
   main:
-    identifier: about
+    identifier: About
     name: About
     url: ./about
     weight: 3

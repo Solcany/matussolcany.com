@@ -27,14 +27,13 @@ const toggle_thumbnails = function(categorized_thumbnails, checkboxes) {
 	for(let u = 0; u <  checkboxes_state.length; u++) {
 		const thumbnails = categorized_thumbnails[u];
 		const checkbox_state = checkboxes_state[u];
-
 		// if all checkboxes are unchecked, show all thubmnails
-		if(checkboxes_state.every(function(checkbox) { return checkbox == false })) {
-			toggle_thumbnails_category(thumbnails, true);
+		//if(checkboxes_state.every(function(checkbox) { return checkbox == false })) {
+		//	toggle_thumbnails_category(thumbnails, true);
 			// otherwise filter based on checkbox state
-		} else {
+		//} else {
 			toggle_thumbnails_category(thumbnails, checkbox_state);
-		}
+		//}
 	}
 }
 
@@ -50,9 +49,7 @@ const init_thumbnails = function() {
 	const categorized_thumbnails = categories.map(function(category) {
 		return filter_by_css_class(thumbnails_arr, "post-category-" + category)
 	})
-
 	toggle_thumbnails(categorized_thumbnails, checkboxes_arr);
-
 	for(let i = 0; i < checkboxes_arr.length; i++) {
 		const checkbox = checkboxes_arr[i]
 		checkbox.addEventListener('click', function() {

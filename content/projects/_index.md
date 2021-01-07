@@ -1,4 +1,3 @@
 ---
-title: "projects"
-author: "a"
+title: "Projects"
 ---

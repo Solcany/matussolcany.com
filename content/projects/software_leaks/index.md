@@ -22,6 +22,6 @@ In 2010 a software weapon known as [Stuxnet](https://en.wikipedia.org/wiki/Stuxn
 
 Since then other governments started developing their own software weapons. Some of these weapons were leaked and later repurposed and used against the public by hostile governments or individual groups. The recent attacks fueled by these leaks came in the form of [ransomware](https://en.wikipedia.org/wiki/Ransomware) outbreaks, Notably: [notPetya](https://arstechnica.com/information-technology/2017/06/notpetya-developers-obtained-nsa-exploits-weeks-before-their-public-leak/) and [wannaCry](https://www.wired.com/story/eternalblue-leaked-nsa-spy-tool-hacked-world/) both peaked in 2017.
 
-This project maps all the major leaks of software weapons, their documentation and links them back to the governments that developed them. Information in this document comes from [Edward Snowden](https://www.theguardian.com/world/2013/jul/31/nsa-top-secret-program-online-data), [Wiki Leaks Vault 7 release](https://wikileaks.org/ciav7p1/) and from the [leakers themselves](https://medium.com/@shadowbrokerss).
+This project maps all the major leaks of software weapons, their documentation and links them back to the governments that developed them. Information in this document comes from [Edward Snowden](https://www.theguardian.com/world/2013/jul/31/nsa-top-secret-program-online-data) , [Wiki Leaks Vault 7 release](https://wikileaks.org/ciav7p1) and from the [leakers themselves](https://medium.com/@shadowbrokerss).
 
 {{< competencies >}}
