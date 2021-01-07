@@ -23,18 +23,18 @@ menu:
         <div name="education_wrapper" class="w-auto-ns w-100 w-25-l dib pr6-l">
             <h2 name="headline" class="w-100 f6 tl gothic-bold black mb1 mb4-l mt3 mt2-l mt0-l"> Services </h2>
             <p class="f6 gangster-grotesk black">
-             interaction design, information design, motion design, digital prototyping, web development, Processing and P5.js development
+             interaction design, information design, data visualization, graphic design, digital prototyping, web development, Processing and P5.js development, teaching, consulting
             </p>
         </div>
         <div name="tools_wrapper" class="w-100 w-25-l pr6-l w-auto-ns">
                 <h2 name="headline" class="w-100 f6 tl gothic-bold black mb1 mb4-l mt3 mt2-l"> Tools </h2>
                 <h3>Visual, prototyping</h3>
-                    <p class="f6 gangster-grotesk black">I'm proficient with Figma, Sketch, Adobe Creative Suite(Indesign, After Effects, Illustrator, Photoshop).</p>
+                    <p class="f6 gangster-grotesk black">I'm proficient with Figma, Sketch and Adobe Creative Suite (Illustrator, After Effects, Indesign, Photoshop).</p>
                 <h3>Development</h3>
-                    <p class="f6 gangster-grotesk black">I develop static websites with Hugo framework. I have extensive experience with javascript, html and css. I create  images and prototypes with Processing, p5.js and their Clojure port Quil. My recent obsession is Godot game engine. My code editor of choice is Doom Emacs </p> 
+                    <p class="f6 gangster-grotesk black">I have extensive experience with javascript, html and css, i prefer to develop static websites using Hugo framework. I create images and prototypes with Processing, p5.js or their Clojure equivalent Quil. My recent obsession is Godot game engine. My code editor of choice is Doom Emacs. </p> 
                 <h3> Miscellaneous </h3>
                     <p class="f6 gangster-grostesk black">
-                        I'm proficient with photogrammetric 3D scanning and Metashape. I have intermediate experience with QGIS and Blender.
+                        I'm proficient with photogrammetric 3D scanning and Metashape. I have intermediate experience with QGIS, Blender.
                     </p>
             </div>
         </div>

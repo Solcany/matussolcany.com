@@ -2,6 +2,7 @@
 baseURL: "./"
 languageCode: en-us
 Title: Matúš Solčány
+Author: Matúš Solčány
 theme:
   - hugo-video
   - matussolcany
