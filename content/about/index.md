@@ -121,7 +121,7 @@ menu:
                         <span class="db f6  pr3 black pb1">2017</span>
                         <div class="db">
                             <p class="ma0 gangster-regular f6 dib db-l black">Biela Kocka</p>
-                            <span class="black f6 pt1 db gangster-regular">Dream x Reality, Honorary recognition</span>
+                            <span class="black f6 pt1 db gangster-regular">Dream x Reality, Best educational project</span>
                         </div>
                     </li>
                     <li name="prize" class="gangster-regular db mb2 mb4-l mt3 mt0-l">

@@ -29,10 +29,10 @@
                 <!-- ! only the first category of categories is taken into account for now ! -->
                {{ $category := index (.Params.Categories) 0}}
                {{ $categoryCss := (print "post-category-" $category )}}
-	            <li id="{{ .Title }}" class="{{ $categoryCss }} post border-box pb1 pb4-l">
+	            <li id="{{ .Title }}" class="{{ $categoryCss }} post border-box pb3 pb4-l">
 
 		            <div name="content">
-                        <h2><a class="text-link f6 gothic-bold pb1 db tl black pointer no-underline" href="{{ .Permalink }}" title="{{ .Title }}"> {{ .Title }} </a></h2>
+                        <h2><a class="text-link f6 gothic-bold pb0 pb1-l db tl black pointer no-underline" href="{{ .Permalink }}" title="{{ .Title }}"> {{ .Title }} </a></h2>
 			            <a href= "{{ .RelPermalink }}" class="image-link dib">
                             <img src="{{ $thumbnail.RelPermalink }}" class="thumbnail z-4 pointer">
 			            </a>
