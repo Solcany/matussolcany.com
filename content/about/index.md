@@ -14,7 +14,9 @@ menu:
 
 <div class="w-100 border-box ph2 ph3-l pt2">
 
-<img src="image/id.jpg" alt="matus solcany portrait" class="object-cover pt2 db w-40 w-10-l cover">
+<div class="w-25-l pr6-l">
+    <img src="image/id.jpg" alt="matus solcany portrait" class="w-100 db">
+</div>
 
 </div>
 

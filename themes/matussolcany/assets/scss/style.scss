@@ -62,8 +62,8 @@ p {
     @include gangster-regular;
     font-size: $f6;
 
-    @media screen and (min-width: $l-width) {
-	    font-size: f6;
+    @media screen and (max-width: $m-width) {
+	    line-height: 21px;
 	}
 }
 
@@ -88,7 +88,7 @@ header {
 }
 
 .link-icon {
-    width: 20px;
+    width: 22px;
 }
 
 .bot-protect {
