@@ -18,6 +18,7 @@ markup:
 params:
     Author: Matúš Solčány
     Description: The portfolio of digital designer and developer Matus Solcany
+    SiteURL: "https://matussolcany.com"
     homeGridColumns: 3
     projectCategories:
     - visual

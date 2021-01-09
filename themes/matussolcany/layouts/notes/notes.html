@@ -6,7 +6,7 @@
     {{ $section := . }}
     <h2 class="mt3">{{ $section.Title }} </h2>
 
-    {{ range $section.RegularPages }}
+    {{ range $section.Pages }}
     <a href="{{.Page.Permalink }}"> {{.Page.Title}} </a>
     {{ end }}
     <!-- <li><a href="{{ .Permalink }}">{{ .Params.title | humanize | title }}</a></li>

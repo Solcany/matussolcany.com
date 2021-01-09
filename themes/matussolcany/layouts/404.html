@@ -53,9 +53,9 @@
 			<span class="pt2 f6 pt0-l gangster-regular black"> {{ .Site.Params.Author }} © {{ now.Year }}</span>
 		</li>
  		<li class="db dib-l pr0 w-100 w-30-l">
-			{{ $merveilles_svg := resources.Get "icons/merveilles.svg" }}
+			{{- $merveilles_logo := resources.Get "images/merveilles.svg" -}}
 			<a href="https://merveilles.town/@matsol" class="fr-l">
-				<img class="link-icon" src="{{ $merveilles_svg.RelPermalink }}">
+				<img class="link-icon" src="{{ $merveilles_logo.RelPermalink }}">
 			</a>
 		</li>
 	</ul>

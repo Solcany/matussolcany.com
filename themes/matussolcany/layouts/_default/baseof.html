@@ -4,36 +4,38 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>{{ .Site.Title }}</title>
-	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
-	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+	<title>{{- .Site.Title -}}</title>
+	<meta name="description" content="{{ .Site.Params.Description }}">
+	<meta name="author" content="{{ .Site.Params.Description }}">
 
     <meta property="og:title" content="{{ .Site.Title }}"/>
-  <!--  <meta property="og:url" content="{{ .Permalink }}" /> -->
+    <meta property="og:url" content="{{ .Site.Params.SiteURL }}" />
     <meta property="og:type" content="website" />
-    {{ with .Site.Params.description }}<meta property="og:description" content=”{{ . }}” />{{ end }}
+    <meta property="og:description" content=”{{- .Site.Params.Description -}}” />
+    {{- $ogimage := resources.Get "images/ogimage.jpg" -}}
+    <meta property="og:image" content="{{ .Site.Params.SiteURL }}{{ $ogimage.RelPermalink }}">
+    <meta property="og:type" content="website" />
 
-    {{ $favicon := resources.Get "favicon.png" }}
+    {{- $favicon := resources.Get "favicon.png" -}}
     <link rel="icon" type="image/png" sizes="16x16" href="{{ $favicon.RelPermalink }}">
 
-    {{ $tachyons_css := resources.Get "css/tachyons.css" | minify}}
-	{{ $custom_css := resources.Get "scss/style.scss" | toCSS | minify}}
-    {{ $bundle_css := slice $tachyons_css $custom_css | resources.Concat "css/bundle.min.css"}}
+    {{- $tachyons_css := resources.Get "css/tachyons.css" | minify -}}
+	{{- $custom_css := resources.Get "scss/style.scss" | toCSS | minify -}}
+    {{- $bundle_css := slice $tachyons_css $custom_css | resources.Concat "css/bundle.min.css" -}}
 	<link rel="stylesheet" href="{{ $bundle_css.RelPermalink }}">
 
-	{{ if eq .IsHome true}}
-	    {{ $home_js := resources.Get "./js/home.js" | minify }}
+	{{- if eq .IsHome true -}}
+	    {{- $home_js := resources.Get "./js/home.js" | minify -}}
 	    <script src="{{ $home_js.RelPermalink }}"></script>
-	{{ end }}
-
-    {{ if and (isset .Page.Params "has_zoomable_images") (eq .Page.Params.has_zoomable_images true)}}
-	    {{ $image_zoom_js := resources.Get "./js/trigger_dragscroll.js" | minify}}
+	{{- end -}}
+    {{- if and (isset .Page.Params "has_zoomable_images") (eq .Page.Params.has_zoomable_images true) -}}
+	    {{- $image_zoom_js := resources.Get "./js/trigger_dragscroll.js" | minify -}}
         <script src="{{ $image_zoom_js.Permalink }}"></script>
     {{ end }}
 </head>
 <body>
-	{{ partial "header" . }}
-	{{ block "main" . }}{{ end }}
-	{{ partial "footer" . }}
+	{{- partial "header" . -}}
+	{{- block "main" . -}}{{- end -}}
+	{{- partial "footer" . -}}
 </body>
 </html>

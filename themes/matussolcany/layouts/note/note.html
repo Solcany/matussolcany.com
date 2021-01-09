@@ -1,5 +1,15 @@
 {{ define "main" }}
 <main aria-role="main" class="ph2 ph3-l w-50-l w-100">
+<div id="breadcrumbs">
+    <a href="/">Home</a>
+    {{ range (split .URL "/") }}
+    {{ if gt (len . ) 0 }}
+    / <a href="/{{ . }}">{{ humanize (replace . "posts" "blog") }}</a>
+    {{ end }}
+    {{ end }}
+</div>
+
+
     <h1 class="mt3"> {{.Title}} </h1>
     {{ .Content }}
 </main>

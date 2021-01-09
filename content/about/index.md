@@ -9,7 +9,7 @@ menu:
     identifier: About
     name: About
     url: ./about
-    weight: 3
+    weight: 4
 ---
 
 <div class="w-100 border-box ph2 ph3-l pt2">
