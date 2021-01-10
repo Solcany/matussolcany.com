@@ -1,5 +1,6 @@
 ---
 Title: blender basics
+category: tools
 ---
 
 # tutorials

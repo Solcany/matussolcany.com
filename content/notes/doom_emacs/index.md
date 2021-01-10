@@ -1,3 +1,14 @@
+---
+title: Doom Emacs cheatsheet
+slug: doom-emacs-cheatsheet
+date: 2020-11-20T20:43:39+01:00
+type: note
+layout: note
+category: tools
+draft: false
+---
+
+
 # Doom Emacs basics
 
 *help* space + h

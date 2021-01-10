@@ -1,16 +1,18 @@
 {{ define "main" }}
 <main aria-role="main" class="ph2 ph3-l">
     <h1 class="mt3"> {{.Params.titleshort}} </h1>
-    {{ .Content }}
-    {{ range .Sections }}
-    {{ $section := . }}
-    <h2 class="mt3">{{ $section.Title }} </h2>
+    {{- .Content -}}
 
-    {{ range $section.Pages }}
-    <a href="{{.Page.Permalink }}"> {{.Page.Title}} </a>
-    {{ end }}
-    <!-- <li><a href="{{ .Permalink }}">{{ .Params.title | humanize | title }}</a></li>
-    -->
-    {{ end }}
+    {{- $categories := slice -}}
+    {{- range .Pages -}}
+    {{- $categories = $categories | append .Params.category -}}
+    {{- end -}}
+    {{- $categories := $categories | uniq | sort -}}
+    {{- range $category := $categories -}}
+        <h2 class="mt3">{{- humanize $category -}}</h2>
+        {{- range $page := where $.Pages "Params.category" $category -}}
+            <a class="db" href="{{ $page.RelPermalink }}"> {{- $page.Title -}}</a>
+        {{- end -}}
+    {{- end -}}
 </main>
 {{ end }}

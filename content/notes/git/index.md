@@ -1,3 +1,13 @@
+---
+title: Git cheatsheet
+slug: git-cheatsheet
+date: 2020-11-20T20:43:39+01:00
+type: note
+layout: note
+category: tools
+draft: false
+---
+
 # git basics
 
 ## fixing repo within new repo being ignored
