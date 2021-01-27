@@ -12,7 +12,7 @@ competencies:
   - information design
 draft: false
 position_in_projects_grid: 1
-position_in_column: 2
+position_in_column: 3
 
 ---
 

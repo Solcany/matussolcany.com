@@ -3,7 +3,7 @@ title: Matúš Solčány - Notes
 titleshort: Notes
 type: notes
 layout: notes
-draft: false
+draft: true
 
 menu:
   main:

@@ -5,7 +5,7 @@ date: 2020-11-20T20:43:39+01:00
 type: note
 layout: note
 category: tools
-draft: false
+draft: true
 ---
 
 
@@ -68,3 +68,11 @@ draft: false
 *commit* c + c
 *save commit* ctrl + c + ctrl + c
 *push* p
+
+# Doom 
+*reload Doom after init/config change* space + h + r + r
+
+# Org-roam
+*new note capture* space + n + r + c 
+*link to a note* space + n + r + i
+*show links* space + n + r + r

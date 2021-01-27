@@ -21,7 +21,7 @@ params:
     SiteURL: "https://matussolcany.com"
     homeGridColumns: 3
     projectCategories:
-    - visual
     - interactive
+    - visual
     - informative
 ---

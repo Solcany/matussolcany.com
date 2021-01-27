@@ -1,6 +1,7 @@
 ---
 Title: blender basics
 category: tools
+draft: true
 ---
 
 # tutorials
@@ -11,6 +12,9 @@ https://www.youtube.com/watch?v=fZSD7pVIUkY
 
 ## character modelling
 https://www.youtube.com/watch?v=WlaMfIgS2ns
+
+## hatching shader
+https://www.youtube.com/watch?v=508pwYME-w4&feature=youtu.be
 
 
 # blender basics

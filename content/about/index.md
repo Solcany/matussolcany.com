@@ -25,18 +25,18 @@ menu:
         <div name="education_wrapper" class="w-auto-ns w-100 w-25-l dib pr6-l">
             <h2 name="headline" class="w-100 f6 tl gothic-bold black mb1 mb4-l mt3 mt2-l mt0-l"> Services </h2>
             <p class="f6 gangster-grotesk black">
-             interaction design, information design, data visualization, graphic design, digital prototyping, web development, Processing and P5.js development, teaching, consulting
+             interaction design, ux ui design, information design, data visualization, graphic design, digital prototyping, web development, Processing and P5.js development, teaching, consulting
             </p>
         </div>
         <div name="tools_wrapper" class="w-100 w-25-l pr6-l w-auto-ns">
                 <h2 name="headline" class="w-100 f6 tl gothic-bold black mb1 mb4-l mt3 mt2-l"> Tools </h2>
                 <h3>Visual, prototyping</h3>
-                    <p class="f6 gangster-grotesk black">I'm proficient with Figma, Sketch and Adobe Creative Suite (Illustrator, After Effects, Indesign, Photoshop).</p>
+                    <p class="f6 gangster-grotesk black">I'm proficient with Figma, Sketch and Adobe Creative Suite (Illustrator, After Effects, Indesign, Photoshop). I have experience with prototyping in Unity.</p>
                 <h3>Development</h3>
-                    <p class="f6 gangster-grotesk black">I have extensive experience with javascript, html and css, i prefer to develop static websites using Hugo framework. I create images and prototypes with Processing, p5.js or their Clojure equivalent Quil. My recent obsession is Godot game engine. My code editor of choice is Doom Emacs. </p> 
+                    <p class="f6 gangster-grotesk black">I have extensive experience with javascript, html and css, I develop static websites using Hugo framework. I develop 3d VR capable websites with Aframe framework. I create images and prototypes with Processing, p5.js or their Clojure equivalent Quil. My recent obsession is Godot game engine. My code editor of choice is Doom Emacs. </p> 
                 <h3> Miscellaneous </h3>
                     <p class="f6 gangster-grostesk black">
-                        I'm proficient with photogrammetric 3D scanning and Metashape. I have intermediate experience with QGIS, Blender.
+                        I'm proficient with photogrammetric 3D scanning and Metashape. I have intermediate experience with QGIS and Blender.
                     </p>
             </div>
         </div>
@@ -74,7 +74,7 @@ menu:
                         <span class="db f6 pr3 black pb1">2017</span>
                         <div class="db">
                             <p class="ma0 gangster-regular f6 dib db-l black">Copenhagen Institute of Interactive design (DK), summer school, taught by Shruti Ramiah and Momo Miyazaki</p>
-<span class="black f6 pt1 db gangster-regular">People centred research</span>                                
+<span class="black f6 pt1 db gangster-regular">People centered research</span>                                
                      </div>
                     </li>
                     <li name="education" class="gangster-regular db mb2 mb4-l mt3 mt0-l">
@@ -128,7 +128,7 @@ menu:
                         <span class="db f6 pr3 black pb1">2019</span>
                         <div class="db">
                             <p class="ma0 gangster-regular f6 dib db-l black">HackaLOD</p>
-                            <span class="black f6 pt1 db gangster-regular">Verget Te Niet, Audience prize</span>
+                            <span class="black f6 pt1 db gangster-regular">Niet Te Vergeten, Audience prize</span>
                         </div>
                     </li>
                 </ul>
