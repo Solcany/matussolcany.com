@@ -1,1 +1,6 @@
-**/fonts 
+/fonts
+/public
+**/video
+*.otf
+/content/Teaching
+*.ttf

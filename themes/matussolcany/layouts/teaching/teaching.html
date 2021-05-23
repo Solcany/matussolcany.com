@@ -1,0 +1,18 @@
+{{ define "main" }}
+<main aria-role="main" class="ph2 ph3-l w-100 w-60-l pb5-l">
+    <h1 class="mt3"> {{.Params.titleshort}} </h1>
+    {{- .Content -}}
+
+    {{- $years := slice -}}
+    {{- range .Pages -}}
+    {{- $years = $years | append .Params.year -}}
+    {{- end -}}
+    {{- $years := $years | uniq | sort -}}
+    {{- range $year := $years -}}
+        <h3 class="mt3">{{- $year -}}</h2>
+        {{- range $page := where $.Pages "Params.year" $year -}}
+            <a class="db" href="{{ $page.RelPermalink }}"> {{- $page.Title -}}</a>
+        {{- end -}}
+    {{- end -}}
+</main>
+{{ end }}

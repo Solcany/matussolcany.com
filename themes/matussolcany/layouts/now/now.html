@@ -1,4 +1,6 @@
 {{ define "main" }}
+{{ $SHOW_PAST := false }}
+
 <main id="now">
     <h1 class="ph2 ph3-l mt3"> {{.Params.titleshort}} </h1>
 
@@ -11,7 +13,7 @@
     </section>
 
     <!-- only show the past section if there's a past -->
-    {{if gt (len .Pages) 1}}
+    {{if (and (gt (len .Pages) 1) $SHOW_PAST)}}
     <section id="past" class="bt theborder ph3 mb4">
     <h2 class="gothic-bold pt3 pb2 f4"> Past </h4>
         <ul class="w-100 w-50-l">

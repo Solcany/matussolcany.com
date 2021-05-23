@@ -3,15 +3,27 @@
 	<ul class="flex flex-column flex-row-l justify-between-l">
 		<li class="db dib-l pr0 w-100 w-30-l">
 			<a class="dib gangster-regular f6 black" href="&#109;&#097;&#105;&#108;&#116;&#111;:&#109;&#097;&#116;&#117;&#115;&#046;&#115;&#111;&#108;&#099;&#097;&#110;&#121;&#064;&#112;&#114;&#111;&#116;&#111;&#110;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">&#109;&#097;&#116;&#117;&#115;&#046;&#115;&#111;&#108;&#099;&#097;&#110;&#121;&#064;&#112;&#114;&#111;&#116;&#111;&#110;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a>
-		</li>       
-		<li class="db dib-l pv2 pv0-l self-center w-100 w-30-l tl tc-l">
+		</li>
+        
+		<li class="db dib-l pv2 pv0-l self-center w-100 w-30-l tl tr-l">
 			<span class="pt2 f6 pt0-l gangster-regular black"> {{ .Site.Params.Author }} © {{ now.Year }}</span>
 		</li>
+        
+        <!--
  		<li class="db dib-l pr0 w-100 w-30-l">
+			{{- $twitter_logo := resources.Get "images/twitter.svg" -}}
+            
+			<a href="https://twitter.com/@pointfugue" class="fr-l">
+				<img class="link-icon" src="{{ $twitter_logo.RelPermalink }}">
+			</a>
+
 			{{- $merveilles_logo := resources.Get "images/merveilles.svg" -}}
-			<a href="https://merveilles.town/@matsol" class="fr-l">
+            
+			<a href="https://merveilles.town/@matsol" class="fr-l mr2">
 				<img class="link-icon" src="{{ $merveilles_logo.RelPermalink }}">
 			</a>
-		</li>   
+		</li>
+        -->
+        
 	</ul>
 </footer>

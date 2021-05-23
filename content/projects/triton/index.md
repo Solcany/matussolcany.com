@@ -14,7 +14,7 @@ competencies:
   - front end development
 draft: false
 position_in_projects_grid: 1
-position_in_column: 1
+position_in_column: 3
 ---
 
 {{< video src="video/triton-video">}}

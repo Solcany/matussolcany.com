@@ -73,6 +73,16 @@ a {
     color: black;
 }
 
+pre {
+    padding-left: $offset3;
+
+    code {
+        font-family: monospace;
+        font-size: $f7;
+        color: $thedarkgray;
+    }
+}
+
 header {
     border-bottom: 1px solid $thegrey;
 

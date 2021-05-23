@@ -3,6 +3,7 @@ title: Matúš Solčány - Now
 titleshort: Now
 type: now
 layout: now
+draft: true
 
 menu:
   main:

@@ -13,8 +13,8 @@ competencies:
   - ui, ux design
   - front end development(Hugo)
 draft: false
-position_in_projects_grid: 1
-position_in_column: 5
+position_in_projects_grid: 2
+position_in_column: 2
 ---
 {{< video src="video/precrime-video">}}
 
