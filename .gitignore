@@ -1,6 +1,7 @@
-/fonts
-/public
+fonts/
+public/
 **/video
 *.otf
-/content/Teaching
+content/Teaching/
 *.ttf
+.DS_Store
