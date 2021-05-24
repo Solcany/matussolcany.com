@@ -1,7 +1,9 @@
 fonts/
 public/
-**/video
-*.otf
 content/Teaching/
+*.webm
+*.ogv
+*.mp4
+*.otf
 *.ttf
 .DS_Store
