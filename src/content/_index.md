@@ -11,7 +11,10 @@ menu:
     url: ./
     weight: 1
 ---
-I’m a creative developer and digital designer based in the Netherlands. In my work I merge interactive, visual and informative elements to create compelling [interfaces]({{< relref "/projects/klima/index.md" >}}), [experiences]({{< relref "/projects/unforgettable/index.md" >}}) and [visualizations]({{< relref "/projects/ira-bots/index.md" >}}). 
 
+{{% class important %}}
 
+I’m a creative developer and digital designer based in the Netherlands. In my work I merge interactive, visual and informative elements to create compelling [interfaces]({{< relref "/projects/klima/index.md" >}}), [experiences]({{< relref "/projects/unforgettable/index.md" >}}) and [visualizations]({{< relref "/projects/ira-bots/index.md" >}}).
+
+{{% /class %}}
 

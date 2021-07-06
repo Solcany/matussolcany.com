@@ -11,9 +11,9 @@ competencies:
   - ui, ux design
   - information design
 draft: false
-position_in_projects_grid: 1
-position_in_column: 2
-
+is_showcased: true
+showcase_column_position: 6
+description: Interactive installation to let museum visitors explore the long tail
 ---
 
 {{< img src="image/sxs1.jpg" alt="landing page of the sxs website with the president Tiso and Hitler on the background">}}

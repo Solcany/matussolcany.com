@@ -28,8 +28,12 @@ $l-width: 60em;
 // @media screen and (min-width: 30em) and (max-width: 60em) {
 // @media screen and (min-width: 60em) {
 
+$transition-time: 325ms;
+
+
 $thegrey: #C5C5C5;//#383838;
 $thedarkgray: #4d4d4d;
+$theblue: #2942ff;
 
 .text-shadow {
 	text-shadow: rgba(0, 0, 0, 0.9) 0 0 10px;
@@ -67,11 +71,46 @@ p {
 	}
 }
 
+span.important {
+    p {
+        font-size: $f2;
+        line-height: 60px;
+        a {
+            font-size: $f2;
+        }
+    }
+}
+
 a {
     @include gangster-regular;
     font-size: $f6;
     color: black;
+
+    &:hover {
+        color: $theblue;
+    }
 }
+
+
+img {
+    &.fadein {
+        opacity: 0; // no-js fallback
+        -webkit-transition: all $transition-time ease-in; 
+        -moz-transition: all $transition-time ease-in; 
+        -ms-transition: all $transition-time ease-in; 
+        -o-transition: all $transition-time ease-in; 
+    }
+}
+
+.js img.fadein {
+    //opacity: 0;
+}
+
+
+
+
+
+
 
 pre {
     padding-left: $offset3;
@@ -301,32 +340,29 @@ body {
 }
 
 section#works {
-    div.grid {
-        ul {
-            li.post {
-                div {
-                    a.text-link {
+    ul {
+        li.post {
+            div {
+                a.text-link {
 
-                    }
-                    a.image-link {
-                        position: relative;
+                }
+                a.image-link {
+                    position: relative;
 
-                        img.thumbnail {
-                            opacity: 1;
-                            display: block;
+                    img.thumbnail {
+                        display: block;
 
-                            &.inactive {
-                                filter: grayscale(100%);
-                                opacity: 0.2;
-                            }
-
-                            &.active {
-                                filter: none;
-                                opacity: 1.0;
-                            }
+                        &.inactive {
+                            filter: grayscale(100%);
+                            opacity: 0.2;
                         }
 
+                        &.active {
+                            filter: none;
+                            opacity: 1.0;
+                        }
                     }
+
                 }
             }
         }

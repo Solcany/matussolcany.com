@@ -13,8 +13,9 @@ competencies:
   - research
   - front end development
 draft: false
-position_in_projects_grid: 0
-position_in_column: 1
+is_showcased: true
+showcase_column_position: 1
+description: Interactive installation to let museum visitors explore the long tail
 ---
 
 {{< video src="video/ira-video" alt="Internet Research Agency Remixer web demo">}}

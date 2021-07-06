@@ -23,7 +23,7 @@
 	{{- $custom_css := resources.Get "scss/style.scss" | toCSS | minify -}}
     {{- $bundle_css := slice $tachyons_css $custom_css | resources.Concat "css/bundle.min.css" -}}
 	<link rel="stylesheet" href="{{ $bundle_css.RelPermalink }}">
-
+	
 	{{- if eq .IsHome true -}}
 	    {{- $home_js := resources.Get "./js/home.js" | minify -}}
 	    <script src="{{ $home_js.RelPermalink }}"></script>

@@ -1,0 +1,25 @@
+<ul class="pt2 pt3-l w-100 w-60-l theborder border-box ">
+<!-- sort the projects array by position_in_column property in each projects's front matter -->
+{{ $projects := (where $.Site.RegularPages "Section" "Projects")}}
+{{ $projects := (where $projects "Params.draft" false)}}
+{{ $projects := (where $projects "Params.is_showcased" true)}}        
+{{ $projects := (sort $projects "Params.showcase_column_position" "asc")}}
+{{ range $projects }}
+        {{ $thumbnail := .Resources.GetMatch "image/thumbnail.jpg" }}
+        <li id="{{ .Title }}" class="post border-box pb3 pb4-l">
+            <div name="content">
+	            <a href= "{{ .RelPermalink }}" class="image-link dib">
+                    <img src="{{ $thumbnail.RelPermalink }}" onload="this.style.opacity=1" class="fadein thumbnail z-4 pointer">
+	            </a>
+                <a class="w-100 pointer no-underline" href="{{ .Permalink }}" title="{{ .Title }}">           
+                    <h2 class="text-link f6 gothic-bold pb0 pb1-l db tl black "> 
+                        {{ .Title }} 
+                    </h2> 
+                    <span class="tl db f6">
+                        {{ .Params.description }} 
+                    </span>  
+                </a>                     
+            </div>
+        </li>
+{{ end }}
+</ul>

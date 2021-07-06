@@ -11,8 +11,9 @@ competencies:
   - ideation
   - ui, ux design
 draft: false
-position_in_projects_grid: 2
-position_in_column: 1
+is_showcased: true
+showcase_column_position: 1
+description: Interactive installation to let museum visitors explore the long tail
 ---
 
 {{< video src="video/unforgettable_video" >}}

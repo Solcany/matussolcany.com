@@ -13,8 +13,8 @@ competencies:
   - 3d modelling
 draft: false
 show_thumbnail_in_post: false
-position_in_projects_grid: 0
-position_in_column: 3
+is_showcased: false
+showcase_column_position: 0
 ---
 {{< img src="image/hacf1.jpg">}}
 

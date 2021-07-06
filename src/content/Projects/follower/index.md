@@ -11,8 +11,8 @@ competencies:
   - game development (Unity)
   - ideation
 draft: false
-position_in_projects_grid: 1
-position_in_column: 2
+is_showcased: false
+showcase_column_position: 0
 
 ---
 

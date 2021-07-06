@@ -73,5 +73,5 @@ const resize_placeholders = function(thumbnails) {
 }
 
 window.addEventListener('load', function() {
-    init_thumbnails();
+    // init_thumbnails();
 })

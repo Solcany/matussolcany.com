@@ -8,7 +8,6 @@ categories:
   - interactive
 draft: true
 show_thumbnail_in_post: true
-position_in_projects_grid: 2
-position_in_column: 5
-
+is_showcased: false
+showcase_column_position: 0
 ---

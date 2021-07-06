@@ -1,0 +1,18 @@
+<!-- adds a span wrapper with a given class 
+	used when you want to give a .md output like <p> and particular class
+
+	use:
+	{{/* % class className % */}}
+		
+		some .md content
+
+	{{/* % /class % */}}
+
+
+
+-->
+
+{{ $_hugo_config := `{ "version": 1 }` }}
+<span class="{{ .Get 0 }}">
+{{ .Inner }}
+</span>

@@ -11,8 +11,9 @@ competencies:
   - graphic design
   - information design
 draft: false
-position_in_projects_grid: 0
-position_in_column: 2
+is_showcased: true
+showcase_column_position: 2
+description: Interactive installation to let museum visitors explore the long tail
 ---
 
 {{< img src="image/subdigital_system1.jpg" alt="a photo of the model with multiple urban elements highlighted in mostly green, orange and purple">}}

@@ -11,9 +11,9 @@ competencies:
   - ideation
   - ui, ux design
 draft: false
-position_in_projects_grid: 1
-position_in_column: 1
-
+is_showcased: true
+showcase_column_position: 5
+description: Interactive installation to let museum visitors explore the long tail
 ---
 
 {{<img src="image/klima1.jpg" alt="A screenshot of Klima app with a matched painting, the current weather and a matching landscape photo in the background of the app sketch">}}
