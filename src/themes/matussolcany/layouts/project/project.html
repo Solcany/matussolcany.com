@@ -1,7 +1,8 @@
 {{ define "main" }}
-<main class="project ph2 ph3-l w-100 w-60-l">
+
+<main class="project pl3-l ph2 ph5-l pt2 pb2-l w-70">
     <h1 class="mt3 mt4-l mb2 mb3-l"> {{ .Title }}</h1>
-    {{.Content}}
+	{{ .Content }}
     <a class="mt3 mb4 db" href="{{ .Site.BaseURL }}"> return to Projects </a>
 </main>
 {{ end }}

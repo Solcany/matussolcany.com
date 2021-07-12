@@ -11,7 +11,7 @@
 	{{- else -}}
 		class="w-100"
 	{{ end }}>
-	<img loading="lazy" {{if $is_zoomable }} data-zoomable="basic-view" {{ end }} src="{{ $img.RelPermalink }}" {{if (ne $alt nil) }} alt="{{ $alt }}" {{ end }} />
+	<img loading="lazy" onload="this.style.opacity=1" class="fadein" {{if $is_zoomable }} data-zoomable="basic-view" {{ end }} src="{{ $img.RelPermalink }}" {{if (ne $alt nil) }} alt="{{ $alt }}" {{ end }} />
 	{{if (ne $caption nil) }}<figcaption>{{ $caption }}</figcaption> {{ end }}
 </figure>
 {{ end }}
