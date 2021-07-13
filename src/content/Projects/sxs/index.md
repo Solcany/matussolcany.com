@@ -12,6 +12,7 @@ competencies:
   - information design
 draft: false
 is_showcased: false
+showcase_column: 0
 showcase_column_position: 0
 description: Interactive installation to let museum visitors explore the long tail
 ---

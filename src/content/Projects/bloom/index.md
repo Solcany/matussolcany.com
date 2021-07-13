@@ -14,7 +14,8 @@ competencies:
 draft: false
 show_thumbnail_in_post: false
 is_showcased: true
-showcase_column_position: 4
+showcase_column: 0
+showcase_column_position: 2
 description: Interactive installation to let museum visitors explore the long tail
 
 ---

@@ -9,5 +9,6 @@ categories:
 draft: true
 show_thumbnail_in_post: true
 is_showcased: false
+showcase_column: 0
 showcase_column_position: 0
 ---

@@ -12,8 +12,8 @@ competencies:
   - Quil development
 draft: false
 is_showcased: false
+showcase_column: 0
 showcase_column_position: 0
-
 ---
 {{< img src="image/pf1.jpg" alt="2 pointfugue posters. white typography spelling: Point Fugue Meetups, programming and generative art with Clojure and Quil. Black background with a blue and red sprawling centric whirlpool of lines in the center of each poster.">}}
 

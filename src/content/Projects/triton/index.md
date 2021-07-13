@@ -13,8 +13,9 @@ competencies:
   - graphic design
   - front end development
 draft: false
-is_showcased: false
-showcase_column_position: 0
+is_showcased: true
+showcase_column: 1
+showcase_column_position: 2
 ---
 
 {{< video src="video/triton-video">}}

@@ -12,6 +12,8 @@ menu:
     weight: 4
 ---
 
+<<img
+
 <div class="w-100 border-box ph2 ph3-l pt2">
 
 <div class="w-25-l pr6-l">

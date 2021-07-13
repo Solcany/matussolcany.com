@@ -14,6 +14,7 @@ competencies:
 draft: false
 show_thumbnail_in_post: false
 is_showcased: false
+showcase_column: 0
 showcase_column_position: 0
 ---
 {{< img src="image/hacf1.jpg">}}

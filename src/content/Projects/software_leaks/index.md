@@ -13,8 +13,8 @@ competencies:
 draft: false
 has_zoomable_images: true
 is_showcased: false
+showcase_column: 0
 showcase_column_position: 0
-
 ---
 {{< zoomable_img src="image/leaks1.jpg" hq_src="image/leaks1-hq.jpg" alt="a mostly black and white map showing relationships between governments and the software weapons they produced and were leaked" caption="click on the + icon to enlarge the image">}}
 

@@ -12,7 +12,8 @@ competencies:
   - ui, ux design
 draft: false
 is_showcased: true
-showcase_column_position: 1
+showcase_column: 0
+showcase_column_position: 0
 description: Interactive installation to let museum visitors explore the long tail
 ---
 

@@ -14,6 +14,7 @@ competencies:
   - front end development(Hugo)
 draft: false
 is_showcased: false
+showcase_column: 0
 showcase_column_position: 0
 ---
 {{< video src="video/precrime-video">}}

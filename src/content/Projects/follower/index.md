@@ -12,8 +12,8 @@ competencies:
   - ideation
 draft: false
 is_showcased: false
+showcase_column: 0
 showcase_column_position: 0
-
 ---
 
 {{< img src="image/follower0.jpg" alt="Follower start game screen with purple facebook login window on purple background">}}

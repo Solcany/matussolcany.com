@@ -28,7 +28,7 @@ $l-width: 60em;
 // @media screen and (min-width: 30em) and (max-width: 60em) {
 // @media screen and (min-width: 60em) {
 
-$transition-time: 325ms;
+$transition-time: 200ms;
 
 
 $thegrey: #C5C5C5;//#383838;
@@ -99,6 +99,10 @@ img {
         -moz-transition: all $transition-time ease-in; 
         -ms-transition: all $transition-time ease-in; 
         -o-transition: all $transition-time ease-in; 
+    }
+
+    &.loaded {
+        opacity: 1;
     }
 }
 
@@ -351,16 +355,19 @@ section#works {
 
                     img.thumbnail {
                         display: block;
+                        position: relative;
 
-                        &.inactive {
-                            filter: grayscale(100%);
-                            opacity: 0.2;
+                        &:hover {
+                            opacity: 0.75;
                         }
 
-                        &.active {
-                            filter: none;
-                            opacity: 1.0;
-                        }
+                        &:after {
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            background-color: blue;
+                        }                        
+                        //opacity: 1.0;
                     }
 
                 }
@@ -369,68 +376,7 @@ section#works {
     }
 }
 
-$checkbox-area-w: 22px;
-$checkbox-area-h: 18px;
 
-$checkbox-w: 15px;
-$checkmark-w: 11px;
-
-div#content_filter {
-    form {
-        div.container {
-             position: relative;
-             cursor: pointer;
-             -webkit-user-select: none;
-             -moz-user-select: none;
-             -ms-user-select: none;
-             user-select: none;
-             height: $checkbox-w;
-
-            input[type=checkbox] {
-                position: absolute;
-                top:0;
-                left:0;
-                opacity: 0;
-                cursor: pointer;
-                height: $checkbox-area-h;
-                width: $checkbox-area-w;
-                z-index: 10000;
-
-                  &:checked ~ span.checkmark {
-                      &:after {
-                         display: block;
-                      }
-                  }
-            }
-
-            span.checkmark {
-                position: relative;
-                display: inline-block;
-                height: $checkbox-w;
-                width: $checkbox-w;
-                border: solid 1px $thegrey;
-
-                &:after {
-                    content: "";
-                    position: absolute;
-                    display: none;
-                    left: 2px;
-                    top: 2px;
-                    width: $checkmark-w;
-                    height: $checkmark-w;
-                    background-color: black;
-                }
-            }
-
-            label {
-                position: relative;
-                bottom: 2px;
-                display: inline-block;
-                cursor: pointer;
-            }
-        }
-    }
-}
 
 .theborder {
     border-color: #C5C5C5;
