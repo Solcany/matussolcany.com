@@ -1,8 +1,39 @@
 {{ define "main" }}
 
-<main class="project pl3-l ph2 ph5-l pt2 pb2-l w-70">
+<main class="project ph2 ph5-l pt2 pb4-l w-100 w-70-l">
     <h1 class="mt3 mt4-l mb2 mb3-l"> {{ .Title }}</h1>
 	{{ .Content }}
-    <a class="mt3 mb4 db" href="{{ .Site.BaseURL }}"> return to Projects </a>
 </main>
+<section name="next_project" class="w-100 pt1 pb3 ph5-l">
+	    <h2 class="mt3 mt4-l mb3 mb3-l"> Next project </h2>
+
+
+	    {{ .Scratch.Set "next" nil }}
+		{{ if .NextPage }}
+	    	{{ .Scratch.Set "next" .NextPage }}		
+		{{ else }}
+	    	{{ .Scratch.Set "next" (index (where $.Site.RegularPages "Section" "Projects") 0) }}		
+		{{ end }}
+
+		{{ $next := .Scratch.Get "next" }}
+		{{ $thumbnail := $next.Resources.GetMatch "image/thumbnail.jpg" }}
+        <div id="{{ $next.Title }}" class="w-50-l w-100 post border-box">
+            <div name="content">
+	            <a href= "{{ $next.RelPermalink }}" class="image-link dib">
+                    <img src="{{ $thumbnail.RelPermalink }}" onload="this.style.opacity=1" class="fadein thumbnail z-4 pointer">
+	            </a>
+                <a class="w-100 pointer no-underline" href="{{ $next.Permalink }}" title="{{ $next.Title }}">           
+                    <h2 class="text-link f6 gothic-bold pb0 pb1-l db tl black "> 
+                        {{ $next.Title }} 
+                    </h2> 
+                    <span class="tl db f6">
+                        {{ $next.Params.description }} 
+                    </span>  
+                </a>                     
+            </div>
+        </div>
+
+	<a class="mt4 mb4 db" href="{{ .Site.BaseURL }}"> Return to projects </a>
+</section>
+
 {{ end }}

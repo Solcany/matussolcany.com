@@ -1,13 +1,13 @@
-<ul class="pt2 pt3-l w-100 w-60-l theborder border-box ">
+<ul class=" w-100 w-60-l theborder border-box ">
         <!-- sort the projects array by position_in_column property in each projects's front matter -->
         {{ $projects := (where $.Site.RegularPages "Section" "Projects")}}
         {{ $projects := (where $projects "Params.draft" false)}}
         {{ $projects := (where $projects "Params.is_showcased" false)}}        
         {{ $projects := (sort $projects "Params.title" "asc")}}
         {{ range $projects }}
-	            <li id="{{ .Title }}" class="post border-box pb3-l">
+	            <li id="{{ .Title }}" class="post border-box pb3">
 		            <div name="content">
-                        <a class="w-100 pointer no-underline" href="{{ .Permalink }}" title="{{ .Title }}">           
+                        <a class="w-100 pointer underline" href="{{ .Permalink }}" title="{{ .Title }}">         
                             {{ .Title }} 
                         </a>                     
 		            </div>
