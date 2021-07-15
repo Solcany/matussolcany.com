@@ -17,16 +17,16 @@
             <!-- ! only the first category of categories is taken into account for now ! -->
            {{ $category := index (.Params.Categories) 0}}
            {{ $categoryCss := (print "post-category-" $category )}}
-            <li id="{{ .Title }}" class="{{ $categoryCss }} post border-box pb1 pb4-l">
+            <li id="{{ .Title }}" class="{{ $categoryCss }} post border-box pb1 pb4-l no-decoration">
                 <div name="content">
                     <a href= "{{ .RelPermalink }}" class="image-link dib">
                         <img src="{{ $thumbnail.RelPermalink }}" onload="this.classList.add('loaded')" class="fadein thumbnail z-4 pointer">
                     </a>
                     <a class="w-100 pointer no-underline" href="{{ .Permalink }}" title="{{ .Title }}">           
-                        <h2 class="text-link gothic-bold pb0 pb1-l pt2 db tc black ">
+                        <h2 class="text-link gothic-bold pb0 pb1-l pt2 db tl black ">
                             {{ .Title }} 
                         </h2> 
-                        <span class="tc db f6">
+                        <span class="tl db f6">
                             {{ .Params.description }} 
                         </span>  
                     </a>                     

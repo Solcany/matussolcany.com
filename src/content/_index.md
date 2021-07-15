@@ -14,7 +14,7 @@ menu:
 
 {{% class important %}}
 
-I’m a creative developer and digital designer based in the Netherlands. In my work I merge interactive, visual and informative elements to create compelling [interfaces]({{< relref "/projects/klima/index.md" >}}), [experiences]({{< relref "/projects/unforgettable/index.md" >}}) and [visualizations]({{< relref "/projects/ira-bots/index.md" >}}).
+Hi, I'm Matúš. I create interactive [experiences]({{< relref "/projects/unforgettable/index.md" >}}) and [interfaces]({{< relref "/projects/unforgettable/index.md" >}}) to explore and navigate emerging digital landscapes.
 
 {{% /class %}}
 
