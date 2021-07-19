@@ -20,7 +20,7 @@ I have both studio and freelance working experience. In the past I worked for cl
 
 ## Colophon
 
-- Designed and Coded by Matúš Solčány
+- Designed and coded by Matúš Solčány
 - Statically generated with Hugo
 - Hosted on Websupport servers
 - Coded with Doom Emacs

@@ -19,7 +19,7 @@ I'm based in Eindhoven, The Netherlands. If you have a question or looking for a
 
 ## Links
 
- <ul class="w-100 border-box">
+ <ul class="w-100 border-box pt2">
 	<li class="post border-box pb2 no-decoration">
 		<a class="dib gangster-regular f6 black" href="https://linkedin.com/in/matus-solcany-631792209">Linkedin</a>
 	</li> 	

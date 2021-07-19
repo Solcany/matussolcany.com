@@ -23,7 +23,6 @@ Unfortgattable is an interactive installation to let museum visitors explore the
 
 {{< competencies >}}
 
-
 {{< img src="image/unforgettable3.jpg" alt="3D rendered illustration of a figure standing in front of a touch screen, on the screen there's a collection of artworks with blue borders. Under the touch screen there's a projector projecting a mirror image of the screen on the wall">}}
 {{< img src="image/unforgettable1.jpg" alt="A screenshot of the screen with a collection of artworks with blue borders">}}
 {{< img src="image/unforgettable2.jpg" caption="the ExpLOD team" alt="A photo of the ExpLOD team holding the audience prize trophy" >}}
