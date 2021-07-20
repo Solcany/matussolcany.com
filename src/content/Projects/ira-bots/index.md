@@ -16,7 +16,7 @@ draft: false
 is_showcased: true
 showcase_column: 1
 showcase_column_position: 0
-description: Interactive installation to let museum visitors explore the long tail
+description: Exploring the russian twitter troll bots through creation of fictional avatars
 ---
 
 {{< video src="video/ira-video" alt="Internet Research Agency Remixer web demo">}}
@@ -29,11 +29,11 @@ The database used comes from the [Twitter 2016 elections integrity  release](htt
 
 {{< competencies >}}
 
-{{< img src="image/ira1.jpg" alt="Illustration of enlarged busts covered with the russian flag sitting on the map of the US. Each head has a text bubble with tweets of the russian twitter bots">}}
-{{< img src="image/ira2.jpg" alt="Illustration of enlarged busts covered with the american flag sitting on the map of the US">}}
-{{< img src="image/ira3.jpg" alt="Illustration of enlarged busts covered with the american flag sitting on the map of the US. Each head has a text bubble with tweets of the russian twitter bots">}}
-{{< img src="image/ira4.jpg" alt="a large bot profile image is surrounded by smaller profile images" caption="Choosing the bot's profile image">}}
-{{< img src="image/ira5.jpg" alt="the large bot profile image is surrounded by bots names" caption="Choosing the bot's profile name">}}
+{{< img src="image/ira1.jpg" alt="Illustration of enlarged busts covered with the russian flag sitting on the map of the US. Each head has a text bubble with tweets of the russian twitter bots" fig_css="project_fig">}}
+{{< img src="image/ira2.jpg" alt="Illustration of enlarged busts covered with the american flag sitting on the map of the US" fig_css="project_fig">}}
+{{< img src="image/ira3.jpg" alt="Illustration of enlarged busts covered with the american flag sitting on the map of the US. Each head has a text bubble with tweets of the russian twitter bots" fig_css="project_fig">}}
+{{< img src="image/ira4.jpg" alt="a large bot profile image is surrounded by smaller profile images" caption="Choosing the bot's profile image" fig_css="project_fig">}}
+{{< img src="image/ira5.jpg" alt="the large bot profile image is surrounded by bots names" caption="Choosing the bot's profile name" fig_css="project_fig">}}
 {{< img src="image/ira6.jpg" alt="the large bot profile image is surrounded by bots profile descriptions" caption="Choosing the bot's profile description">}}
 
 

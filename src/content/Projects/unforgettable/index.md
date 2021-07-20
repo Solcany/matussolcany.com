@@ -14,15 +14,17 @@ draft: false
 is_showcased: true
 showcase_column: 0
 showcase_column_position: 0
-description: Interactive installation to let museum visitors explore the long tail
+description: Audience driven curation of rarely seen artworks
 ---
 
 {{< video src="video/unforgettable_video" >}}
 
-Unfortgattable is an interactive installation to let museum visitors explore the long tail of scarcely visited artworks. Unforgettable won an audience prize of HackaLOD hackathon in 2019 and is a result of collaboration of ExpLOD team: Edward, Jorim, [Philo](https://phivk.com/), Ben and myself.
+Unfortgattable is a museum installation that asks museum audience to explore and curate the scarcely visited digitised artworks: deciding whether an artwork should remain or to be forgotten. 
+
+Unforgettable won an audience prize of HackaLOD hackathon in 2019 and is a result of collaboration of ExpLOD team: [Edward](https://twitter.com/anderson_edw), [Jorim](https://jtheuns.com/), [Philo](https://phivk.com/), [Ben](https://ben.companjen.name/) and myself.
 
 {{< competencies >}}
 
-{{< img src="image/unforgettable3.jpg" alt="3D rendered illustration of a figure standing in front of a touch screen, on the screen there's a collection of artworks with blue borders. Under the touch screen there's a projector projecting a mirror image of the screen on the wall">}}
-{{< img src="image/unforgettable1.jpg" alt="A screenshot of the screen with a collection of artworks with blue borders">}}
-{{< img src="image/unforgettable2.jpg" caption="the ExpLOD team" alt="A photo of the ExpLOD team holding the audience prize trophy" >}}
+{{< img src="image/unforgettable3.jpg" alt="3D rendered illustration of a figure standing in front of a touch screen, on the screen there's a collection of artworks with blue borders. Under the touch screen there's a projector projecting a mirror image of the screen on the wall" fig_css="project_fig">}}
+{{< img src="image/unforgettable1.jpg" alt="A screenshot of the screen with a collection of artworks with blue borders" fig_css="project_fig">}}
+{{< img src="image/unforgettable2.jpg" caption="the ExpLOD team" alt="A photo of the ExpLOD team holding the audience prize trophy">}}

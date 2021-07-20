@@ -6,8 +6,10 @@
 {{ $caption2 := (.Get "caption2") }}
 {{ $alt2 := (.Get "alt2") }}
 
-<div class="w-100 border-box flex flex-column flex-row-l">
-	<figure class="w-100 w-50-l dib mr0 pr0 pr2-ns">
+{{ $container_css := (.Get "container_css")}}
+
+<div class="w-100 border-box flex flex-column flex-row-l {{ if $container_css }} {{$container_css }} {{ end }}">
+	<figure class="w-100 w-50-l dib mr0 pr0 pr2-ns" >
 		<img loading="lazy" src="{{ $img1.RelPermalink }}" {{if (ne $alt1 nil) }} alt="{{ $alt1 }}" {{ end }}/>
 		{{if (ne $caption1 nil) }}<figcaption>{{ $caption1 }}</figcaption> {{ end }}
 	</figure>

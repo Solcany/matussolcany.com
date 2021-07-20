@@ -14,7 +14,7 @@ draft: false
 is_showcased: true
 showcase_column: 0
 showcase_column_position: 1
-description: Interactive installation to let museum visitors explore the long tail
+description: Presenting interlaced infrastructures of a city
 ---
 
 {{< img src="image/subdigital_system1.jpg" alt="a photo of the model with multiple urban elements highlighted in mostly green, orange and purple">}}
@@ -25,11 +25,11 @@ I was commissioned by [Subdigital](https://www.sub.digital/project02/) studio in
 
 {{< competencies >}}
 
-{{< img src="image/subdigital_system2.jpg" alt="a sketch of the graphical system showing a region of the city covered with various geometrical textures and solid colors">}}
+{{< img src="image/subdigital_system2.jpg" alt="a sketch of the graphical system showing a region of the city covered with various geometrical textures and solid colors" fig_css="project_fig">}}
 
-{{< img src="image/subdigital_system3.jpg" alt="a sketch of transporation systems, roads in grey, red, green, yellow and purple">}}
+{{< img src="image/subdigital_system3.jpg" alt="a sketch of transporation systems, roads in grey, red, green, yellow and purple" fig_css="project_fig">}}
 
-{{< img src="image/subdigital_system4.jpg" alt="a photo of the whole model with multiple urban elements highlighted" >}}
+{{< img src="image/subdigital_system4.jpg" alt="a photo of the whole model with multiple urban elements highlighted" fig_css="project_fig">}}
 
 {{< img src="image/subdigital_system5.jpg" alt="a photo detail of a region of the model with multiple urban elements highlighted mostly in blue, green and red">}}
 

@@ -367,8 +367,13 @@ body {
         flex: 1;
 
         &.project {
-            figure {
-              //  padding-bottom: $offset5; 
+
+            figure.project_fig {
+               padding-bottom: $offset5; 
+            }
+
+            div.diptych_container {
+               padding-bottom: $offset5;                 
             }         
         }
 
