@@ -14,22 +14,22 @@ draft: false
 is_showcased: false
 showcase_column: 0
 showcase_column_position: 0
-description: Interactive installation to let museum visitors explore the long tail
+description: Telling the story of the Slovak state in 4 chapters
 ---
 
 {{< img src="image/sxs1.jpg" alt="landing page of the sxs website with the president Tiso and Hitler on the background">}}
 
 [visit the website](https://senxskutocnost.sng.sk/en)
 
-This website tells a story of the fascist Slovak State spanning years 1939-1945 in 4 chapters. This website was created in the time when a slovak neo nazi party ’Naše Slovensko’(Our Slovakia) won 8.06 % in the 2016 parliamentary elections. The website supported Slovak National Gallery’s exhibition of the same name and provided wider context. I was commisioned by [lab.SNG](https://lab.sng.sk/) to collaborate on this project. 
+This website tells the story of the fascist Slovak State existing in 1939-1945 in 4 chapters. The website supported Slovak National Gallery’s exhibition of the same name and provided wider historical context. 
 
-In 2017 this project won Biela Kocka award for the best educational project.
+This project is a result of collaboration of [lab.SNG](https://lab.sng.sk/), [Philo Van Kemenade](https://phivk.com) and myself. In 2017 we won a Biela Kocka award for the best educational project.
 
 {{< competencies >}}
 
-{{< img src="image/sxs2.jpg" caption="Landing screen of a content page of chapter 1" alt="sxs website, chapter 1 landing page with Tiso's face in the background" >}}
+{{< img src="image/sxs2.jpg" caption="Landing screen of a content page of chapter 1" alt="sxs website, chapter 1 landing page with Tiso's face in the background" fig_css="project_fig">}}
 
-{{< img src="image/sxs3.jpg" alt="content page example with a slovak state propaganda poster">}}
+{{< img src="image/sxs3.jpg" alt="content page example with a slovak state propaganda poster" fig_css="project_fig">}}
 
 {{< img src="image/sxs4.jpg" caption="The timeline on the left provides overview and navigation of a chapter" alt="content page example with timeline bar revealed">}}
  

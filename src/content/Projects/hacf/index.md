@@ -9,7 +9,7 @@ categories:
   - visual 
 competencies:
   - graphic design
-  - Processing development
+  - creative coding
   - 3d modelling
 draft: false
 show_thumbnail_in_post: false
@@ -19,10 +19,10 @@ showcase_column_position: 0
 ---
 {{< img src="image/hacf1.jpg">}}
 
-I designed this poster as a tribute to my favorite tv show. The characters of the Halt And Catch Fire series struggle to come up with the next best thing in the computer world of the 80's. Only to be be surpassed in the last moment by a competitor, nevertheless they rise up and start over. To create these visuals I developed a generative system in Processing and 3D scanned my hand.
+I designed these posters as a tribute to my favorite tv show Halt And Catch Fire. The visuals were created with a custom generative system and 3d scanning.
 
 {{< competencies >}}
 
-{{< img src="image/hacf3.jpg" caption="The generative process" alt="a triptych showing the generative process step by step: a uniform greyscale grid of lines, distorted grid, the distorted grid populated with blue, green and purple rectangles">}}
+{{< img src="image/hacf3.jpg" caption="The generative process" alt="a triptych showing the generative process step by step: a uniform greyscale grid of lines, distorted grid, the distorted grid populated with blue, green and purple rectangles" fig_css="project_fig">}}
 
 {{< img src="image/hacf4.jpg" caption="The generated grids were later used as standalone prints and were on display at the 2017 Sensorium festival In Bratislava" alt="a triptych showing 3 distorted grids populated with different blue, green, purple geometric shapes">}}
