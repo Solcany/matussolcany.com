@@ -124,7 +124,7 @@ a {
 
 img {
     &.fadein {
-        opacity: 1.0; // no-js fallback
+        opacity: 0.0; 
         -webkit-transition: all $transition-time ease-in; 
         -moz-transition: all $transition-time ease-in; 
         -ms-transition: all $transition-time ease-in; 
@@ -136,9 +136,9 @@ img {
     }
 }
 
-.js img.fadein {
-    opacity: 0.0;
-}
+// .js img.fadein {
+//     opacity: 0.0;
+// }
 
 
 pre {

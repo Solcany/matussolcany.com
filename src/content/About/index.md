@@ -21,7 +21,7 @@ I have both studio and freelance working experience. In the past I worked for cl
 ## Colophon
 
 - Designed and coded by Matúš Solčány
-- Statically generated with Hugo
-- Hosted on Websupport servers
-- Coded with Doom Emacs
+- Statically generated with [Hugo](https://gohugo.io/)
+- Coded with [Doom Emacs](https://github.com/hlissner/doom-emacs)
+- Hosted on [Websupport](https://www.websupport.sk/) servers
 

@@ -9,11 +9,13 @@
 </main>
 <section name="next_project" class="w-100 pb3 ph3 ph6-l">
 	    <h2 class="mt3 mt4-l mb3 mb3-l"> Next project </h2>
+
 	    {{ .Scratch.Set "next" nil }}
 		{{ if .NextPage }}
 	    	{{ .Scratch.Set "next" .NextPage }}	
 		{{ else }}
-	    	{{ .Scratch.Set "next" (index (where $.Site.RegularPages "Section" "Projects") 0) }}		
+        	{{ $last_project_index := (sub (len (where $.Site.RegularPages "Section" "Projects")) 1)}}		
+	    	{{ .Scratch.Set "next" (index (where $.Site.RegularPages "Section" "Projects") $last_project_index) }}		
 		{{ end }}
 
 		{{ $next := .Scratch.Get "next" }}

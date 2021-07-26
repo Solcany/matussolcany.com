@@ -24,10 +24,6 @@
     {{- $bundle_css := slice $tachyons_css $custom_css | resources.Concat "css/bundle.min.css" -}}
 	<link rel="stylesheet" href="{{ $bundle_css.RelPermalink }}">
 	
-	{{- if eq .IsHome true -}}
-	    {{- $home_js := resources.Get "./js/home.js" | minify -}}
-	    <script src="{{ $home_js.RelPermalink }}"></script>
-	{{- end -}}
     {{- if and (isset .Page.Params "has_zoomable_images") (eq .Page.Params.has_zoomable_images true) -}}
 	    {{- $image_zoom_js := resources.Get "./js/trigger_dragscroll.js" | minify -}}
         <script src="{{ $image_zoom_js.Permalink }}"></script>

@@ -16,11 +16,11 @@ draft: false
 is_showcased: false
 showcase_column: 0
 showcase_column_position: 0
-description: A master's thesis about witchhunts and computers
+description: Master's thesis about witchhunts and computers
 ---
 {{< video src="video/precrime-video">}}
 
-[visit the website](https://crimeprediction.info)
+[visit the website](https://matusssolcany.com/crimeprediction)
 
 An online version of my thesis created at Information Design Masters at Design Academy Eindhoven in 2020. 
 
