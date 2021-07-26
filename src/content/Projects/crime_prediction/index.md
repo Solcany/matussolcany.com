@@ -20,7 +20,7 @@ description: Master's thesis about witchhunts and computers
 ---
 {{< video src="video/precrime-video">}}
 
-[visit the website](https://matusssolcany.com/crimeprediction)
+[visit the website](https://matussolcany.com/crimeprediction)
 
 An online version of my thesis created at Information Design Masters at Design Academy Eindhoven in 2020. 
 

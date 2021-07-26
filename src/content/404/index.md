@@ -4,4 +4,4 @@ headless: true
 ---
  
 # 404
-This page doesn't exist. [Return home](/)
+This page doesn't exist. [Return home](https://matussolcany.com)

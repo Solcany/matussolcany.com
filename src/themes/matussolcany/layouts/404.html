@@ -1,65 +1,49 @@
-<!-- very hacky way to do a 404, need to fix this -->
-
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode | default "en-us" }}">
+<html lang="en-us">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>{{- .Site.Title -}}</title>
-	<meta name="description" content="{{ .Site.Params.Description }}">
-	<meta name="author" content="{{ .Site.Params.Description }}">
+	<title>Matúš Solčány</title>
+	<meta name="description" content="Portfolio of digital designer Matúš Solčány">
+	<meta name="author" content="Portfolio of digital designer Matúš Solčány">
 
-    <meta property="og:title" content="{{ .Site.Title }}"/>
-    <meta property="og:url" content="{{ .Site.Params.SiteURL }}" />
+    <meta property="og:title" content="Matúš Solčány"/>
+    <meta property="og:url" content="https://matussolcany.com" />
     <meta property="og:type" content="website" />
-    <meta property="og:description" content=”{{- .Site.Params.Description -}}” />
-    {{- $ogimage := resources.Get "images/ogimage.jpg" -}}
-    <meta property="og:image" content="{{ .Site.Params.SiteURL }}{{ $ogimage.RelPermalink }}">
-    <meta property="og:type" content="website" />
-
-    {{- $favicon := resources.Get "favicon.png" -}}
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ $favicon.RelPermalink }}">
-
-    {{- $tachyons_css := resources.Get "css/tachyons.css" | minify -}}
-	{{- $custom_css := resources.Get "scss/style.scss" | toCSS | minify -}}
-    {{- $bundle_css := slice $tachyons_css $custom_css | resources.Concat "css/bundle.min.css" -}}
-	<link rel="stylesheet" href="{{ $bundle_css.RelPermalink }}">
-
-	{{- if eq .IsHome true -}}
-	    {{- $home_js := resources.Get "./js/home.js" | minify -}}
-	    <script src="{{ $home_js.RelPermalink }}"></script>
-	{{- end -}}
-    {{- if and (isset .Page.Params "has_zoomable_images") (eq .Page.Params.has_zoomable_images true) -}}
-	    {{- $image_zoom_js := resources.Get "./js/trigger_dragscroll.js" | minify -}}
-        <script src="{{ $image_zoom_js.Permalink }}"></script>
-        {{ end }}
+    <meta property="og:description" content=”Portfolio&#32;of&#32;digital&#32;designer&#32;Matúš&#32;Solčány” /><meta property="og:image" content="https://matussolcany.com/images/ogimage.jpg">
+    <meta property="og:type" content="website" /><link rel="icon" type="image/png" sizes="16x16" href="/favicon.png"><link rel="stylesheet" href="/css/bundle.min.css">
 </head>
 <body>
-	{{- partial "header" . -}}
-    <main aria-role="main" class="ph2 ph3-l">
-        {{- with site.GetPage "/404" -}}
-        {{- .Content -}}
-        {{- end -}}
-    </main>
-</body>
-<!-- some pages need a footer that's attached to the bottom of the screen -->
-<footer  class="pv2 ph2 ph3-l w-100 bt bn-l thegray">
+<header class="w-100 flex flex-column flex-row-l items-start justify-between-l pt3 pb0 pb3-l ph3 ph6-l bb thegray ">
+	<a class="black gothic-bold f6 no-underline dib tc tl-l pb3 pb0-l"href="/">Matúš Solčány</a>
+	<nav class="pb2 pb0-l">
+		<ul class="flex w-100 justify-between-l dib-ns tc  border-box tr-ns"><li class="tl tr-l ">
+				<a class="f6-l black gangster-regular no-underline dib " href="/">Projects</a>
+		</li><li class="tl tr-l  pl3 pl4-l ">
+				<a class="f6-l black gangster-regular no-underline dib" href="/about">About</a>
+		</li><li class="tl tr-l  pl3 pl4-l ">
+				<a class="f6-l black gangster-regular no-underline dib " href="/contact/">Contact</a>
+		</li></ul>
+	</nav>
+</header>
+
+<main aria-role="main" class="ph3 ph6-l pt4">
+    {{- with site.GetPage "/404" -}}
+    {{- .Content -}}
+    {{- end -}}
+</main>
+
+<footer  class="ph3 ph6-l pv3 w-100 bt thegray">
 	<ul class="flex flex-column flex-row-l justify-between-l">
 		<li class="db dib-l pr0 w-100 w-30-l">
 			<a class="dib gangster-regular f6 black" href="&#109;&#097;&#105;&#108;&#116;&#111;:&#109;&#097;&#116;&#117;&#115;&#046;&#115;&#111;&#108;&#099;&#097;&#110;&#121;&#064;&#112;&#114;&#111;&#116;&#111;&#110;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">&#109;&#097;&#116;&#117;&#115;&#046;&#115;&#111;&#108;&#099;&#097;&#110;&#121;&#064;&#112;&#114;&#111;&#116;&#111;&#110;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a>
 		</li>
-		<li class="db dib-l pv2 pv0-l self-center w-100 w-30-l tl tc-l">
-			<span class="pt2 f6 pt0-l gangster-regular black"> {{ .Site.Params.Author }} © {{ now.Year }}</span>
-		</li>
- 		<li class="db dib-l pr0 w-100 w-30-l">
-			{{- $merveilles_logo := resources.Get "images/merveilles.svg" -}}
-			<a href="https://merveilles.town/@matsol" class="fr-l">
-				<img class="link-icon" src="{{ $merveilles_logo.RelPermalink }}">
-			</a>
+		<li class="db dib-l pv2 pv0-l self-center w-100 w-30-l tl tr-l">
+			<span class="pt2 f6 pt0-l gangster-regular black"> Matúš Solčány © 2021</span>
 		</li>
 	</ul>
 </footer>
-
-
+</body>
 </html>
+
