@@ -13,9 +13,9 @@ competencies:
   - graphic design
   - front end development
 draft: false
-is_showcased: true
-showcase_column: 1
-showcase_column_position: 2
+is_showcased: false
+showcase_column: 0
+showcase_column_position: 3
 description: Multiple perspectives on the events of a cyber attack
 ---
 

@@ -13,7 +13,7 @@ competencies:
 draft: false
 is_showcased: true
 showcase_column: 1
-showcase_column_position: 1
+showcase_column_position: 3
 description: Connecting local weather to digital art collections
 ---
 

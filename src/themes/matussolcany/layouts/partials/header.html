@@ -1,15 +1,15 @@
 
-<header class="w-100 flex flex-column flex-row-l items-start justify-between-l pt3 pb0 pb3-l ph3 ph6-l bb thegray ">
+<header class="w-100 flex flex-column flex-row-l items-start justify-between-l pt3 pb0 pb3-l ph3 ph6-l ">
 	<a class="black gothic-bold f6 no-underline dib tc tl-l pb3 pb0-l"href="{{- .Site.BaseURL -}}">{{ .Site.Title }}</a>
 	{{- $currentPage := . -}}
 	<nav class="pb2 pb0-l">
-		<ul class="flex w-100 justify-between-l dib-ns tc  border-box tr-ns">
+		<ul class="flex w-100 justify-between-l dib-ns tc border-box tr-ns">
 			{{- range $index, $nav_element := .Site.Menus.main -}}
 			{{- $active := or ($currentPage.IsMenuCurrent "main" $nav_element) ($currentPage.HasMenuCurrent "main" $nav_element) -}}
 			{{- $active = or $active (eq $nav_element.Name $currentPage.Title) -}}
 			{{- $active = or $active (and (eq $nav_element.Name "Projects") (eq $currentPage.Section "Projects")) -}}
 			<li class="tl tr-l {{if gt $index 0}} pl3 pl4-l {{ end }}">
-				<a class="f6-l black gangster-regular no-underline dib {{ if $active }} nav_active {{ end }}" href="{{ .URL | relURL }}">
+				<a class="f6 black gangster-regular no-underline dib {{ if $active }} nav_active {{ end }}" href="{{ .URL | relURL }}">
 					{{- $nav_element.Name -}}
 				</a>
 		</li>
