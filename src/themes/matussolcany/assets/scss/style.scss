@@ -14,54 +14,40 @@ $z-top: 10000;
 $z-3: 9000;
 $z-2: 8000;
 $z-1: 7000;
-
-$offset1: 0.25rem;
-$offset2: 0.5rem;
-$offset3: 1rem;
-$offset4: 2rem;
-$offset5: 4rem;
-$offset6: 5rem;
-$offset7: 9rem;
-
-$m-width: 30em;
-$l-width: 60em;
-// @media screen and (min-width: 30em) and (max-width: 60em) {
-// @media screen and (min-width: 60em) {
-
+$offset1: 4px;
+$offset2: 8px;
+$offset3: 16px;
+$offset4: 32px;
+$offset5: 64px;
+$offset6: 80px;
+$offset7: 144px;
+$m-width: 480px;
+$l-width: 960px;
 $transition-time: 200ms;
-
-
-$thegrey: #C5C5C5;//#383838;
+$thegrey: #C5C5C5;
 $thedarkgray: #5c5c5c;
 $theblue: #2942ff;
 
-.text-shadow {
-	text-shadow: rgba(0, 0, 0, 0.9) 0 0 10px;
-}
 
 h1 {
     @include gothic-bold;
     font-size: $f5;
 }
-
 h2 {
     @include gothic-bold;
     font-size: $f6;
     color: black;
 }
-
 h3 {
     @include gothic-bold;
     font-size: $f7;
     color: black;
 }
-
 h4 {
     @include gangster-regular;
     font-size: $f6;
     color: black;
 }
-
 p {
     @include gangster-regular;
     font-size: $f6;
@@ -72,15 +58,28 @@ p {
 }
 
 span.important {
-    p {
+    p, h1 {
         @include gangster-regular;
-        font-size: $f3;
-        line-height: 40px;
-        
+        font-size: $f2;
+        line-height: 55px;
+        padding-top: $offset2;
+        padding-bottom: $offset2;
+
         a {
             @include gangster-regular;
-            font-size: $f3;
+            font-size: $f2;
+        } 
 
+        @media screen and (min-width: $l-width) {
+            font-size: $f1;
+            line-height: 70px;
+            padding-top: $offset3;
+            padding-bottom: $offset3;
+
+            a {
+                font-size: $f1;
+
+            }
         }
     }
 

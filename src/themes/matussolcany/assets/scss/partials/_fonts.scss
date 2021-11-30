@@ -1,7 +1,11 @@
 
 @font-face {
     font-family: 'hk_gothic_bold';
-    src: url('../fonts/hk-gothic.ttf') format('truetype');
+    src: url('../fonts/hk-gothic.eot');
+    src: url('../fonts/hk-gothic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/hk-gothic.woff2') format('woff2'),
+         url('../fonts/hk-gothic.woff') format('woff'),
+         url('../fonts/hk-gothic.ttf') format('truetype'); 
     font-weight: normal;
     font-style: normal;
 
@@ -22,20 +26,32 @@
         font-style: normal;
 }
 
+@font-face {
+    font-family: 'ibm_plex_sans_regular';
+    src: url('../fonts/ibmplexsans-regular.eot');
+    src: url('../fonts/ibmplexsans-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ibmplexsans-regular.woff2') format('woff2'),
+         url('../fonts/ibmplexsans-regular.woff') format('woff'),
+         url('../fonts/ibmplexsans-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 .gangster-regular {
-    font-family: //'gangster_grotesk_regular',
+    font-family: 'ibm_plex_sans_regular',
                  avenir,
                  sans-serif;
-        font-weight: normal;
-        font-style: normal;
-                -webkit-font-smoothing:antialiased;
+    font-weight: normal;
+    font-style: normal;
+    -webkit-font-smoothing:antialiased;
     font-smoothing: antialiased;
 }
 
 @mixin gangster-regular {
-    font-family: 
+    font-family: 'ibm_plex_sans_regular',
                  avenir,
-                 'helvetica neue', helvetica,
                  sans-serif;
     font-weight: normal;
     font-style: normal;
