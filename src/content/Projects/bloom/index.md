@@ -17,6 +17,7 @@ is_showcased: true
 showcase_column: 0
 showcase_column_position: 2
 description: The life of an online library visualised as a blooming digital plant
+thumbnail_alt: "a grid of generated flowers in flat illustration style, all colors of the rainbow are visible"
 
 ---
 
@@ -34,4 +35,4 @@ This project is a result of collaboration with [Lucia Dubačová](https://medium
 
 {{< img src="image/bloom4.jpg" caption="Rules of growth were further improved by using an interactive Processing sketch" alt="a screen with a generated flower surrounded by graphical sliders for adjusting the flower's parameters" fig_css="project_fig">}}
 
-{{< img src="image/bloom5.jpg" alt="a grid with some generated flowers">}}
+{{< img src="image/bloom5.jpg" alt="a grid of generated flowers in flat illustration style, all colors of the rainbow are visible">}}

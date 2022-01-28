@@ -14,9 +14,11 @@ competencies:
   - front end development
 draft: false
 is_showcased: true
-showcase_column: 1
-showcase_column_position: 0
+showcase_column: 0
+showcase_column_position: 1
 description: Exploring the russian twitter troll bots through creation of fictional avatars
+thumbnail_alt: Illustration of enlarged busts covered with the american flag sitting on the map of the US
+
 ---
 
 {{< video src="video/ira-video" alt="Internet Research Agency Remixer web demo">}}

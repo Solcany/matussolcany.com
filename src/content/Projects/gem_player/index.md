@@ -16,10 +16,10 @@ is_showcased: true
 showcase_column: 1
 showcase_column_position: 2
 description: Web adaption of the Whac A Mole game with procedural level generation
-
+thumbnail_alt: A screen with a group of orange, pink and yellow circular gems on gray background
 ---
 
-{{< video src="video/gem_player_demo" alt="A screen recording of a Gem Player session">}}
+{{< video src="video/gem_player_demo" alt="A screen recording of a Gem Player session" css_class="title_video">}}
 
 [play the game online](https://matussolcany.com/gemplayer)
 

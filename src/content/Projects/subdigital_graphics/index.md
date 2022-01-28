@@ -12,12 +12,13 @@ competencies:
   - information design
 draft: false
 is_showcased: true
-showcase_column: 0
+showcase_column: 1
 showcase_column_position: 1
 description: Presenting interlaced infrastructures of a city
+thumbnail_alt: a photo of the lit up physical city model with multiple plastic urban elements highlighted in green, orange and purple
 ---
 
-{{< img src="image/subdigital_system1.jpg" alt="a photo of the model with multiple urban elements highlighted in mostly green, orange and purple">}}
+{{< img src="image/subdigital_system1.jpg" alt="a photo of the lit up physical city model with multiple plastic urban elements highlighted in green, orange and purple">}}
 
 Bratislava 2022 Model is an interactive model of the Nove Nivy downtown area of Bratislava. It is a tool for presentation of the real estate developments of this area commissioned by HB Reavis real estate developer.
 

@@ -10,7 +10,6 @@
 */ -}}
 
 {{- $video_src := .Get "src" -}}
-{{- $video_alt := .Get "alt" -}}
 {{- $video_mp4 := "" -}}
 {{- $video_webm := "" -}}
 {{- $video_ogg := "" -}}
@@ -50,7 +49,7 @@
 {{- else if $unsupportedfile -}}
   {{- errorf "No valid video file with filename %q found." $video_src -}}
 {{- else -}}
-<video {{ if ne (.Get "controls") "false" }}controls {{ end }} preload="metadata" width="{{ or (.Get "width") $width }}" {{ if eq (.Get "autoplay") "true" }}autoplay {{ end }}{{ if eq (.Get "loop") "true" }}loop {{ end }}{{ if eq (.Get "muted") "true" }}muted {{ end }}{{ with $poster }} poster="{{ .RelPermalink }}" {{ end }}class="html-video">
+<video {{if (.Get "alt") }} title="{{(.Get "alt")}}"{{end}}{{ if ne (.Get "controls") "false" }}controls {{ end }} preload="metadata" width="{{ or (.Get "width") $width }}" {{ if eq (.Get "autoplay") "true" }}autoplay {{ end }}{{ if eq (.Get "loop") "true" }}loop {{ end }}{{ if eq (.Get "muted") "true" }}muted {{ end }}{{ with $poster }} poster="{{ .RelPermalink }}" {{ end }} class="html-video {{if (.Get "css_class")}} {{(.Get "css_class")}} {{ end }}" >
   {{- with $video_webm }}
     <source src="{{ .RelPermalink }}" type="video/webm">
     {{- $video_dl = . -}}
@@ -63,5 +62,6 @@
     <source src="{{ .RelPermalink }}" type="video/ogg">
     {{- $video_dl = . -}}
   {{- end }}
+  Your device does not support video
 </video>
 {{- end -}}

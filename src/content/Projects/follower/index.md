@@ -15,7 +15,7 @@ is_showcased: false
 showcase_column: 0
 showcase_column_position: 0
 description: Making peer pressure of social networks tangible in VR shooter game
-
+thumbnail_alt: "Follower start game screen with purple facebook login window on purple background"
 ---
 
 {{< img src="image/follower0.jpg" alt="Follower start game screen with purple facebook login window on purple background">}}

@@ -16,8 +16,9 @@ show_thumbnail_in_post: false
 is_showcased: false
 showcase_column: 0
 showcase_column_position: 0
+thumbnail_alt: "posters with a dark 3d scanned hand wrapped by a thick pink cable on top of a distorted colorful grid on black background"
 ---
-{{< img src="image/hacf1.jpg">}}
+{{< img src="image/hacf1.jpg" alt="posters with a dark 3d scanned hand wrapped by a thick pink cable on top of a distorted colorful grid on black background">}}
 
 I designed these posters as a tribute to my favorite tv show Halt And Catch Fire. The visuals were created with a custom generative system and 3d scanning.
 

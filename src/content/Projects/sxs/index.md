@@ -15,9 +15,10 @@ is_showcased: false
 showcase_column: 0
 showcase_column_position: 0
 description: Telling the story of the Slovak state in 4 chapters
+thumbnail_alt: The army green landing page of the sxs website with Tiso and Hitler in the background
 ---
 
-{{< img src="image/sxs1.jpg" alt="landing page of the sxs website with the president Tiso and Hitler on the background">}}
+{{< img src="image/sxs1.jpg" alt="The army green landing page of the sxs website with Tiso and Hitler in the background">}}
 
 [visit the website](https://senxskutocnost.sng.sk/en)
 

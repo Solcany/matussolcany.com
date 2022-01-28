@@ -11,10 +11,11 @@ competencies:
   - ideation
   - ui, ux design
 draft: false
-is_showcased: true
+is_showcased: false
 showcase_column: 1
-showcase_column_position: 3
+showcase_column_position: 2
 description: Connecting local weather to digital art collections
+thumbnail_alt: A screenshot of Klima app with a matched painting, the current weather and a matching landscape photo in the background of the app sketch
 ---
 
 {{<img src="image/klima1.jpg" alt="A screenshot of Klima app with a matched painting, the current weather and a matching landscape photo in the background of the app sketch">}}

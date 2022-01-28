@@ -367,6 +367,14 @@ body {
 
         &.project {
 
+            video {
+               padding-bottom: $offset5; 
+               
+                &.title_video {
+                    padding-bottom: 0;
+                }
+            }
+
             figure.project_fig {
                padding-bottom: $offset5; 
             }

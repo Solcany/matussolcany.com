@@ -17,9 +17,10 @@ is_showcased: false
 showcase_column: 0
 showcase_column_position: 3
 description: Multiple perspectives on the events of a cyber attack
+thumbnail_alt: Screenshot of the Triton/Trisus website. White text on the left, black background, illustrated Triton/Trisus flag rendered as a grid of characters on the right
 ---
 
-{{< video src="video/triton-video">}}
+{{< video src="video/triton-video" css_class="title_video" alt="Screen recording of the Triton/Trisus website">}}
 
 Industrial sites around the world are nowadays controlled and monitored by [centralised computer systems](https://en.wikipedia.org/wiki/Industrial_control_system) that are [directly or indirectly connected to Internet](https://arstechnica.com/information-technology/2018/01/the-internet-of-omg-vulnerable-factory-and-power-grid-controls-on-internet/). This makes the whole operation more convenient and efficient but at the same poses a considerable risk for the security of the site. 
 
@@ -29,7 +30,7 @@ The Triton/Trisus website presents the attacker’s actions that led to the shut
 
 {{< competencies >}}
 
-{{< img src="image/triton1.jpg" alt="A screenshot of the Triton/Trisus website. White text on the left, black background, asciified Triton/Trisus flag on the right" fig_css="project_fig">}}
+{{< img src="image/triton1.jpg" alt="Screenshot of the Triton/Trisus website. White text on the left, black background, illustrated Triton/Trisus flag rendered as a grid of characters on the right" fig_css="project_fig">}}
 {{< img src="image/triton2.jpg" caption="Each row represents a different perspective on the same events. Each cell within one of the rows is an event" alt="A screenshot. beige timeline divided into 3 rows, the events of the breach are depicted these rows in illustrations and in text" fig_css="project_fig">}}
 {{< img src="image/triton3.jpg" caption="The blackened cells suggest the direction in which the events affected each row" alt="A screenshot. The same timeline, some of the events have black background" fig_css="project_fig">}}
 {{< img src="image/triton4.jpg" caption="source: https://www.shodan.io/search?query=ics" alt="A screenshot. A beige map of the world on a black background with thousands of white points representing all the industrial control systems connected to Internet">}}

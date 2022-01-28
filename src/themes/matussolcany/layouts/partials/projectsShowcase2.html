@@ -20,7 +20,7 @@
             <li id="{{ .Title }}" class="{{ $categoryCss }} post border-box pb4 no-decoration">
                 <div name="content">
                     <a href= "{{ .RelPermalink }}" class="image-link dib">
-                        <img src="{{ $thumbnail.RelPermalink }}" onload="this.classList.add('loaded')" class="fadein thumbnail z-4 pointer">
+                        <img src="{{ $thumbnail.RelPermalink }}" onload="this.classList.add('loaded')" class="fadein thumbnail z-4 pointer" {{ if isset .Params "thumbnail_alt" }} alt="{{.Params.thumbnail_alt}}" {{ end }}>
                     </a>
                     <a class="thumbnail-text-link w-100 pointer no-underline" href="{{ .Permalink }}" title="{{ .Title }}">           
                         <h2 class="text-link gothic-bold pt2 db tl black ">
