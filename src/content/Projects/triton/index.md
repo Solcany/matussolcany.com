@@ -20,7 +20,7 @@ description: Multiple perspectives on the events of a cyber attack
 thumbnail_alt: Screenshot of the Triton/Trisus website. White text on the left, black background, illustrated Triton/Trisus flag rendered as a grid of characters on the right
 ---
 
-{{< video src="video/triton-video" css_class="title_video" alt="Screen recording of the Triton/Trisus website">}}
+{{< video src="video/triton-video" title_video="true" alt="Screen recording of the Triton/Trisus website">}}
 
 Industrial sites around the world are nowadays controlled and monitored by [centralised computer systems](https://en.wikipedia.org/wiki/Industrial_control_system) that are [directly or indirectly connected to Internet](https://arstechnica.com/information-technology/2018/01/the-internet-of-omg-vulnerable-factory-and-power-grid-controls-on-internet/). This makes the whole operation more convenient and efficient but at the same poses a considerable risk for the security of the site. 
 

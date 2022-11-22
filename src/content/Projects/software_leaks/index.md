@@ -10,7 +10,7 @@ categories:
 competencies:
   - research
   - information design
-draft: false
+draft: true
 has_zoomable_images: true
 is_showcased: false
 showcase_column: 0
