@@ -18,7 +18,7 @@ description: Audience driven curation of rarely seen artworks
 thumbnail_alt: 3D rendered illustration of a figure standing in front of a touch screen, on the screen there's a collection of artworks with blue borders. Under the touch screen there's a projector projecting a mirror image of the screen onto the wall
 ---
 
-{{< video src="video/unforgettable_video" css_class="title_video" alt="a short video with the narrator explaining the workings of the Unforgettable project" >}}
+{{< video src="video/unforgettable_video" title_video="true" alt="a short video with the narrator explaining the workings of the Unforgettable project" >}}
 
 Unfortgattable is a museum installation that asks museum audience to explore and curate the scarcely visited digitised artworks: deciding whether an artwork should remain or to be forgotten. 
 

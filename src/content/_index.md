@@ -14,7 +14,7 @@ menu:
 
 {{% class important %}}
 
-# Hi, I'm Matúš. I create interactive [experiences]({{< relref "/projects/unforgettable/index.md" >}}) and [interfaces]({{< relref "/projects/ira-bots/index.md" >}}) to explore and navigate emerging digital landscapes.
+# Hi, I'm Matúš. I create interactive [experiences]({{< relref "/projects/latent_garden/index.md" >}}) and [interfaces]({{< relref "/projects/unforgettable/index.md" >}}) to explore and navigate emerging digital landscapes.
 
 {{% /class %}}
 

@@ -175,8 +175,8 @@ header {
 figure {
     padding-left: 0;
     margin: 0;
-    padding-top: $offset1;
-    padding-bottom: $offset1;
+    // padding-top: $offset1;
+    // padding-bottom: $offset1;
 
     img {
         width: 100%;
@@ -367,21 +367,19 @@ body {
 
         &.project {
 
-            video {
-               padding-bottom: $offset5; 
-               
-                &.title_video {
-                    padding-bottom: 0;
+            figure {
+
+                &.project_fig {
+                   padding-bottom: $offset5; 
                 }
-            }
 
-            figure.project_fig {
-               padding-bottom: $offset5; 
-            }
-
+                &.title_fig {
+                   padding-bottom: 0; 
+                }            
+            }    
             div.diptych_container {
                padding-bottom: $offset5;                 
-            }         
+            }                
         }
 
         ul {

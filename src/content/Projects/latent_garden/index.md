@@ -17,9 +17,9 @@ description: Exploring the imagination space of image generating neural networks
 thumbnail_alt: a cloud of tiny generated photorealistic portraits connected with green lines on black background
 ---
 
-{{< video src="video/latent_walker" css_class="title_video" alt="a screen recording of first person walk through a generated gallery of synthetic portrait paintings">}}
+{{< video src="video/latent_walker" alt="a screen recording of first person walk through a generated gallery of synthetic portrait paintings" title_video="true">}}
 
-[visit project website](https://latent.garden)
+[visit the project website](https://latent.garden)
 
 Latent Garden is the ongoing artistic data exploration project. The goal of the project is to develop intuitive ways to navigate latent spaces in the context of generative neural networks. The project started in 2021 and its first phase is scheduled to finish in May 2022. Visit [the dedicated website](https://latent.garden) to follow the progress of the project.
 
@@ -27,7 +27,7 @@ This project is made possible with the generous support of [Creative Industries 
 
 {{< competencies >}}
 
-{{< video src="video/vectors_output" alt="a rotating 3d cloud of tiny painted portraits on black background">}}
+{{< video src="video/vectors_output" alt="a rotating 3d cloud of tiny painted portraits on black background" caption="Clustering by latent points similarity">}}
 
-{{< video src="video/imgs_output" alt="a rotating 3d cloud of tiny painted portraits on black background">}}
+{{< video src="video/imgs_output" alt="a rotating 3d cloud of tiny painted portraits on black background" caption="Clustering by visual similarity">}}
 
