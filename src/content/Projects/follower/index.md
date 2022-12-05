@@ -10,8 +10,9 @@ categories:
 competencies:
   - game development (Unity)
   - ideation
-draft: false
+draft: true
 is_showcased: false
+is_listed: true
 showcase_column: 0
 showcase_column_position: 0
 description: Making peer pressure of social networks tangible in VR shooter game

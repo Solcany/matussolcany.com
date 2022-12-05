@@ -3,6 +3,7 @@
         <!-- sort the projects array by position_in_column property in each projects's front matter -->
         {{ $projects := (where $.Site.RegularPages "Section" "Projects")}}
         {{ $projects := (where $projects "Params.draft" false)}}
+        {{ $projects := (where $projects "Params.is_listed" true)}}        
         {{ $projects := (where $projects "Params.is_showcased" false)}}        
         {{ $projects := (sort $projects "Params.title" "asc")}}
         {{ range $projects }}

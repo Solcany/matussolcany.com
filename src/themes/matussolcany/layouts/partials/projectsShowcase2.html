@@ -8,6 +8,7 @@
         <!-- sort the projects array by position_in_column property in each projects's front matter -->
     {{ $projects := (where $.Site.RegularPages "Section" "Projects")}}
     {{ $projects := (where $projects "Params.draft" false)}}
+    {{ $projects := (where $projects "Params.is_listed" true)}}            
     {{ $projects := (where $projects "Params.is_showcased" true)}}            
     {{ $projects := (sort $projects "Params.showcase_column_position" "asc")}}
 

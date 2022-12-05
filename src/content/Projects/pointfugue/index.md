@@ -12,6 +12,7 @@ competencies:
   - creative coding
 draft: false
 is_showcased: false
+is_listed: true
 showcase_column: 0
 showcase_column_position: 0
 thumbnail_alt: 2 pointfugue posters with blue and red whirlpool elements with bold typeface on black background

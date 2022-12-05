@@ -31,7 +31,7 @@ $theblue: #2942ff;
 
 h1 {
     @include gothic-bold;
-    font-size: $f5;
+    font-size: $f6;
 }
 h2 {
     @include gothic-bold;
@@ -60,39 +60,39 @@ p {
 span.important {
     p, h1 {
         @include gangster-regular;
-        font-size: $f2;
-        line-height: 55px;
-        padding-top: $offset2;
-        padding-bottom: $offset2;
+        font-size: $f6;
+        //line-height: 55px;
+        padding-top: $offset1;
+        padding-bottom: $offset1;
 
         a {
             @include gangster-regular;
-            font-size: $f2;
+            font-size: $f6;
         } 
 
-        @media screen and (min-width: $l-width) {
-            font-size: $f1;
-            line-height: 70px;
-            padding-top: $offset3;
-            padding-bottom: $offset3;
+        // @media screen and (min-width: $l-width) {
+        //     font-size: $f6;
+        //     //line-height: 70px;
+        //     padding-top: $offset1;
+        //     padding-bottom: $offset1;
 
-            a {
-                font-size: $f1;
+        //     a {
+        //         font-size: $f6;
 
-            }
-        }
+        //     }
+        // }
     }
 
-    @media screen and (min-width: $l-width) {
-        p {
-            font-size: $f1;
-            line-height: 80px;
+    // @media screen and (min-width: $l-width) {
+    //     p {
+    //         font-size: $f1;
+    //         line-height: 80px;
             
-            a {
-                font-size: $f1;
-            }
-        }
-    }
+    //         a {
+    //             font-size: $f1;
+    //         }
+    //     }
+    // }
 
 
 }

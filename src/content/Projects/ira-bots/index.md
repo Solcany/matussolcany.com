@@ -14,6 +14,7 @@ competencies:
   - front end development
 draft: false
 is_showcased: true
+is_listed: true
 showcase_column: 0
 showcase_column_position: 1
 description: Exploring the russian twitter troll bots through creation of fictional avatars

@@ -13,6 +13,7 @@ competencies:
 draft: true
 has_zoomable_images: true
 is_showcased: false
+is_listed: true
 showcase_column: 0
 showcase_column_position: 0
 thumbnail_alt: a mostly black and white map resembling a flow chart showing relationships of governments and the software weapons they produced and were leaked
