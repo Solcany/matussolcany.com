@@ -15,8 +15,6 @@ I'm a creative coder and web developer with background in information and intera
 
 My previous experiences and interests revolve around the creation of interfaces and experiences to navigate new emerging digital landscapes. I'm always on lookout for interesting overlaps of design, art, science and technology. My commercial and personal work usually comes in the form of interactive data visualisations and websites. 
 
-I'm a proficient web developer and creative   coder. 
-
 I have both studio and freelance working experience. In the past I worked for clients like the Slovak National Gallery, the real estate developer HB Reavis and Goethe Institut. CV available on request.
 
 ## Colophon
