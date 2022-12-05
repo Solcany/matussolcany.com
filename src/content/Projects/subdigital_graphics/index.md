@@ -12,6 +12,7 @@ competencies:
   - information design
 draft: false
 is_showcased: true
+is_listed: true
 showcase_column: 1
 showcase_column_position: 1
 description: Presenting interlaced infrastructures of a city

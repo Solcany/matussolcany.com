@@ -14,6 +14,7 @@ competencies:
   - front end development
 draft: false
 is_showcased: false
+is_listed: true
 showcase_column: 0
 showcase_column_position: 3
 description: Multiple perspectives on the events of a cyber attack

@@ -13,9 +13,10 @@ competencies:
   - ui, ux design
 draft: false
 show_thumbnail_in_post: false
-is_showcased: true
+is_showcased: false
+is_listed: true
 showcase_column: 0
-showcase_column_position: 2
+showcase_column_position: 0
 description: The life of an online library visualised as a blooming digital plant
 thumbnail_alt: "a grid of generated flowers in flat illustration style, all colors of the rainbow are visible"
 

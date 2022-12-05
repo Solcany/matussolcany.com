@@ -12,6 +12,7 @@ competencies:
   - information design
 draft: false
 is_showcased: false
+is_listed: false
 showcase_column: 0
 showcase_column_position: 0
 description: Telling the story of the Slovak state in 4 chapters

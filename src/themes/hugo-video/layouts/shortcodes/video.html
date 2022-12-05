@@ -49,7 +49,7 @@
 {{- else if $unsupportedfile -}}
   {{- errorf "No valid video file with filename %q found." $video_src -}}
 {{- else -}}
-<figure class="project_fig {{if (.Get "title_video")}} title_fig {{end}}">
+<figure class="project_fig {{if (eq (.Get "title_video") "true")}} title_fig {{end}}">
   <video {{if (.Get "alt") }} title="{{(.Get "alt")}}"{{end}}{{ if ne (.Get "controls") "false" }}controls {{ end }} preload="metadata" width="{{ or (.Get "width") $width }}" {{ if eq (.Get "autoplay") "true" }}autoplay {{ end }}{{ if eq (.Get "loop") "true" }}loop {{ end }}{{ if eq (.Get "muted") "true" }}muted {{ end }}{{ with $poster }} poster="{{ .RelPermalink }}" {{ end }} class="html-video">
     {{- with $video_webm }}
       <source src="{{ .RelPermalink }}" type="video/webm">

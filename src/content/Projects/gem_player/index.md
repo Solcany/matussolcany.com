@@ -13,7 +13,8 @@ competencies:
 draft: false
 show_thumbnail_in_post: false
 is_showcased: true
-showcase_column: 1
+is_listed: true
+showcase_column: 0
 showcase_column_position: 2
 description: Web adaption of the Whac A Mole game with procedural level generation
 thumbnail_alt: A screen with a group of orange, pink and yellow circular gems on gray background

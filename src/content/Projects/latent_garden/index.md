@@ -11,6 +11,7 @@ competencies:
   - research, design, development
 draft: false
 is_showcased: true
+is_listed: true
 showcase_column: 0
 showcase_column_position: 0
 description: Exploring the imagination space of image generating neural networks.

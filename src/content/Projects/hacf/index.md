@@ -14,6 +14,7 @@ competencies:
 draft: false
 show_thumbnail_in_post: false
 is_showcased: false
+is_listed: true
 showcase_column: 0
 showcase_column_position: 0
 thumbnail_alt: "posters with a dark 3d scanned hand wrapped by a thick pink cable on top of a distorted colorful grid on black background"

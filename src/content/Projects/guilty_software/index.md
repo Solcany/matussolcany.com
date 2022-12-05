@@ -14,6 +14,7 @@ competencies:
   - front end development
 draft: false
 is_showcased: false
+is_listed: true
 showcase_column: 0
 showcase_column_position: 0
 thumbnail_alt: alt

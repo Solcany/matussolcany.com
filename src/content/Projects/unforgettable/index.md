@@ -12,6 +12,7 @@ competencies:
   - ui, ux design
 draft: false
 is_showcased: true
+is_listed: true
 showcase_column: 1
 showcase_column_position: 0
 description: Audience driven curation of rarely seen artworks
