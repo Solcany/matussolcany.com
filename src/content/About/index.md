@@ -23,6 +23,6 @@ I have both studio and freelance working experience. In the past I worked for cl
 
 - Designed and coded by Matúš Solčány
 - Statically generated with [Hugo](https://gohugo.io/)
-- Coded with [Doom Emacs](https://github.com/hlissner/doom-emacs)
-- Hosted on [Websupport](https://www.websupport.sk/) servers
+
+
 
