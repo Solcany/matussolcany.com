@@ -1,49 +1,7 @@
-<!DOCTYPE html>
-<html lang="en-us">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Matúš Solčány</title>
-	<meta name="description" content="The portfolio of digital designer Matúš Solčány">
-	<meta name="author" content="Matúš Solčány">
-
-    <meta property="og:title" content="Matúš Solčány"/>
-    <meta property="og:url" content="https://matussolcany.com" />
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content=”Portfolio&#32;of&#32;digital&#32;designer&#32;Matúš&#32;Solčány” /><meta property="og:image" content="https://matussolcany.com/images/ogimage.jpg">
-    <meta property="og:type" content="website" /><link rel="icon" type="image/png" sizes="16x16" href="/favicon.png"><link rel="stylesheet" href="/css/bundle.min.css">
-</head>
-<body>
-<header class="w-100 flex flex-column flex-row-l items-start justify-between-l pt3 pb0 pb3-l ph3 ph6-l ">
-	<a class="black gothic-bold f6 no-underline dib tc tl-l pb3 pb0-l"href="/">Matúš Solčány</a>
-	<nav class="pb2 pb0-l">
-		<ul class="flex w-100 justify-between-l dib-ns tc  border-box tr-ns"><li class="tl tr-l ">
-				<a class="f5 black gangster-regular no-underline dib " href="/">Projects</a>
-		</li><li class="tl tr-l  pl3 pl4-l ">
-				<a class="f5 black gangster-regular no-underline dib" href="/about">About</a>
-		</li><li class="tl tr-l  pl3 pl4-l ">
-				<a class="f5 black gangster-regular no-underline dib " href="/contact/">Contact</a>
-		</li></ul>
-	</nav>
-</header>
-
-<main aria-role="main" class="ph3 ph6-l pt4">
-    {{- with site.GetPage "/404" -}}
-    {{- .Content -}}
-    {{- end -}}
+{{ define "main" }}
+<main aria-role="main" class="mt4 ph3 ph6-l pt3 pb4 w-50-l w-100">
+     <h1 class="mb3">Page Not Found</h1>
+     <p>Sorry, this page doesn't exist.</p>
+     <p><a href="{{ .Site.BaseURL }}">Go back to homepage</a></p>
 </main>
-
-<footer  class="ph3 ph6-l pv3 w-100 bt thegray">
-	<ul class="flex flex-column flex-row-l justify-between-l">
-		<li class="db dib-l pr0 w-100 w-30-l">
-			<a class="dib gangster-regular f6 black" href="&#109;&#097;&#105;&#108;&#116;&#111;:&#109;&#097;&#116;&#117;&#115;&#046;&#115;&#111;&#108;&#099;&#097;&#110;&#121;&#064;&#112;&#114;&#111;&#116;&#111;&#110;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">&#109;&#097;&#116;&#117;&#115;&#046;&#115;&#111;&#108;&#099;&#097;&#110;&#121;&#064;&#112;&#114;&#111;&#116;&#111;&#110;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a>
-		</li>
-		<li class="db dib-l pv2 pv0-l self-center w-100 w-30-l tl tr-l">
-			<span class="pt2 f6 pt0-l gangster-regular black"> Matúš Solčány © 2021</span>
-		</li>
-	</ul>
-</footer>
-</body>
-</html>
-
+{{ end }}
