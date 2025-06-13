@@ -1,7 +1,7 @@
 ---
 title: "The Future Of Disinformation: Fake Newspaper Synthesis from Conspiracy Land"
 slug: the-future-of-disinformation
-date: 2021-3-9T14:16:39+01:00
+date: 2021-03-09T14:16:39+01:00
 year: 2021
 type: note
 layout: note

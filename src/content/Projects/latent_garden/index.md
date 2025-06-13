@@ -1,7 +1,7 @@
 ---
 title: Latent Garden
 slug: latent_garden
-date: 2022-27-15T22:04:10+01:00
+date: 2022-12-15T22:04:10+01:00
 year: 2022
 type: project
 layout: project

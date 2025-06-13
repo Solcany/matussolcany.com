@@ -1,5 +1,4 @@
 {{ define "main" }}
-
 <main class="project mt4 ph3 ph6-l pb4-l w-100 w-70-l">
     <h1 class="mt3 mt4-l mb2"> {{ .Title }}</h1>
     {{ if .Params.description }} 
@@ -10,24 +9,28 @@
 <section name="next_project" class="w-100 pb3 ph3 ph6-l">
 	    <h2 class="mt3 mt4-l mb3 mb3-l"> Next project </h2>
 	    {{ .Scratch.Set "next" nil }}
-		{{ if .NextPage }}
-            {{ if (eq .NextPage.Params.is_listed true) }}
-	    	  {{ .Scratch.Set "next" .NextPage }}	
+		{{ if .Next }}
+            {{ if (eq .Next.Params.is_listed true) }}
+	    	  {{ .Scratch.Set "next" .Next }}	
             <!-- skip the next page if it's unlisted, use the page's next page instead -->
             <!-- WIP: this will not work if there's 2 unlisted pages in succession -->
-            {{ else if .NextPage.NextPage}}
-              {{ .Scratch.Set "next" .NextPage.NextPage }}   
+            {{ else if .Next.Next}}
+              {{ .Scratch.Set "next" .Next.Next }}   
             {{ end }}
 		{{ else }}
-        	{{ $last_project_index := (sub (len (where $.Site.RegularPages "Section" "Projects")) 1)}}		
-	    	{{ .Scratch.Set "next" (index (where $.Site.RegularPages "Section" "Projects") $last_project_index) }}		
+        	{{ $last_project_index := (sub (len (where $.Site.RegularPages "Section" "projects")) 1)}}		
+	    	{{ .Scratch.Set "next" (index (where $.Site.RegularPages "Section" "projects") $last_project_index) }}		
 		{{ end }}
 		{{ $next := .Scratch.Get "next" }}
 		{{ $thumbnail := $next.Resources.GetMatch "image/thumbnail.jpg" }}
         <div id="{{ $next.Title }}" class="w-50-l w-100 post border-box">
             <div name="content">
 	            <a href= "{{ $next.RelPermalink }}" class="image-link dib">
+                    {{ if $thumbnail }}
                     <img src="{{ $thumbnail.RelPermalink }}" onload="this.classList.add('loaded')" class="fadein thumbnail z-4 pointer">
+                    {{ else }}
+                    <div class="thumbnail placeholder">No thumbnail available</div>
+                    {{ end }}
 	            </a>
                 <a class="w-100 thumbnail-text-link pointer no-underline" href="{{ $next.Permalink }}" title="{{ $next.Title }}">           
                     <h2 class="text-link f6 gothic-bold pb0 pb1-l db tl black "> 
@@ -39,8 +42,6 @@
                 </a>                     
             </div>
         </div>
-
 	<a class="mt4 mb4 db" href="{{ .Site.BaseURL }}"> Return to projects </a>
 </section>
-
 {{ end }}

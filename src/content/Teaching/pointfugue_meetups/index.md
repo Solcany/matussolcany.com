@@ -1,7 +1,7 @@
 ---
 title: "Pointfugue Meetups"
 slug: pointfugue-meetups-workshop
-date: 2021-3-9T14:16:39+01:00
+date: 2021-03-09T14:16:39+01:00
 type: note
 year: 2019
 layout: note

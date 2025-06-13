@@ -27,13 +27,11 @@ The goal of the Sky watch project is to use images of sky ( and potentially weat
 
 {{< competencies >}}
 
-{{< video src="video/sky_watch.mp4" title_video="false" alt="">}}
+{{/*< video src="video/sky_watch.mp4" title_video="false" alt="">*/}}
 
-{{< video src="video/noise_to_image.mp4" title_video="false" alt="" caption="Using images of the sky as the noise source for a generative neural network">}}
+{{/*< video src="video/noise_to_image.mp4" title_video="false" alt="" caption="Using images of the sky as the noise source for a generative neural network">*/}}
 
-{{< video src="video/noises.mp4" title_video="false" alt="" caption="algorithmic noise and sky images comparison">}}
-
-
+{{/*< video src="video/noises.mp4" title_video="false" alt="" caption="algorithmic noise and sky images comparison">*/}} 
 
 
 
