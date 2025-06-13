@@ -5,7 +5,7 @@ date: 2020-11-20T20:43:39+01:00
 type: note
 layout: note
 category: tools
-draft: false
+draft: true 
 ---
 
 Terminal(also known as CLI, or command line interface) is a tool for controlling your computer and programs. Instead of using graphical icons to start and use programs it uses text commands to do the same. Some niche, open source and free software is often developed without a graphical front-end due to time, budget and people power constrains. Instead this software uses CLI for operation. 

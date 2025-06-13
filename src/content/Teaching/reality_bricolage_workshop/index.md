@@ -6,7 +6,7 @@ type: note
 year: 2020
 layout: note
 category: teaching
-draft: false
+draft: true 
 ---
 
 {{<img src="image/rb2.jpg" caption="Virtual space by Elisa Mirkil" alt="A screenshot of Klima app with a matched painting, the current weather and a matching landscape photo in the background of the app sketch">}}

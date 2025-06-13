@@ -5,6 +5,9 @@ type: notes
 layout: notes
 draft: true
 
+cascade:
+  draft: true
+
 menu:
   main:
     identifier: Notes

@@ -6,7 +6,7 @@ type: note
 year: 2019
 layout: note
 category: teaching
-draft: false
+draft: true 
 ---
 
 {{<img src="image/pf.jpg" alt="A screenshot of Klima app with a matched painting, the current weather and a matching landscape photo in the background of the app sketch" fig_css="w-50">}}

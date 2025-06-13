@@ -11,6 +11,9 @@ menu:
     name: Teaching
     url: ./teaching
     weight: 3
+
+cascade:
+  draft: true
 ---
 {{< img src="teaching.jpg" alt="a grid with some generated flowers">}}
 

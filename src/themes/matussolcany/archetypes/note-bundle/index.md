@@ -6,5 +6,4 @@ type: note
 layout: note
 categories:
   - category
-draft: true
 ---
