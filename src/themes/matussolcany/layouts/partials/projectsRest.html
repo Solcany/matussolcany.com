@@ -1,7 +1,7 @@
 <h2 class="mb3 mb3-1"> More projects </h2>
 <ul class="w-100 theborder border-box ">
         <!-- sort the projects array by position_in_column property in each projects's front matter -->
-        {{ $projects := (where $.Site.RegularPages "Section" "Projects")}}
+        {{ $projects := (where $.Site.RegularPages "Section" "projects")}}
         {{ $projects := (where $projects "Params.draft" false)}}
         {{ $projects := (where $projects "Params.is_listed" true)}}        
         {{ $projects := (where $projects "Params.is_showcased" false)}}        

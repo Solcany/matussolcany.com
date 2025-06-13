@@ -13,10 +13,10 @@ competencies:
   - graphic design
   - front end development
 draft: false
-is_showcased: false
+is_showcased: true 
 is_listed: true
-showcase_column: 0
-showcase_column_position: 3
+showcase_column: 1
+showcase_column_position: 2
 description: Multiple perspectives on the events of a cyber attack
 thumbnail_alt: Screenshot of the Triton/Trisus website. White text on the left, black background, illustrated Triton/Trisus flag rendered as a grid of characters on the right
 ---

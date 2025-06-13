@@ -18,8 +18,12 @@
               {{ .Scratch.Set "next" .Next.Next }}   
             {{ end }}
 		{{ else }}
-        	{{ $last_project_index := (sub (len (where $.Site.RegularPages "Section" "projects")) 1)}}		
-	    	{{ .Scratch.Set "next" (index (where $.Site.RegularPages "Section" "projects") $last_project_index) }}		
+            {{ $all_projects := (where $.Site.RegularPages "Section" "projects")}}
+            {{ $all_projects := (where $all_projects "Params.draft" false)}}
+            {{ $all_projects := (where $all_projects "Params.is_listed" true)}}
+            {{ $all_projects := (sort $all_projects "Date" "desc")}}
+        	{{ $last_project_index := (sub (len $all_projects) 1)}}		
+	    	{{ .Scratch.Set "next" (index $all_projects $last_project_index) }}		
 		{{ end }}
 		{{ $next := .Scratch.Get "next" }}
 		{{ $thumbnail := $next.Resources.GetMatch "image/thumbnail.jpg" }}

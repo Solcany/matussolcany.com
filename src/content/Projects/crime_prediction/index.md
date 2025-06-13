@@ -16,7 +16,7 @@ draft: false
 is_showcased: true
 is_listed: true
 showcase_column: 1
-showcase_column_position: 2
+showcase_column_position: 0 
 description: Master's thesis about witchhunts and computers
 thumbnail_alt: "a screenshot of the landing page of the crime prediction website with a large 3d face on the black background, a half of the face is covered with blue texture made of characters. The button on the left reads: read the thesis"
 ---

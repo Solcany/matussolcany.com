@@ -11,10 +11,10 @@ competencies:
   - ideation
   - graphic design
   - ui, ux design
-draft: false
+draft: true 
 show_thumbnail_in_post: false
 is_showcased: false
-is_listed: true
+is_listed: false 
 showcase_column: 0
 showcase_column_position: 0
 description: The life of an online library visualised as a blooming digital plant

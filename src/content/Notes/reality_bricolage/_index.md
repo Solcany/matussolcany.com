@@ -5,7 +5,7 @@ date: 2020-11-20T20:43:39+01:00
 type: note
 layout: note
 category: events
-draft: false
+draft: true 
 ---
 
 ## Reality Bricolage was a 3 day workshop on 3d scanning and virtual exhibitions

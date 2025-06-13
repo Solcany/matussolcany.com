@@ -14,7 +14,7 @@ menu:
 
 {{% class important %}}
 
-# I'm a creative coder and web developer with background in information and interaction design. I create [interfaces]({{< relref "/projects/latent_garden/index.md" >}}) to explore and navigate emerging digital landscapes.
+# I'm an information designer and frontend developer. I currently work at the University of Amsterdam developing interfaces for data visualization and exploration.
 
 {{% /class %}}
 

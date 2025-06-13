@@ -11,16 +11,9 @@ menu:
     url: ./about
     weight: 4
 ---
-I'm a creative coder and web developer with background in information and interaction design. 
+I'm an information designer and frontend developer. Currently I work at the University of Amsterdam developing interfaces for data visualization and exploration. I have experience working both in studios and as a freelancer.
 
-My previous experiences and interests revolve around the creation of interfaces and experiences to navigate new emerging digital landscapes. I'm always on lookout for interesting overlaps of design, art, science and technology. My commercial and personal work usually comes in the form of interactive data visualisations and websites. 
-
-I have both studio and freelance working experience. In the past I worked for clients like the Slovak National Gallery, the real estate developer HB Reavis and Goethe Institut. CV available on request.
-
-## Colophon
-
-- Designed and coded by Matúš Solčány
-- Statically generated with [Hugo](https://gohugo.io/)
+Previously I worked as a frontend developer at Kaspar AI on a prototypical interface for AI-assisted film editing tool. I've developed websites and digital experiences for clients including the Slovak National Gallery, real estate developer HB Reavis, the Goethe Institut, and the Universities of Edinburgh and Durham.
 
 
 

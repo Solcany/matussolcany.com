@@ -10,9 +10,9 @@ categories:
 competencies:
   - concept
   - development
-draft: false
+draft: true 
 is_showcased: false
-is_listed: true
+is_listed: false
 showcase_column: 0
 showcase_column_position: 0
 description: Weather as a source of randomness
