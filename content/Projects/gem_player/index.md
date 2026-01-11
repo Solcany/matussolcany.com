@@ -22,7 +22,7 @@ thumbnail_alt: A screen with a group of orange, pink and yellow circular gems on
 
 {{< video src="video/gem_player_demo" alt="A screen recording of a Gem Player session" title_video="true">}}
 
-[play the game online](https://matussolcany.com/gemplayer)
+[play the game online](https://gemplayer.matussolcany.com)
 
 Gem player is a web adaption of a popular Whac A Mole arcade game. Inspired by generative art the game creates a unique level for each play session. The soundtrack of the game is created by the player as each gem plays a different note on the pentatonic scale. I developed Gem Player with with Svelte framework.
 

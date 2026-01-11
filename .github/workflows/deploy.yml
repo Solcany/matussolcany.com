@@ -25,12 +25,11 @@ jobs:
         run: hugo --minify
         
       - name: Deploy to VPS
-        uses: appleboy/scp-action@v0.1.7
+        uses: burnett01/rsync-deployments@7.0.1
         with:
-          host: ${{ secrets.VPS_HOST }}
-          username: root
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          source: "public/*"
-          target: "/var/www/portfolio"
-          strip_components: 1
-          rm: true
+          switches: -avzr --delete --exclude=fonts
+          path: public/
+          remote_path: /var/www/portfolio/
+          remote_host: ${{ secrets.VPS_HOST }}
+          remote_user: root
+          remote_key: ${{ secrets.SSH_PRIVATE_KEY }}

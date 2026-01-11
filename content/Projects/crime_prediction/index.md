@@ -22,7 +22,7 @@ thumbnail_alt: "a screenshot of the landing page of the crime prediction website
 ---
 {{< video src="video/precrime-video" title_video="true" alt="a screen recording of crime prediction website">}}
 
-[visit the website](https://matussolcany.com/crimeprediction)
+[visit the website](https://crimeprediction.matussolcany.com)
 
 An online version of my thesis created at Information Design Masters at Design Academy Eindhoven in 2020. 
 

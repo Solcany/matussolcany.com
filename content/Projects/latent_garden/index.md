@@ -20,9 +20,9 @@ thumbnail_alt: a cloud of tiny generated photorealistic portraits connected with
 
 {{< video src="video/latent_walker" alt="a screen recording of first person walk through a generated gallery of synthetic portrait paintings" title_video="true">}}
 
-[visit the project website](https://latent.garden)
+[visit the project website](https://latentgarden.matussolcany.com)
 
-Latent Garden is the ongoing artistic data exploration project. The goal of the project is to develop intuitive ways to navigate latent spaces in the context of generative neural networks. The project started in 2021 and its first phase is scheduled to finish in May 2022. Visit [the dedicated website](https://latent.garden) to follow the progress of the project.
+Latent Garden was an artistic data exploration project. The goal of the project is to develop intuitive ways to navigate latent spaces in the context of generative neural networks. 
 
 This project is made possible with the generous support of [Creative Industries Fund NL](https://stimuleringsfonds.nl/en/).
 
