@@ -1,7 +1,6 @@
 ---
 title: Matúš Solčány
 titleshort: Projects
-kind: home
 slug: landing-page
 
 menu:
