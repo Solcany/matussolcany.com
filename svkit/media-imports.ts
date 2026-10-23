@@ -1,6 +1,7 @@
 import type { PreprocessorGroup } from 'svelte/compiler';
 
 const MEDIA_ATTRIBUTE = /\s(src|poster)="(\.\.?\/[^"]+)"/g;
+const IMAGE = /\.(jpe?g|png|webp|avif)$/i;
 const INSTANCE_SCRIPT = /<script(?![^>]*\bcontext=)(?![^>]*\bmodule\b)[^>]*>/;
 
 export function mediaImports(): PreprocessorGroup {
@@ -12,8 +13,9 @@ export function mediaImports(): PreprocessorGroup {
 			const imports: string[] = [];
 			const code = content.replace(MEDIA_ATTRIBUTE, (_, attribute, path) => {
 				const name = `__media${imports.length}`;
-				imports.push(`import ${name} from ${JSON.stringify(path)};`);
-				return ` ${attribute}={${name}}`;
+				const responsive = attribute === 'src' && IMAGE.test(path);
+				imports.push(`import ${name} from ${JSON.stringify(responsive ? `${path}?responsive` : path)};`);
+				return responsive ? ` {...${name}}` : ` ${attribute}={${name}}`;
 			});
 			if (!imports.length) return;
 

@@ -3,11 +3,15 @@ import { sveltekit } from '@sveltejs/kit/vite';
 import tailwindcss from '@tailwindcss/vite';
 import { mdsvex } from 'mdsvex';
 import { defineConfig } from 'vite';
+import { imagetools } from 'vite-imagetools';
+import { responsiveImages } from './responsive-images.ts';
 import { mediaImports } from './media-imports.ts';
 
 export default defineConfig({
 	plugins: [
 		tailwindcss(),
+		responsiveImages(),
+		imagetools(),
 		sveltekit({
 			adapter: adapter(),
 			paths: {

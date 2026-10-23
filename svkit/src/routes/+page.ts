@@ -6,6 +6,7 @@ export function load() {
 		listed
 			.filter((project) => project.is_showcased && project.showcase_column === column)
 			.sort((a, b) => (a.showcase_column_position ?? 0) - (b.showcase_column_position ?? 0))
+			.map((project, position) => ({ ...project, eager: position === 0 }))
 	);
 	const rest = listed
 		.filter((project) => !project.is_showcased)

@@ -1,5 +1,14 @@
 <script lang="ts">
-	let { class: className = '', ...rest } = $props();
+	let { alt = '', class: className = '', ...rest } = $props();
+
+	const delay = Math.round(Math.random() * 400);
 </script>
 
-<img class={['block w-full max-w-none', className]} loading="lazy" {...rest} />
+<img
+	{alt}
+	sizes="(min-width: 60em) 70vw, 100vw"
+	loading="lazy"
+	class={['block h-auto w-full max-w-none js:opacity-0 loaded:opacity-100 motion-safe:transition-opacity motion-safe:duration-200 motion-safe:ease-in', className]}
+	style:transition-delay="{delay}ms"
+	{...rest}
+/>

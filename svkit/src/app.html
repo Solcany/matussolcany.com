@@ -8,6 +8,19 @@
 		<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin />
 		<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=author@700&display=swap" />
 		<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@400&display=swap" />
+		<script>
+			document.documentElement.classList.add('js');
+			for (const type of ['load', 'loadedmetadata', 'error']) {
+				document.addEventListener(
+					type,
+					({ target }) => {
+						if (!(target instanceof HTMLImageElement || target instanceof HTMLVideoElement)) return;
+						target.classList.add('loaded');
+					},
+					true
+				);
+			}
+		</script>
 		%sveltekit.head%
 	</head>
 	<body class="flex min-h-screen min-w-80 flex-col leading-body wrap-break-word">

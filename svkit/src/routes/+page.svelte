@@ -25,7 +25,12 @@
 			{#each data.showcase as project (project.slug)}
 				<ShowcaseItem column={project.showcase_column}>
 					<ProjectCard href={project.href} id={project.slug}>
-						<Thumbnail id="{project.slug}-image" src={project.thumbnail} alt={project.thumbnail_alt} />
+						<Thumbnail
+							id="{project.slug}-image"
+							image={project.thumbnail}
+							alt={project.thumbnail_alt}
+							loading={project.eager ? 'eager' : 'lazy'}
+						/>
 						<CardTitle id="{project.slug}-title">{project.title}</CardTitle>
 						<CardText id="{project.slug}-text">{project.description}</CardText>
 					</ProjectCard>

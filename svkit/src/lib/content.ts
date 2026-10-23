@@ -1,3 +1,4 @@
+import type { ResponsiveImage } from './image.ts';
 import { resolve } from '$app/paths';
 import type { Component } from 'svelte';
 
@@ -23,10 +24,10 @@ const modules = {
 	...drafts.modules
 };
 
-const thumbnails: Record<string, string> = {
-	...import.meta.glob<string>('/src/content/projects/*/image/thumbnail.jpg', {
+const thumbnails = {
+	...import.meta.glob<ResponsiveImage>('/src/content/projects/*/image/thumbnail.jpg', {
 		eager: true,
-		query: '?url',
+		query: '?responsive',
 		import: 'default'
 	}),
 	...drafts.thumbnails
