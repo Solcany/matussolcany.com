@@ -17,10 +17,10 @@
 </script>
 
 <Main>
-	<section class="w-full px-4 py-4 text-black">
+	<section class="w-full px-4 xl:px-20 py-4 text-black">
 		<Intro />
 	</section>
-	<section class="mb-8 w-full px-4">
+	<section class="mb-8 w-full px-4 xl:px-20">
 		<ShowcaseGrid>
 			{#each data.showcase as project (project.slug)}
 				<ShowcaseItem column={project.showcase_column}>

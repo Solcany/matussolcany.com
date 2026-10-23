@@ -5,7 +5,7 @@
 	let { data } = $props();
 </script>
 
-<Main class="mt-8 w-full px-4 lg:w-7/10 lg:pb-8">
+<Main class="mt-8 w-full px-4 xl:px-20 lg:w-7/10 lg:pb-8">
 	<H1 class="mt-4 mb-2 lg:mt-8">{data.project.title}</H1>
 	{#if data.project.description}
 		<span class="mb-1 block pb-4 font-body text-body">{data.project.description}</span>
@@ -15,7 +15,7 @@
 	</ProjectBody>
 </Main>
 
-<section class="w-full px-4 pb-4 lg:w-7/10">
+<section class="w-full px-4 xl:px-20 pb-4 lg:w-7/10">
 	<H2 class="mt-4 mb-4 lg:mt-8">Next</H2>
 	{#if data.next}
 		<ProjectCard href={data.next.href} id={data.next.slug}>

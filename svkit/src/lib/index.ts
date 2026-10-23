@@ -6,6 +6,7 @@ export { default as Diptych } from './components/Diptych.svelte';
 export { default as EmailLink } from './components/EmailLink.svelte';
 export { default as Figure } from './components/Figure.svelte';
 export { default as FooterItem } from './components/FooterItem.svelte';
+export { default as Grid } from './components/Grid.svelte';
 export { default as H1 } from './components/H1.svelte';
 export { default as H2 } from './components/H2.svelte';
 export { default as H3 } from './components/H3.svelte';

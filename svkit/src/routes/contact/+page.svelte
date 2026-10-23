@@ -5,7 +5,7 @@
 	let { data } = $props();
 </script>
 
-<Main class="mt-8 w-full px-4 pt-4 pb-8">
+<Main class="mt-8 w-full px-4 xl:px-20 pt-4 pb-8">
 	<H1 class="mb-4">{data.title}</H1>
 	<Contact />
 </Main>

@@ -6,6 +6,7 @@
   --breakpoint-*: initial;
   --breakpoint-sm: 30em;
   --breakpoint-lg: 60em;
+  --breakpoint-xl: 80rem;
 
   --color-*: initial;
   --color-black: #000;
