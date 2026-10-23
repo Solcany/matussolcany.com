@@ -1,5 +1,5 @@
 <script lang="ts">
-	import H2 from '../elements/H2.svelte';
+	import H2 from './H2.svelte';
 
 	let { children } = $props();
 </script>

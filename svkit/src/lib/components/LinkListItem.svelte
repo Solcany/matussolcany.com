@@ -1,5 +1,5 @@
 <script lang="ts">
-	import A from '../elements/A.svelte';
+	import A from './A.svelte';
 
 	let { children, href } = $props();
 </script>
