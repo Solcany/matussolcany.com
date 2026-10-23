@@ -1,0 +1,54 @@
+---
+title: "Follower: Social VR Experience"
+date: 2020-11-23T21:09:02+01:00
+year: 2017
+categories:
+  - interactive
+competencies:
+  - game development (Unity)
+  - ideation
+is_showcased: false
+is_listed: true
+showcase_column: 0
+showcase_column_position: 0
+description: Making peer pressure of social networks tangible in VR shooter game
+thumbnail_alt: "Follower start game screen with purple facebook login window on purple background"
+---
+
+<script>
+	import { Figure, Img, Caption } from '#lib';
+</script>
+
+<Figure>
+	<Img src="./image/follower0.jpg" alt="Follower start game screen with purple facebook login window on purple background" />
+</Figure>
+
+In the age of social media, the constant stream of likes, requests and notifications can be overwhelming. Follower asks the player how much pressure can they survive.
+At the start the player logs into their Facebook account. The player's friendlist will then become the source of social pressure. The more friends the player has the harder the game will become. Each friend becomes a projectile, [a frenemy](https://en.wikipedia.org/wiki/Frenemy) gravitating towards the player. the player has to use their guns to fend them off. The more time passes, the more friends will be spawned. 
+
+Follower is result of joint effort of [Philo van Kemenade](https://phivk.com/), [Jan Kováříček](https://kovaricek.tumblr.com/) and myself at Bratislava Gamejam 2017 where it received honorary mention.
+
+<Figure>
+	<Img src="./image/follower1.jpg" alt="An overview of the game's 3d purple and blue arena with the player model in the center" />
+	<Caption>The player stands in the middle, their frenemies are closing in... How long can they survive?</Caption>
+</Figure>
+
+<Figure>
+	<Img src="./image/follower2.jpg" alt="the player's first person view with a cube projectile approaching" />
+	<Caption>To survive, the player must fend off their approaching frenemies with the 'Like' guns</Caption>
+</Figure>
+
+<Figure>
+	<Img src="./image/follower3.jpg" alt="the player's first person view with a cube projectile stuck to their visor" />
+	<Caption>Once a frenemy projectile gets too close to the player, it is stuck to their visor and makes it harder for them to defend themselves from other frenemies</Caption>
+</Figure>
+
+<Figure>
+	<Img src="./image/follower4.jpg" alt="the player's first person view with their visor completely covered with cube projectiles" />
+	<Caption>The game ends when the player’s visor is completely covered with frenemies</Caption>
+</Figure>
+
+<Figure>
+	<Img src="./image/follower5.jpg" alt="the player is surrounded by cube projectiles that hit them previously" />
+	<Caption>When the game ends the player is brought to purgatory to wave one last goodbye to their frenemies</Caption>
+</Figure>

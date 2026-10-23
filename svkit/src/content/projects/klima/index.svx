@@ -1,0 +1,55 @@
+---
+title: Klima
+date: 2020-11-15T21:09:00+01:00
+year: 2016
+categories:
+  - interactive
+competencies:
+  - ideation
+  - ui, ux design
+is_showcased: false
+is_listed: true
+showcase_column: 1
+showcase_column_position: 2
+description: Connecting local weather to digital art collections
+thumbnail_alt: A screenshot of Klima app with a matched painting, the current weather and a matching landscape photo in the background of the app sketch
+---
+
+<script>
+	import { Figure, Img, Caption, Diptych } from '#lib';
+</script>
+
+<Figure>
+	<Img src="./image/klima1.jpg" alt="A screenshot of Klima app with a matched painting, the current weather and a matching landscape photo in the background of the app sketch" />
+</Figure>
+
+Klima connects audience to artworks by matching digitised artworks to the current weather of the user.
+
+After an artwork-weather match is found, the user is asked to vote weather the artwork fits their current weather experience. A positive vote reinforces the link of the artwork and the current weather. A negative vote gives the user an option to choose a better fitting weather for the artworks.
+
+Klima won prize for the best prototype at 2016 Slovak National Gallery Art and Data hackathon and is a result of collaboration between Aleksey, Stefan and myself.
+
+<Diptych>
+	<Figure>
+		<Img src="./image/klima2a.jpg" alt="a screenshot of the app with a hand dragging the weather tag towards the painting" />
+		<Caption>A reinforcing vote</Caption>
+	</Figure>
+	<Figure>
+		<Img src="./image/klima2b.jpg" alt="a screenshot of the app showing a graphical bar above the painting reading: Thank you for consolidating this weather-artwork relationship" />
+	</Figure>
+</Diptych>
+
+<Diptych>
+	<Figure>
+		<Img src="./image/klima3a.jpg" alt="a screenshot of the app with a hand dragging the weather tag away from the painting" />
+		<Caption>A weakening vote</Caption>
+	</Figure>
+	<Figure>
+		<Img src="./image/klima3b.jpg" alt="a screenshot of the app showing a graphical bar above the painting reading: Thank you for improving this weather-artwork relationship" />
+	</Figure>
+</Diptych>
+
+<Figure>
+	<Img src="./image/klima4.jpg" alt="3 people sitting around a table in a restaurant where the hackathon took place" />
+	<Caption>The Klima hackathon team</Caption>
+</Figure>

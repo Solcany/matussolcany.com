@@ -1,0 +1,44 @@
+---
+title: Crime Prediction
+date: 2020-11-15T21:11:40+01:00
+year: 2020
+categories:
+  - informative
+competencies:
+  - research
+  - writing
+  - ui, ux design
+  - front end development(Hugo)
+is_showcased: true
+is_listed: true
+showcase_column: 1
+showcase_column_position: 0
+description: Master's thesis about witchhunts and computers
+thumbnail_alt: "a screenshot of the landing page of the crime prediction website with a large 3d face on the black background, a half of the face is covered with blue texture made of characters. The button on the left reads: read the thesis"
+---
+
+<script>
+	import { Figure, Img, Video } from '#lib';
+</script>
+
+<Figure>
+	<Video title="a screen recording of crime prediction website">
+		<source src="./video/precrime-video.webm" type="video/webm" />
+		<source src="./video/precrime-video.mp4" type="video/mp4" />
+		<source src="./video/precrime-video.ogv" type="video/ogg" />
+	</Video>
+</Figure>
+
+[visit the website](https://crimeprediction.matussolcany.com)
+
+An online version of my thesis created at Information Design Masters at Design Academy Eindhoven in 2020. 
+
+<Figure>
+	<Img src="./image/precrime1.jpg" alt="a screenshot of the landing page of the crime prediction website with a large 3d face on the black background, a half of the face is covered with blue texture made of characters. The button on the left reads: read the thesis" />
+</Figure>
+<Figure>
+	<Img src="./image/precrime2.jpg" alt="a screenshot of the black, blue, gray and white content page, chapter 2: The prediction machine" />
+</Figure>
+<Figure>
+	<Img src="./image/precrime3.jpg" alt="a screenshot of the black, blue, gray and white content page, with all the chapter titles rendered" />
+</Figure>

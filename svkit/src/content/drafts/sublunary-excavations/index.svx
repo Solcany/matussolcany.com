@@ -1,0 +1,44 @@
+---
+title: Untitled visual works
+date: 2020-11-25T01:46:19+01:00
+categories:
+  - graphic
+competences:
+ - a
+ - b
+is_showcased: false
+showcase_column: 0
+showcase_column_position: 0
+---
+
+<script>
+	import { Figure, Img, Caption, Diptych } from '#lib';
+</script>
+
+<Figure>
+	<Img src="./image/u1.jpg" alt="" />
+</Figure>
+
+<Diptych>
+	<Figure>
+		<Img src="./image/u2a.jpg" alt="" />
+		<Caption>a</Caption>
+	</Figure>
+	<Figure>
+		<Img src="./image/u2b.jpg" alt="" />
+		<Caption>b</Caption>
+	</Figure>
+</Diptych>
+
+<Figure>
+	<Img src="./image/u4.jpg" alt="" />
+</Figure>
+<Figure>
+	<Img src="./image/u5.png" alt="" />
+</Figure>
+<Figure>
+	<Img src="./image/u6.jpg" alt="" />
+</Figure>
+<Figure>
+	<Img src="./image/u7.jpg" alt="" />
+</Figure>

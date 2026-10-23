@@ -1,0 +1,12 @@
+<script>
+	import { EmailLink, LinkList, LinkListItem } from '#lib';
+</script>
+
+If you have a question or are looking for a collaboration feel free to reach out at <EmailLink address="matus.solcany@protonmail.com" />
+
+## Links
+
+<LinkList>
+	<LinkListItem href="https://linkedin.com/in/matus-solcany-631792209">Linkedin</LinkListItem>
+	<LinkListItem href="https://github.com/solcany">Github</LinkListItem>
+</LinkList>

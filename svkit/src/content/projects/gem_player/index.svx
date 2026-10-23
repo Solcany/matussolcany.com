@@ -1,0 +1,43 @@
+---
+title: "Gem Player"
+date: 2021-08-30T21:12:13+01:00
+year: 2021
+categories:
+  - visual
+competencies:
+  - interaction and graphic design
+  - web development
+is_showcased: true
+is_listed: true
+showcase_column: 0
+showcase_column_position: 2
+description: Web adaption of the Whac A Mole game with procedural level generation
+thumbnail_alt: A screen with a group of orange, pink and yellow circular gems on gray background
+---
+
+<script>
+	import { Figure, Img, Video } from '#lib';
+</script>
+
+<Figure>
+	<Video poster="./video/gem_player_demo.jpg" title="A screen recording of a Gem Player session">
+		<source src="./video/gem_player_demo.webm" type="video/webm" />
+		<source src="./video/gem_player_demo.mp4" type="video/mp4" />
+	</Video>
+</Figure>
+
+[play the game online](https://gemplayer.matussolcany.com)
+
+Gem player is a web adaption of a popular Whac A Mole arcade game. Inspired by generative art the game creates a unique level for each play session. The soundtrack of the game is created by the player as each gem plays a different note on the pentatonic scale. I developed Gem Player with with Svelte framework.
+
+<Figure>
+	<Img src="./image/gem_player1.jpg" alt="A screen with gray background and a white button in the middle" />
+</Figure>
+
+<Figure>
+	<Img src="./image/gem_player2.jpg" alt="A screen with a group of orange, pink and yellow circular gems on gray background" />
+</Figure>
+
+<Figure>
+	<Img src="./image/gem_player3.jpg" alt="A screen with the final score represented with a list of gems and the player's scores" />
+</Figure>

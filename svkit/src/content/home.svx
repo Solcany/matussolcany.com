@@ -1,0 +1,9 @@
+<script>
+	import { Lead } from '#lib';
+</script>
+
+<Lead>
+
+# I'm an information designer and frontend developer. I currently work at the University of Amsterdam developing interfaces for data visualization and exploration.
+
+</Lead>

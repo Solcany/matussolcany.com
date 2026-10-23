@@ -1,0 +1,43 @@
+---
+title: Niet Te Vergeten (Unforgettable)
+date: 2020-11-15T22:04:10+01:00
+year: 2019
+categories:
+  - interactive
+competencies:
+  - ideation
+  - ui, ux design
+is_showcased: false
+is_listed: true
+showcase_column: 1
+showcase_column_position: 0
+description: Audience driven curation of rarely seen artworks
+thumbnail_alt: 3D rendered illustration of a figure standing in front of a touch screen, on the screen there's a collection of artworks with blue borders. Under the touch screen there's a projector projecting a mirror image of the screen onto the wall
+---
+
+<script>
+	import { Figure, Img, Caption, Video } from '#lib';
+</script>
+
+<Figure>
+	<Video poster="./video/unforgettable_video.jpg" title="a short video with the narrator explaining the workings of the Unforgettable project">
+		<source src="./video/unforgettable_video.webm" type="video/webm" />
+		<source src="./video/unforgettable_video.mp4" type="video/mp4" />
+		<source src="./video/unforgettable_video.ogv" type="video/ogg" />
+	</Video>
+</Figure>
+
+Unfortgattable is a museum installation that asks museum audience to explore and curate the scarcely visited digitised artworks: deciding whether an artwork should remain or to be forgotten. 
+
+Unforgettable won an audience prize of HackaLOD hackathon in 2019 and is a result of collaboration of ExpLOD team: [Edward](https://twitter.com/anderson_edw), [Jorim](https://jtheuns.com/), [Philo](https://phivk.com/), [Ben](https://ben.companjen.name/) and myself.
+
+<Figure>
+	<Img src="./image/unforgettable3.jpg" alt="3D rendered illustration of a figure standing in front of a touch screen, on the screen there's a collection of artworks with blue borders. Under the touch screen there's a projector projecting a mirror image of the screen onto the wall" />
+</Figure>
+<Figure>
+	<Img src="./image/unforgettable1.jpg" alt="A screenshot of the screen with a collection of artworks with blue borders" />
+</Figure>
+<Figure>
+	<Img src="./image/unforgettable2.jpg" alt="A photo of the ExpLOD team holding the audience prize trophy" />
+	<Caption>the ExpLOD team</Caption>
+</Figure>
