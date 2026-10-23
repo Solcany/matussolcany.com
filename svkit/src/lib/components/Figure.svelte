@@ -2,4 +2,4 @@
 	let { children, class: className = '', ...rest } = $props();
 </script>
 
-<figure class={className} {...rest}>{@render children?.()}</figure>
+<figure class={className || null} {...rest}>{@render children?.()}</figure>

@@ -4,9 +4,13 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="icon" type="image/png" sizes="16x16" href="%sveltekit.assets%/favicon.png" />
+		<link rel="preconnect" href="https://api.fontshare.com" />
+		<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin />
+		<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=author@700&display=swap" />
+		<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@400&display=swap" />
 		%sveltekit.head%
 	</head>
-	<body class="flex min-h-screen min-w-[320px] flex-col leading-[1.15] wrap-break-word antialiased">
+	<body class="flex min-h-screen min-w-80 flex-col leading-body wrap-break-word">
 		<div style="display: contents">%sveltekit.body%</div>
 	</body>
 </html>

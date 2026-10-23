@@ -9,5 +9,10 @@ export function load({ params }) {
 	const project = projects.find(({ slug }) => slug === params.slug);
 	if (!project) error(404, 'Not found');
 
-	return { project, next: nextProject(project.slug) };
+	return {
+		project,
+		next: nextProject(project.slug),
+		title: project.title,
+		description: project.description
+	};
 }

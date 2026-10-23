@@ -2,4 +2,4 @@
 	let { children, class: className = '', ...rest } = $props();
 </script>
 
-<a class={['font-gangster text-f6 text-black underline hover:text-theblue', className]} {...rest}>{@render children?.()}</a>
+<a class={['text-body text-black underline hover:text-accent focus-visible:text-accent', className]} {...rest}>{@render children?.()}</a>

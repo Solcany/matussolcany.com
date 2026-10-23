@@ -22,7 +22,7 @@ thumbnail_alt: Screenshot of the Triton/Trisus website. White text on the left, 
 </script>
 
 <Figure>
-	<Video title="Screen recording of the Triton/Trisus website">
+	<Video aria-label="Screen recording of the Triton/Trisus website">
 		<source src="./video/triton-video.webm" type="video/webm" />
 		<source src="./video/triton-video.mp4" type="video/mp4" />
 		<source src="./video/triton-video.ogv" type="video/ogg" />

@@ -22,7 +22,7 @@ thumbnail_alt: Illustration of enlarged busts covered with the american flag sit
 </script>
 
 <Figure>
-	<Video title="Internet Research Agency Remixer web demo">
+	<Video aria-label="Internet Research Agency Remixer web demo">
 		<source src="./video/ira-video.webm" type="video/webm" />
 		<source src="./video/ira-video.mp4" type="video/mp4" />
 		<source src="./video/ira-video.ogv" type="video/ogg" />

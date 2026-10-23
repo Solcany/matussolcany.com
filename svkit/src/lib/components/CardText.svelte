@@ -1,5 +1,5 @@
 <script lang="ts">
-	let { children } = $props();
+	let { children, id } = $props();
 </script>
 
-<span class="block text-f6 text-thedarkgray group-hover:text-theblue">{@render children?.()}</span>
+<span {id} class="block font-body text-body text-muted group-hover:text-accent group-focus-visible:text-accent">{@render children?.()}</span>

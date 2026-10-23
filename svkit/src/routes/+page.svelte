@@ -17,17 +17,17 @@
 </script>
 
 <Main>
-	<section class="w-full px-4 py-4 text-black l:px-20">
+	<section class="w-full px-4 py-4 text-black">
 		<Intro />
 	</section>
-	<section class="mb-8 w-full px-4 l:px-20">
+	<section class="mb-8 w-full px-4">
 		<ShowcaseGrid>
 			{#each data.showcase as project (project.slug)}
 				<ShowcaseItem column={project.showcase_column}>
-					<ProjectCard href={project.href}>
-						<Thumbnail src={project.thumbnail} alt={project.thumbnail_alt} />
-						<CardTitle>{project.title}</CardTitle>
-						<CardText>{project.description}</CardText>
+					<ProjectCard href={project.href} id={project.slug}>
+						<Thumbnail id="{project.slug}-image" src={project.thumbnail} alt={project.thumbnail_alt} />
+						<CardTitle id="{project.slug}-title">{project.title}</CardTitle>
+						<CardText id="{project.slug}-text">{project.description}</CardText>
 					</ProjectCard>
 				</ShowcaseItem>
 			{/each}

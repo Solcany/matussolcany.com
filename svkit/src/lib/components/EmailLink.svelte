@@ -4,4 +4,4 @@
 	const encode = (text: string) => [...text].map((char) => `&#${char.codePointAt(0)};`).join('');
 </script>
 
-{@html `<a href="${encode(`mailto:${address}`)}" class="inline-block font-gangster text-f6 text-black underline hover:text-theblue">${encode(address)}</a>`}
+{@html `<a href="${encode(`mailto:${address}`)}" class="inline-block text-body text-black underline hover:text-accent focus-visible:text-accent">${encode(address)}</a>`}

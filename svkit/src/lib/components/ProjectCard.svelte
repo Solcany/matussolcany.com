@@ -1,5 +1,5 @@
 <script lang="ts">
-	let { children, href } = $props();
+	let { children, href, id } = $props();
 </script>
 
-<a {href} class="group block">{@render children?.()}</a>
+<a {href} aria-labelledby="{id}-title {id}-text {id}-image" class="group block">{@render children?.()}</a>

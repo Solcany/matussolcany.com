@@ -20,7 +20,7 @@ thumbnail_alt: 3D rendered illustration of a figure standing in front of a touch
 </script>
 
 <Figure>
-	<Video poster="./video/unforgettable_video.jpg" title="a short video with the narrator explaining the workings of the Unforgettable project">
+	<Video poster="./video/unforgettable_video.jpg" aria-label="a short video with the narrator explaining the workings of the Unforgettable project">
 		<source src="./video/unforgettable_video.webm" type="video/webm" />
 		<source src="./video/unforgettable_video.mp4" type="video/mp4" />
 		<source src="./video/unforgettable_video.ogv" type="video/ogg" />

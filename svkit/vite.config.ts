@@ -10,6 +10,9 @@ export default defineConfig({
 		tailwindcss(),
 		sveltekit({
 			adapter: adapter(),
+			paths: {
+				relative: false
+			},
 			extensions: ['.svelte', '.svx'],
 			preprocess: [
 				mdsvex({

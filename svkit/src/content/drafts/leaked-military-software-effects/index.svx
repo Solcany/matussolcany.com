@@ -16,12 +16,11 @@ thumbnail_alt: a mostly black and white map resembling a flow chart showing rela
 ---
 
 <script>
-	import { Figure, Img, Caption } from '#lib';
+	import { Figure, Img } from '#lib';
 </script>
 
 <Figure>
 	<Img src="./image/leaks1.jpg" alt="a mostly black and white map resembling a flow chart showing relationships of governments and the software weapons they produced and were leaked" />
-	<Caption>click on the + icon to enlarge the image</Caption>
 </Figure>
 
 In 2010 a software weapon known as [Stuxnet](https://en.wikipedia.org/wiki/Stuxnet) was developed in collaboration between the [USA and Israel](https://arstechnica.com/tech-policy/2012/06/confirmed-us-israel-created-stuxnet-lost-control-of-it/). The weapon temporarily halted uranium enrichment process in the iranian nuclear Natanz facility by damaging the enrichment centrifuges. This event marked the beginning of government funded large scale development of software weapons.

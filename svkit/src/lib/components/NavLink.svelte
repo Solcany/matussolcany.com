@@ -2,11 +2,11 @@
 	let { children, href, active = false } = $props();
 </script>
 
-<li class="text-left l:text-right">
+<li class="text-left lg:text-right">
 	<a
 		{href}
 		aria-current={active ? 'page' : undefined}
-		class={['inline-block font-gangster text-f6 text-black hover:text-theblue', active && 'underline']}
+		class={['inline-block font-body text-body text-black hover:text-accent focus-visible:text-accent', active && 'underline']}
 	>
 		{@render children?.()}
 	</a>

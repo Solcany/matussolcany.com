@@ -1,7 +1,7 @@
 <script lang="ts">
 	import H2 from './H2.svelte';
 
-	let { children } = $props();
+	let { children, id } = $props();
 </script>
 
-<H2 class="pt-2 group-hover:text-theblue">{@render children?.()}</H2>
+<H2 {id} class="pt-2 group-hover:text-accent group-focus-visible:text-accent">{@render children?.()}</H2>

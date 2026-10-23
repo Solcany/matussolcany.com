@@ -4,8 +4,8 @@
 
 <li
 	class={[
-		'block w-full l:inline-block l:w-3/10',
-		end && 'self-center py-2 text-left font-gangster text-f6 text-black l:py-0 l:text-right'
+		'block w-full lg:inline-block lg:w-3/10',
+		end && 'self-center py-2 text-left font-body text-body text-black lg:py-0 lg:text-right'
 	]}
 >
 	{@render children?.()}

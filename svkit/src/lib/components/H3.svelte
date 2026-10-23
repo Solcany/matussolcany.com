@@ -2,4 +2,4 @@
 	let { children, class: className = '', ...rest } = $props();
 </script>
 
-<h3 class={['font-gothic text-f7 text-black', className]} {...rest}>{@render children?.()}</h3>
+<h3 class={['font-display font-bold text-display-sm text-black', className]} {...rest}>{@render children?.()}</h3>

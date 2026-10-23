@@ -3,7 +3,7 @@
 </script>
 
 <div
-	class="flex w-full flex-col l:flex-row [&>figure]:w-full l:[&>figure]:w-1/2 l:[&>figure:first-child]:pr-2"
+	class="flex w-full flex-col lg:flex-row [&>figure]:w-full lg:[&>figure]:w-1/2 lg:[&>figure:first-child]:pr-2"
 >
 	{@render children?.()}
 </div>

@@ -22,7 +22,7 @@ thumbnail_alt: "a screenshot of the landing page of the crime prediction website
 </script>
 
 <Figure>
-	<Video title="a screen recording of crime prediction website">
+	<Video aria-label="a screen recording of crime prediction website">
 		<source src="./video/precrime-video.webm" type="video/webm" />
 		<source src="./video/precrime-video.mp4" type="video/mp4" />
 		<source src="./video/precrime-video.ogv" type="video/ogg" />

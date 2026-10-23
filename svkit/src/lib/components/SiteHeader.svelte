@@ -3,7 +3,7 @@
 </script>
 
 <header
-	class="flex w-full flex-col items-start border-b border-thegray px-4 pt-4 l:flex-row l:justify-between l:border-b-0 l:px-20 l:pb-4"
+	class="flex w-full flex-col items-start border-b border-line px-4 pt-4 lg:flex-row lg:justify-between lg:border-b-0 lg:pb-4"
 >
 	{@render children?.()}
 </header>
