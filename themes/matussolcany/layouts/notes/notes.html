@@ -1,6 +1,6 @@
 {{ define "main" }}
-<main aria-role="main" class="ph2 ph3-l">
-    <h1 class="mt3"> {{.Params.titleshort}} </h1>
+<main aria-role="main" class="flex-1 px-2 l:px-4">
+    <h1 class="mt-4"> {{.Params.titleshort}} </h1>
     {{- .Content -}}
 
     {{- $categories := slice -}}
@@ -9,9 +9,9 @@
     {{- end -}}
     {{- $categories := $categories | uniq | sort -}}
     {{- range $category := $categories -}}
-        <h2 class="mt3">{{- humanize $category -}}</h2>
+        <h2 class="mt-4">{{- humanize $category -}}</h2>
         {{- range $page := where $.Pages "Params.category" $category -}}
-            <a class="db" href="{{ $page.RelPermalink }}"> {{- $page.Title -}}</a>
+            <a class="block" href="{{ $page.RelPermalink }}"> {{- $page.Title -}}</a>
         {{- end -}}
     {{- end -}}
 </main>

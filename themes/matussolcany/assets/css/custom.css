@@ -1,0 +1,233 @@
+@layer utilities {
+  h1 {
+    @apply font-gothic font-normal not-italic text-f6;
+  }
+
+  h2 {
+    @apply font-gothic font-normal not-italic text-f6;
+    color: black;
+  }
+
+  h3 {
+    @apply font-gothic font-normal not-italic text-f7;
+    color: black;
+  }
+
+  h4 {
+    @apply font-gangster font-normal not-italic text-f6;
+    color: black;
+  }
+
+  p {
+    @apply font-gangster font-normal not-italic text-f6;
+
+    @variant max-ns {
+      line-height: 21px;
+    }
+  }
+
+  span.important {
+    p,
+    h1 {
+      @apply font-gangster font-normal not-italic text-f6;
+      padding-top: --spacing(1);
+      padding-bottom: --spacing(1);
+
+      a {
+        @apply font-gangster font-normal not-italic text-f6;
+      }
+    }
+  }
+
+  a {
+    @apply font-gangster font-normal not-italic text-f6;
+    color: black;
+
+    &:hover {
+      color: var(--color-theblue);
+    }
+  }
+
+  pre {
+    padding-left: --spacing(4);
+    overflow-x: auto;
+
+    code {
+      font-family: monospace;
+      @apply text-f7;
+      color: var(--color-thedarkgray);
+    }
+  }
+
+  figure {
+    padding-left: 0;
+    margin: 0;
+
+    img {
+      width: 100%;
+      max-width: none;
+      display: block;
+    }
+
+    figcaption {
+      padding-top: --spacing(1);
+      @apply font-gangster font-normal not-italic text-f6;
+    }
+  }
+
+  div[data-view] {
+    position: relative;
+    max-width: none;
+    display: inline-block;
+
+    button.control-view {
+      @apply font-gangster font-normal not-italic;
+      font-size: 1.5rem;
+      position: absolute;
+      border: none;
+      background-color: black;
+      color: white;
+      width: 30px;
+      height: 30px;
+      z-index: 10000;
+      top: 4px;
+
+      &:after {
+        position: absolute;
+      }
+    }
+
+    figure.expandable {
+      margin: 0;
+      padding-left: 0;
+      position: relative;
+      box-sizing: border-box;
+
+      div.img-container {
+        height: 70vh;
+        overflow: auto;
+        border: 1px solid var(--color-thegray);
+      }
+    }
+
+    &[data-view="basic-view"] {
+      button.control-view {
+        right: -30px;
+
+        @variant max-l {
+          right: 0;
+        }
+
+        &:hover {
+          cursor: zoom-in;
+        }
+
+        &:after {
+          left: 7px;
+          top: 0;
+          content: "+";
+        }
+      }
+
+      figure.expandable {
+        div.img-container {
+          display: none;
+          height: auto;
+          width: 100%;
+
+          img {
+            max-width: 100%;
+
+            &[data-lq] {
+              display: block;
+            }
+
+            &[data-hq] {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    &[data-view="expanded-view"] {
+      &:hover {
+        cursor: grab;
+      }
+
+      &:hover:active {
+        cursor: grabbing;
+      }
+
+      button.control-view {
+        right: -29px;
+
+        &:hover {
+          cursor: zoom-out;
+        }
+
+        @variant max-l {
+          right: 0;
+        }
+
+        &:after {
+          left: 11px;
+          top: -2px;
+          content: "-";
+        }
+      }
+
+      figure.expandable {
+        display: block;
+
+        img {
+          max-width: none;
+
+          &[data-lq] {
+            display: none;
+          }
+
+          &[data-hq] {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  body {
+    main {
+      &.project {
+        figure {
+          &.project_fig {
+            padding-bottom: --spacing(16);
+          }
+
+          &.title_fig {
+            padding-bottom: 0;
+          }
+        }
+
+        div.diptych_container {
+          padding-bottom: --spacing(16);
+        }
+      }
+
+      ul {
+        @apply text-f6;
+        box-sizing: border-box;
+        padding-top: --spacing(2);
+
+        li {
+          list-style-position: inside;
+          list-style-type: circle;
+          padding-bottom: --spacing(2);
+
+          &.no-decoration {
+            list-style-type: none;
+          }
+        }
+      }
+    }
+  }
+}

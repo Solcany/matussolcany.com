@@ -19,17 +19,18 @@
     {{- $favicon := resources.Get "favicon.png" -}}
     <link rel="icon" type="image/png" sizes="16x16" href="{{ $favicon.RelPermalink }}">
 
-    {{- $tachyons_css := resources.Get "css/tachyons.css" | minify -}}
-	{{- $custom_css := resources.Get "scss/style.scss" | toCSS | minify -}}
-    {{- $bundle_css := slice $tachyons_css $custom_css | resources.Concat "css/bundle.min.css" -}}
-	<link rel="stylesheet" href="{{ $bundle_css.RelPermalink }}">
-	
+    {{- with (templates.Defer (dict "key" "global")) -}}
+        {{- with resources.Get "css/main.css" | css.TailwindCSS (dict "minify" true) -}}
+	<link rel="stylesheet" href="{{ .RelPermalink }}">
+        {{- end -}}
+    {{- end -}}
+
     {{- if and (isset .Page.Params "has_zoomable_images") (eq .Page.Params.has_zoomable_images true) -}}
 	    {{- $image_zoom_js := resources.Get "./js/trigger_dragscroll.js" | minify -}}
         <script src="{{ $image_zoom_js.Permalink }}"></script>
     {{ end }}
 </head>
-<body>
+<body class="flex flex-col min-h-screen min-w-[320px] antialiased wrap-break-word">
 	{{- partial "header" . -}}
 	{{- block "main" . -}}{{- end -}}
 	{{- partial "footer" . -}}

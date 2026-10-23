@@ -1,13 +1,13 @@
 {{ define "main" }}
-<main class="project mt4 ph3 ph6-l pb4-l w-100 w-70-l">
-    <h1 class="mt3 mt4-l mb2"> {{ .Title }}</h1>
+<main class="project flex-1 mt-8 px-4 l:px-20 l:pb-8 w-full l:w-7/10">
+    <h1 class="mt-4 l:mt-8 mb-2"> {{ .Title }}</h1>
     {{ if .Params.description }} 
-    <span class="pb3 db f6 mb1 gangster-regular">{{ .Params.description }}</span>
+    <span class="pb-4 block text-f6 mb-1 font-gangster">{{ .Params.description }}</span>
     {{ end }}
 	{{ .Content }}
 </main>
-<section name="next_project" class="w-100 pb3 ph3 ph6-l">
-	    <h2 class="mt3 mt4-l mb3 mb3-l"> Next project </h2>
+<section name="next_project" class="w-full pb-4 px-4 l:px-20">
+	    <h2 class="mt-4 l:mt-8 mb-4 l:mb-4"> Next project </h2>
 	    {{ .Scratch.Set "next" nil }}
 		{{ if .Next }}
             {{ if (eq .Next.Params.is_listed true) }}
@@ -27,25 +27,25 @@
 		{{ end }}
 		{{ $next := .Scratch.Get "next" }}
 		{{ $thumbnail := $next.Resources.GetMatch "image/thumbnail.jpg" }}
-        <div id="{{ $next.Title }}" class="w-50-l w-100 post border-box">
+        <div id="{{ $next.Title }}" class="l:w-1/2 w-full post box-border">
             <div name="content">
-	            <a href= "{{ $next.RelPermalink }}" class="image-link dib">
+	            <a href= "{{ $next.RelPermalink }}" class="image-link inline-block">
                     {{ if $thumbnail }}
-                    <img src="{{ $thumbnail.RelPermalink }}" onload="this.classList.add('loaded')" class="fadein thumbnail z-4 pointer">
+                    <img src="{{ $thumbnail.RelPermalink }}" onload="this.classList.add('loaded')" class="thumbnail block relative opacity-0 transition-all duration-200 ease-in [&.loaded]:opacity-100 [&.loaded]:hover:opacity-75 z-4 cursor-pointer">
                     {{ else }}
                     <div class="thumbnail placeholder">No thumbnail available</div>
                     {{ end }}
 	            </a>
-                <a class="w-100 thumbnail-text-link pointer no-underline" href="{{ $next.Permalink }}" title="{{ $next.Title }}">           
-                    <h2 class="text-link f6 gothic-bold pb0 pb1-l db tl black "> 
+                <a class="group w-full cursor-pointer no-underline" href="{{ $next.Permalink }}" title="{{ $next.Title }}">           
+                    <h2 class="text-link text-f6 font-gothic pb-0 l:pb-1 block text-left text-black group-hover:text-theblue">
                         {{ $next.Title }} 
                     </h2> 
-                    <span class="tl db f6">
+                    <span class="text-left block text-f6 text-thedarkgray group-hover:text-theblue">
                         {{ $next.Params.description }} 
                     </span>  
                 </a>                     
             </div>
         </div>
-	<a class="mt4 mb4 db" href="{{ .Site.BaseURL }}"> Return to projects </a>
+	<a class="mt-8 mb-8 block" href="{{ .Site.BaseURL }}"> Return to projects </a>
 </section>
 {{ end }}

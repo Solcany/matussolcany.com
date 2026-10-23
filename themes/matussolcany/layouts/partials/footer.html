@@ -1,12 +1,12 @@
 <!-- some pages need a footer that's attached to the bottom of the screen -->
-<footer  class="ph3 ph6-l pv3 w-100">
-	<ul class="flex flex-column flex-row-l justify-between-l">
-		<li class="db dib-l pr0 w-100 w-30-l">
-			<a class="dib gangster-regular f6 black" href="&#109;&#097;&#105;&#108;&#116;&#111;:&#109;&#097;&#116;&#117;&#115;&#046;&#115;&#111;&#108;&#099;&#097;&#110;&#121;&#064;&#112;&#114;&#111;&#116;&#111;&#110;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">&#109;&#097;&#116;&#117;&#115;&#046;&#115;&#111;&#108;&#099;&#097;&#110;&#121;&#064;&#112;&#114;&#111;&#116;&#111;&#110;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a>
+<footer  class="px-4 l:px-20 py-4 w-full">
+	<ul class="flex flex-col l:flex-row l:justify-between">
+		<li class="block l:inline-block pr-0 w-full l:w-3/10">
+			<a class="inline-block font-gangster text-f6 text-black" href="&#109;&#097;&#105;&#108;&#116;&#111;:&#109;&#097;&#116;&#117;&#115;&#046;&#115;&#111;&#108;&#099;&#097;&#110;&#121;&#064;&#112;&#114;&#111;&#116;&#111;&#110;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">&#109;&#097;&#116;&#117;&#115;&#046;&#115;&#111;&#108;&#099;&#097;&#110;&#121;&#064;&#112;&#114;&#111;&#116;&#111;&#110;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a>
 		</li>
         
-		<li class="db dib-l pv2 pv0-l self-center w-100 w-30-l tl tr-l">
-			<span class="pt2 f6 pt0-l gangster-regular black"> {{ .Site.Params.Author }} © {{ now.Year }}</span>
+		<li class="block l:inline-block py-2 l:py-0 self-center w-full l:w-3/10 text-left l:text-right">
+			<span class="pt-2 text-f6 l:pt-0 font-gangster text-black"> {{ .Site.Params.Author }} © {{ now.Year }}</span>
 		</li>
 	</ul>
 </footer>

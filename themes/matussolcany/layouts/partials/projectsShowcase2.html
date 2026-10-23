@@ -1,45 +1,38 @@
-<div class="grid w-100 flex flex-wrap flex-nowrap-l justify-between">
-    <!-- amount of columns in projects loop -->
-    {{ $columns := .Site.Params.showcaseColumns }}
+{{ $columns := .Site.Params.showcaseColumns }}
+<!-- sort the projects array by position_in_column property in each projects's front matter -->
+{{ $projects := (where $.Site.RegularPages "Section" "projects")}}
+{{ $projects := (where $projects "Params.draft" false)}}
+{{ $projects := (where $projects "Params.is_listed" true)}}
+{{ $projects := (where $projects "Params.is_showcased" true)}}
+{{ $projects := (sort $projects "Params.showcase_column_position" "asc")}}
+<ul class="grid grid-cols-1 gap-x-2 l:grid-cols-{{ $columns }} l:grid-flow-row-dense w-full pt-2 l:pt-4 box-border">
     {{ range $index, $_ := (seq $columns) }}
-        <!-- include padding right for every project loop column but the last one -->
-        {{ $include_padding := (lt $index (sub $columns 1)) }}
-        <ul style="flex-basis: 1; flex-grow: 1; flex-shrink: 1;" class="{{if $include_padding}} pr2 {{end}} pt2 pt3-l theborder border-box">
-            <!-- sort the projects array by position_in_column property in each projects's front matter -->
-            {{ $projects := (where $.Site.RegularPages "Section" "projects")}}
-            {{ $projects := (where $projects "Params.draft" false)}}
-            {{ $projects := (where $projects "Params.is_listed" true)}}            
-            {{ $projects := (where $projects "Params.is_showcased" true)}}            
-            {{ $projects := (sort $projects "Params.showcase_column_position" "asc")}}
-            {{ range $projects }}
-                {{ if eq .Params.showcase_column $index }}
-                    {{ $thumbnail := .Resources.GetMatch "image/thumbnail.jpg" }}
-                    <!-- ! only the first category of categories is taken into account for now ! -->
-                    {{ $category := index (.Params.Categories) 0}}
-                    {{ $categoryCss := (print "post-category-" $category )}}
-                    <li id="{{ .Title }}" class="{{ $categoryCss }} post border-box pb4 no-decoration">
-                        <div name="content">
-                            <a href="{{ .RelPermalink }}" class="image-link dib">
-                                <figure>
-                                    {{ if $thumbnail }}
-                                    <img src="{{ $thumbnail.RelPermalink }}" onload="this.classList.add('loaded')" class="fadein thumbnail z-4 pointer" {{ if isset .Params "thumbnail_alt" }} alt="{{.Params.thumbnail_alt}}" {{ end }}>
-                                    {{ else }}
-                                    <div class="thumbnail placeholder">No thumbnail available</div>
-                                    {{ end }}
-                                </figure>
-                            </a>
-                            <a class="thumbnail-text-link w-100 pointer no-underline" href="{{ .Permalink }}" title="{{ .Title }}">           
-                                <h2 class="text-link gothic-bold pt2 db tl black ">
-                                    {{ .Title }} 
-                                </h2> 
-                                <span class="tl db f6">
-                                    {{ .Params.description }} 
-                                </span>  
-                            </a>                     
-                        </div>
-                    </li>
-                {{ end }}
-            {{ end }}
-        </ul>
+        {{ range (where $projects "Params.showcase_column" $index) }}
+            {{ $thumbnail := .Resources.GetMatch "image/thumbnail.jpg" }}
+            <!-- ! only the first category of categories is taken into account for now ! -->
+            {{ $category := index (.Params.Categories) 0}}
+            {{ $categoryCss := (print "post-category-" $category )}}
+            <li id="{{ .Title }}" class="{{ $categoryCss }} post box-border pb-8 no-decoration l:col-start-{{ add $index 1 }}">
+                <div name="content">
+                    <a href="{{ .RelPermalink }}" class="image-link relative inline-block">
+                        <figure>
+                            {{ if $thumbnail }}
+                            <img src="{{ $thumbnail.RelPermalink }}" onload="this.classList.add('loaded')" class="thumbnail block relative opacity-0 transition-all duration-200 ease-in [&.loaded]:opacity-100 [&.loaded]:hover:opacity-75 z-4 cursor-pointer" {{ if isset .Params "thumbnail_alt" }} alt="{{.Params.thumbnail_alt}}" {{ end }}>
+                            {{ else }}
+                            <div class="thumbnail placeholder">No thumbnail available</div>
+                            {{ end }}
+                        </figure>
+                    </a>
+                    <a class="group w-full cursor-pointer no-underline" href="{{ .Permalink }}" title="{{ .Title }}">
+                        <h2 class="text-link font-gothic pt-2 block text-left text-black group-hover:text-theblue">
+                            {{ .Title }}
+                        </h2>
+                        <span class="text-left block text-f6 text-thedarkgray group-hover:text-theblue">
+                            {{ .Params.description }}
+                        </span>
+                    </a>
+                </div>
+            </li>
+        {{ end }}
     {{ end }}
-</div>
+</ul>

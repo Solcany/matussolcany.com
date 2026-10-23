@@ -1,15 +1,15 @@
 
-<header class="w-100 flex flex-column flex-row-l items-start justify-between-l pt3 pb0 pb3-l ph3 ph6-l ">
-	<a class="black gothic-bold f6 no-underline dib tc tl-l pb3 pb0-l"href="{{- .Site.BaseURL -}}">{{ .Site.Title }}</a>
+<header class="w-full flex flex-col l:flex-row items-start l:justify-between pt-4 pb-0 l:pb-4 px-4 l:px-20 border-b border-thegray l:border-b-0">
+	<a class="text-black font-gothic text-f6 no-underline inline-block text-center l:text-left pb-4 l:pb-0"href="{{- .Site.BaseURL -}}">{{ .Site.Title }}</a>
 	{{- $currentPage := . -}}
-	<nav class="pb2 pb0-l">
-		<ul class="flex w-100 justify-between-l dib-ns tc border-box tr-ns">
-			{{- range $index, $nav_element := .Site.Menus.main -}}
+	<nav class="w-full l:w-auto pb-2 l:pb-0">
+		<ul class="flex flex-wrap gap-x-4 l:gap-x-8 w-full l:justify-between text-center box-border ns:text-right">
+			{{- range $nav_element := .Site.Menus.main -}}
 			{{- $active := or ($currentPage.IsMenuCurrent "main" $nav_element) ($currentPage.HasMenuCurrent "main" $nav_element) -}}
 			{{- $active = or $active (eq $nav_element.Name $currentPage.Title) -}}
 			{{- $active = or $active (and (eq $nav_element.Name "Projects") (eq $currentPage.Section "Projects")) -}}
-			<li class="tl tr-l {{if gt $index 0}} pl3 pl4-l {{ end }}">
-				<a class="f6 black gangster-regular no-underline dib {{ if $active }} nav_active {{ end }}" href="{{ .URL | relURL }}">
+			<li class="text-left l:text-right">
+				<a class="text-f6 text-black font-gangster inline-block {{ if $active }}underline{{ else }}no-underline{{ end }}" href="{{ .URL | relURL }}">
 					{{- $nav_element.Name -}}
 				</a>
 		</li>

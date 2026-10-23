@@ -6,3 +6,5 @@ content/Teaching/
 *.ttf
 .DS_Store
 .claude
+node_modules/
+hugo_stats.json
