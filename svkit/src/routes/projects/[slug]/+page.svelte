@@ -15,19 +15,16 @@
 	</ProjectBody>
 </Main>
 
-<section class="w-full px-4 xl:px-20 pb-4 lg:w-7/10">
+<section class="w-full px-4 xl:px-20 pb-4">
 	<H2 class="mt-4 mb-4 lg:mt-8">Next</H2>
 	{#if data.next}
-		<ProjectCard href={data.next.href} id={data.next.slug}>
-			<Thumbnail
-				id="{data.next.slug}-image"
-				image={data.next.thumbnail}
-				alt={data.next.thumbnail_alt}
-				sizes="(min-width: 60em) 70vw, 100vw"
-			/>
-			<CardTitle id="{data.next.slug}-title">{data.next.title}</CardTitle>
-			<CardText id="{data.next.slug}-text">{data.next.description}</CardText>
-		</ProjectCard>
+		<div class="lg:w-1/2">
+			<ProjectCard href={data.next.href} id={data.next.slug}>
+				<Thumbnail id="{data.next.slug}-image" image={data.next.thumbnail} alt={data.next.thumbnail_alt} />
+				<CardTitle id="{data.next.slug}-title">{data.next.title}</CardTitle>
+				<CardText id="{data.next.slug}-text">{data.next.description}</CardText>
+			</ProjectCard>
+		</div>
 	{/if}
 	<A href={resolve('/')} class="my-8 block">Return to projects</A>
 </section>

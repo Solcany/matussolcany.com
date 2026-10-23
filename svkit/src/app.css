@@ -12,8 +12,9 @@
   --breakpoint-xl: 80rem;
 
   --color-*: initial;
-  --color-black: #000;
-  --color-accent: #2942ff;
+  --color-ink: #000;
+  --color-paper: #fff;
+  --color-accent: #285ff7;
   --color-muted: #5c5c5c;
   --color-line: #c5c5c5;
 
@@ -26,4 +27,14 @@
   --text-body: 18px;
 
   --leading-body: 1.15;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-ink: #000;
+    --color-paper: #a9abb0;
+    --color-accent: #1541bd;
+    --color-muted: #333;
+    --color-line: #383838;
+  }
 }

@@ -1,13 +1,14 @@
+import {
+	FRAME_INTERVAL,
+	FRAME_TOLERANCE,
+	MAX_DELTA,
+	PIXEL_RATIO,
+	SPEED,
+	START_DELAY
+} from './config.ts';
 import { draw } from './draw.ts';
 import { createLayout, type Layout } from './layout.ts';
 import { step } from './simulation.ts';
-
-const MAX_DELTA = 1 / 20;
-const START_DELAY = 2;
-const SPEED = 0.8;
-const MAX_PIXEL_RATIO = 2;
-const FRAME_INTERVAL = 1000 / 60;
-const FRAME_TOLERANCE = 2;
 
 export function mountGrid(element: HTMLElement) {
 	const canvas = document.createElement('canvas');
@@ -17,10 +18,18 @@ export function mountGrid(element: HTMLElement) {
 	const ctx = canvas.getContext('2d');
 	if (!ctx) return;
 
-	const styles = getComputedStyle(element);
-	const colors = {
-		fill: styles.getPropertyValue('--color-accent').trim(),
-		stroke: styles.getPropertyValue('--color-line').trim()
+	const readColors = () => {
+		const styles = getComputedStyle(element);
+		return {
+			fill: styles.getPropertyValue('--color-accent').trim(),
+			stroke: styles.getPropertyValue('--color-line').trim()
+		};
+	};
+	let colors = readColors();
+	const colorScheme = matchMedia('(prefers-color-scheme: dark)');
+	const recolor = () => {
+		colors = readColors();
+		if (layout) draw(ctx, layout, colors);
 	};
 	const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -34,10 +43,9 @@ export function mountGrid(element: HTMLElement) {
 	const resize = () => {
 		const { width, height } = element.getBoundingClientRect();
 		if (!width || !height) return;
-		const ratio = Math.min(devicePixelRatio || 1, MAX_PIXEL_RATIO);
-		canvas.width = Math.round(width * ratio);
-		canvas.height = Math.round(height * ratio);
-		ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+		canvas.width = Math.round(width * PIXEL_RATIO);
+		canvas.height = Math.round(height * PIXEL_RATIO);
+		ctx.setTransform(PIXEL_RATIO, 0, 0, PIXEL_RATIO, 0, 0);
 		layout = createLayout(width, height, elapsed + START_DELAY);
 		step(layout, elapsed, 0, Math.random);
 		draw(ctx, layout, colors);
@@ -88,6 +96,7 @@ export function mountGrid(element: HTMLElement) {
 	resizeObserver.observe(element);
 	intersectionObserver.observe(element);
 	document.addEventListener('visibilitychange', update);
+	colorScheme.addEventListener('change', recolor);
 
 	return () => {
 		cancelAnimationFrame(frame);
@@ -95,6 +104,7 @@ export function mountGrid(element: HTMLElement) {
 		resizeObserver.disconnect();
 		intersectionObserver.disconnect();
 		document.removeEventListener('visibilitychange', update);
+		colorScheme.removeEventListener('change', recolor);
 		canvas.remove();
 	};
 }

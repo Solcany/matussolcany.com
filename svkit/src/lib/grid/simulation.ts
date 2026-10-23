@@ -1,57 +1,91 @@
+import {
+	ANGLE_CURVE,
+	ANGLE_EASING,
+	BASE_ALPHA,
+	DAMPING,
+	FADE_CURVE,
+	FALLOFF_CURVE,
+	HOLD,
+	HOLD_TURN,
+	HOLD_TWIST,
+	MAX_ACTIVE,
+	MAX_ANGLE,
+	MAX_TWIST,
+	PULL,
+	RADIUS_RATIO,
+	RELEASE,
+	SETTLED_ANGLE,
+	SETTLED_VELOCITY,
+	SIMULATION_FPS,
+	SNAP,
+	STIFFNESS,
+	SWELL,
+	TRIGGERED_ANGLE,
+	TRIGGER_INTERVAL,
+	TWIST_CURVE
+} from './config.ts';
 import type { Cell, Layout, Point, Trigger } from './layout.ts';
-
-const RADIUS_RATIO = 0.28;
-const MAX_TWIST = 0.4;
-const MAX_ANGLE = Math.PI / 2.46;
-const TRIGGERED_ANGLE = Math.PI / 2.05;
-const BASE_ALPHA = 150 / 255;
-
-const PULL = 0.6;
-const STIFFNESS = 0.02;
-const DAMPING = 0.88;
-
-const SWELL = 1.2;
-const HOLD = 2.5;
-const RELEASE = 2;
-const MAX_ACTIVE = 3;
-
-const SETTLED_VELOCITY = 0.01;
-const SETTLED_ANGLE = 0.001;
 
 const distance = (a: Point, b: Point) => Math.hypot(a.x - b.x, a.y - b.y);
 const lerp = (a: number, b: number, t: number) => a + (b - a) * t;
 const easeInOut = (t: number) => (t < 0.5 ? 2 * t * t : 1 - (-2 * t + 2) ** 2 / 2);
 
-function strength(trigger: Trigger, time: number) {
-	const age = time - trigger.born;
-	if (age < SWELL) return easeInOut(age / SWELL);
-	if (age < SWELL + HOLD) return 1;
-	return easeInOut(Math.max(0, 1 - (age - SWELL - HOLD) / RELEASE));
-}
+type Active = { trigger: Trigger; power: number; wind: number };
 
-function isHolding(trigger: Trigger, time: number) {
+function activate(trigger: Trigger, time: number): Active {
+	if (trigger.snap) {
+		const remaining = easeInOut(Math.max(0, 1 - (time - trigger.snap.at) / SNAP));
+		return { trigger, power: trigger.snap.power * remaining, wind: trigger.snap.wind * remaining };
+	}
 	const age = time - trigger.born;
-	return age >= SWELL && age < SWELL + HOLD;
+	if (age < SWELL) return { trigger, power: easeInOut(age / SWELL), wind: 0 };
+	if (age < SWELL + HOLD) return { trigger, power: 1, wind: (age - SWELL) / HOLD };
+	const power = easeInOut(Math.max(0, 1 - (age - SWELL - HOLD) / RELEASE));
+	return { trigger, power, wind: power };
 }
 
 function schedule(layout: Layout, time: number, random: () => number) {
-	layout.triggers = layout.triggers.filter((trigger) => time - trigger.born < SWELL + HOLD + RELEASE);
+	layout.triggers = layout.triggers.filter((trigger) =>
+		trigger.snap ? time - trigger.snap.at < SNAP : time - trigger.born < SWELL + HOLD + RELEASE
+	);
 	if (time < layout.nextTrigger) return;
-	layout.nextTrigger = time + 1.5 + random() * 2;
+	layout.nextTrigger = time + TRIGGER_INTERVAL.min + random() * (TRIGGER_INTERVAL.max - TRIGGER_INTERVAL.min);
 	if (layout.triggers.length >= MAX_ACTIVE) return;
 	const idle = layout.cells.filter((cell) => !layout.triggers.some((trigger) => trigger.cell === cell));
 	layout.triggers.push({ cell: idle[Math.floor(random() * idle.length)], born: time });
 }
 
-function falloff(layout: Layout, from: Point, to: Point) {
-	return Math.max(0, 1 - distance(from, to) / layout.reach) ** 2;
+function entersSquare(square: Point[], corner: number, towards: Point) {
+	const origin = square[corner];
+	const cross = (a: Point, b: Point) =>
+		(a.x - origin.x) * (b.y - origin.y) - (a.y - origin.y) * (b.x - origin.x);
+	const next = square[(corner + 1) % 4];
+	const previous = square[(corner + 3) % 4];
+	const wedge = Math.sign(cross(next, previous));
+	return Math.sign(cross(next, towards)) === wedge && Math.sign(cross(towards, previous)) === wedge;
 }
 
-function displaceVertices(layout: Layout, active: [Trigger, number][]) {
+function crossesOwnSquare(layout: Layout, cell: Cell) {
+	const index = layout.cells.indexOf(cell);
+	const column = Math.floor(index / layout.rows);
+	const row = index % layout.rows;
+	const edges: [number, Point][] = [];
+	if (column < layout.columns - 1) edges.push([1, layout.cells[index + layout.rows].parent[3]]);
+	if (column > 0) edges.push([3, layout.cells[index - layout.rows].parent[1]]);
+	if (row < layout.rows - 1) edges.push([0, layout.cells[index + 1].parent[2]]);
+	if (row > 0) edges.push([2, layout.cells[index - 1].parent[0]]);
+	return edges.some(([corner, towards]) => entersSquare(cell.parent, corner, towards));
+}
+
+function falloff(layout: Layout, from: Point, to: Point) {
+	return Math.max(0, 1 - distance(from, to) / layout.reach) ** FALLOFF_CURVE;
+}
+
+function displaceVertices(layout: Layout, active: Active[]) {
 	for (const vertex of layout.vertices) {
 		vertex.head.x = vertex.origin.x;
 		vertex.head.y = vertex.origin.y;
-		for (const [trigger, power] of active) {
+		for (const { trigger, power } of active) {
 			const center = trigger.cell.origin;
 			const away = Math.atan2(vertex.origin.y - center.y, vertex.origin.x - center.x);
 			const offset = layout.push * power * falloff(layout, vertex.origin, center);
@@ -70,14 +104,14 @@ function moveCell(cell: Cell, targetX: number, targetY: number, frames: number) 
 	return Math.abs(cell.velocity.x) + Math.abs(cell.velocity.y) > SETTLED_VELOCITY;
 }
 
-function shapeCell(cell: Cell, influence: number, own: number, stretch: number, frames: number) {
+function shapeCell(cell: Cell, influence: number, own: number, winding: number, stretch: number, frames: number) {
 	const [topLeft, bottomLeft, topRight, bottomRight] = cell.corners;
 	const diagonal = (distance(topLeft.head, bottomRight.head) + distance(bottomLeft.head, topRight.head)) / 2;
 	const radius = diagonal * RADIUS_RATIO;
 
-	const targetAngle = lerp(MAX_ANGLE * influence ** 2, TRIGGERED_ANGLE, own);
-	cell.angle = lerp(cell.angle, targetAngle, 1 - 0.9 ** frames);
-	cell.alpha = lerp(BASE_ALPHA * (1 - stretch) ** 4, 1, own);
+	const targetAngle = lerp(MAX_ANGLE * influence ** ANGLE_CURVE, TRIGGERED_ANGLE, own) + HOLD_TURN * winding;
+	cell.angle = lerp(cell.angle, targetAngle, 1 - ANGLE_EASING ** frames);
+	cell.alpha = lerp(BASE_ALPHA * (1 - stretch) ** FADE_CURVE, 1, own);
 
 	cell.parent.forEach((point, i) => {
 		const angle = (i * Math.PI) / 2 + cell.angle;
@@ -85,7 +119,7 @@ function shapeCell(cell: Cell, influence: number, own: number, stretch: number, 
 		point.y = cell.pos.y + (Math.cos(angle) * radius) / 2;
 	});
 
-	const twist = MAX_TWIST * influence ** 1.5 * (1 - own);
+	const twist = MAX_TWIST * influence ** TWIST_CURVE * (1 - own) + HOLD_TWIST * winding;
 	let previous = cell.parent;
 	for (const square of cell.children) {
 		square.forEach((point, v) => {
@@ -100,35 +134,41 @@ function shapeCell(cell: Cell, influence: number, own: number, stretch: number, 
 }
 
 export function step(layout: Layout, time: number, delta: number, random: () => number) {
-	const frames = delta * 60;
+	const frames = delta * SIMULATION_FPS;
 	schedule(layout, time, random);
-	const active = layout.triggers.map((trigger): [Trigger, number] => [trigger, strength(trigger, time)]);
+	const active = layout.triggers.map((trigger) => activate(trigger, time));
 
 	displaceVertices(layout, active);
 	const maxStretch = PULL * layout.cellSize * falloff(layout, { x: 0, y: 0 }, { x: layout.cellSize, y: 0 });
 
-	let moving = layout.triggers.some((trigger) => !isHolding(trigger, time));
+	let moving = layout.triggers.length > 0;
 	for (const cell of layout.cells) {
 		let targetX = cell.origin.x;
 		let targetY = cell.origin.y;
 		let influence = 0;
 		let own = 0;
-		for (const [trigger, power] of active) {
+		let winding = 0;
+		for (const { trigger, power, wind } of active) {
 			if (trigger.cell === cell) {
 				own = Math.max(own, power);
+				winding = Math.max(winding, power * wind);
 				continue;
 			}
 			const pull = power * falloff(layout, cell.origin, trigger.cell.origin);
 			targetX += (trigger.cell.origin.x - cell.origin.x) * PULL * pull;
 			targetY += (trigger.cell.origin.y - cell.origin.y) * PULL * pull;
 			influence = Math.max(influence, pull);
+			winding = Math.max(winding, pull * wind);
 		}
 		const sliding = moveCell(cell, targetX, targetY, frames);
 		const stretch = Math.min(1, distance(cell.pos, cell.origin) / maxStretch);
-		const turning = shapeCell(cell, influence, own, stretch, frames);
+		const turning = shapeCell(cell, influence, own, winding, stretch, frames);
 		moving ||= sliding || turning;
 	}
 
-	if (moving) return time;
-	return Math.min(layout.nextTrigger, ...layout.triggers.map((trigger) => trigger.born + SWELL + HOLD));
+	for (const { trigger, power, wind } of active) {
+		if (!trigger.snap && crossesOwnSquare(layout, trigger.cell)) trigger.snap = { at: time, power, wind };
+	}
+
+	return moving ? time : layout.nextTrigger;
 }

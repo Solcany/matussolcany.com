@@ -17,7 +17,7 @@
 </script>
 
 <Main>
-	<section class="w-full px-4 xl:px-20 py-4 text-black">
+	<section class="w-full px-4 xl:px-20 py-4 text-ink">
 		<Intro />
 	</section>
 	<section class="mb-8 w-full px-4 xl:px-20">

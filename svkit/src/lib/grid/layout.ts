@@ -1,3 +1,5 @@
+import { BLEED, NESTED_SQUARES, PUSH, REACH, ROWS } from './config.ts';
+
 export type Point = { x: number; y: number };
 
 type Vertex = { origin: Point; head: Point };
@@ -13,7 +15,7 @@ export type Cell = {
 	children: Point[][];
 };
 
-export type Trigger = { cell: Cell; born: number };
+export type Trigger = { cell: Cell; born: number; snap?: { at: number; power: number; wind: number } };
 
 export type Layout = {
 	width: number;
@@ -29,13 +31,10 @@ export type Layout = {
 	nextTrigger: number;
 };
 
-const NESTED_SQUARES = 3;
-const BLEED = 0.22;
-
 const square = () => Array.from({ length: 4 }, () => ({ x: 0, y: 0 }));
 
 export function createLayout(width: number, height: number, firstTrigger: number): Layout {
-	const rows = 5;
+	const rows = ROWS;
 	const columns = Math.max(1, Math.round((rows * width) / height));
 	const step = { x: width / (columns - BLEED * 2), y: height / (rows - BLEED * 2) };
 
@@ -75,8 +74,8 @@ export function createLayout(width: number, height: number, firstTrigger: number
 		width,
 		height,
 		cellSize,
-		reach: cellSize * 3,
-		push: cellSize * 0.35,
+		reach: cellSize * REACH,
+		push: cellSize * PUSH,
 		columns,
 		rows,
 		cells,

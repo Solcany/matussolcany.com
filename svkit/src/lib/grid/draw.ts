@@ -1,8 +1,7 @@
+import { LATTICE_WIDTH, OUTLINE_WIDTH, VISIBLE_ALPHA } from './config.ts';
 import type { Layout, Point } from './layout.ts';
 
 type Colors = { fill: string; stroke: string };
-
-const VISIBLE_ALPHA = 0.005;
 
 function addSquare(ctx: CanvasRenderingContext2D, points: Point[]) {
 	ctx.moveTo(points[0].x, points[0].y);
@@ -12,8 +11,9 @@ function addSquare(ctx: CanvasRenderingContext2D, points: Point[]) {
 
 export function draw(ctx: CanvasRenderingContext2D, layout: Layout, colors: Colors) {
 	ctx.clearRect(0, 0, layout.width, layout.height);
-	ctx.strokeStyle = colors.stroke;
 	ctx.fillStyle = colors.fill;
+	ctx.strokeStyle = colors.stroke;
+	ctx.lineJoin = 'round';
 
 	ctx.beginPath();
 	layout.cells.forEach((cell, i) => {
@@ -31,7 +31,7 @@ export function draw(ctx: CanvasRenderingContext2D, layout: Layout, colors: Colo
 		}
 	});
 	ctx.globalAlpha = 1;
-	ctx.lineWidth = 0.4;
+	ctx.lineWidth = LATTICE_WIDTH;
 	ctx.stroke();
 
 	for (const cell of layout.cells) {
@@ -50,6 +50,6 @@ export function draw(ctx: CanvasRenderingContext2D, layout: Layout, colors: Colo
 		for (const square of cell.children) addSquare(ctx, square);
 	}
 	ctx.globalAlpha = 1;
-	ctx.lineWidth = 0.45;
+	ctx.lineWidth = OUTLINE_WIDTH;
 	ctx.stroke();
 }
