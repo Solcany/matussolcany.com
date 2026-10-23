@@ -1,12 +1,3 @@
-{{ if isset $.Page.Params "competencies" }}
-    <h3 class="pt2 pb1 gangster-regular thedarkgray f6"> Competencies </h3>
-    <ul class="gangster-regular f6 pt0 pb4">
-        {{ $competencies := $.Page.Params.competencies }}
-        {{ $arr_len := (sub (len $competencies) 1) }}
-        {{range $index, $competence := $competencies}}
-        <li class="dib pa0 ma0" style=""> {{$competence}}{{if lt $index $arr_len}}, {{ end }} </li>
-        {{ end }}
-    </ul>
-    {{ else }}
+{{ if not (isset $.Page.Params "competencies") }}
     {{ errorf "Missing competencies array in the front matter. You should add competencies array in the front matter of the project: %q" $.Page.Params.title}}
 {{ end }}

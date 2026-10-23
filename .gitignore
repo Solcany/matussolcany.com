@@ -5,3 +5,4 @@ content/Teaching/
 *.otf
 *.ttf
 .DS_Store
+.claude
