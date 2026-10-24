@@ -3,6 +3,7 @@ import {
 	FRAME_TOLERANCE,
 	MAX_DELTA,
 	PIXEL_RATIO,
+	RESIZE_DEBOUNCE,
 	SPEED,
 	START_DELAY
 } from './config.ts';
@@ -38,11 +39,14 @@ export function mountGrid(element: HTMLElement) {
 	let last = 0;
 	let frame = 0;
 	let sleep = 0;
+	let resizing = 0;
+	let size = { width: 0, height: 0 };
 	let onScreen = false;
 
 	const resize = () => {
 		const { width, height } = element.getBoundingClientRect();
-		if (!width || !height) return;
+		if (!width || !height || (width === size.width && height === size.height)) return;
+		size = { width, height };
 		canvas.width = Math.round(width * PIXEL_RATIO);
 		canvas.height = Math.round(height * PIXEL_RATIO);
 		ctx.setTransform(PIXEL_RATIO, 0, 0, PIXEL_RATIO, 0, 0);
@@ -85,9 +89,15 @@ export function mountGrid(element: HTMLElement) {
 		start();
 	};
 
-	const resizeObserver = new ResizeObserver(() => {
+	const rebuild = () => {
 		resize();
 		update();
+	};
+
+	const resizeObserver = new ResizeObserver(() => {
+		clearTimeout(resizing);
+		if (layout) resizing = setTimeout(rebuild, RESIZE_DEBOUNCE);
+		else rebuild();
 	});
 	const intersectionObserver = new IntersectionObserver(([entry]) => {
 		onScreen = entry.isIntersecting;
@@ -101,6 +111,7 @@ export function mountGrid(element: HTMLElement) {
 	return () => {
 		cancelAnimationFrame(frame);
 		clearTimeout(sleep);
+		clearTimeout(resizing);
 		resizeObserver.disconnect();
 		intersectionObserver.disconnect();
 		document.removeEventListener('visibilitychange', update);

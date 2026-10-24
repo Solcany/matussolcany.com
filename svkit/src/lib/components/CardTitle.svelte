@@ -4,4 +4,4 @@
 	let { children, id } = $props();
 </script>
 
-<H2 {id} class="pt-2 group-hover:text-accent group-focus-visible:text-accent">{@render children?.()}</H2>
+<H2 {id} class="pt-2 group-hover:text-accent group-hover:underline group-focus-visible:text-accent group-focus-visible:underline">{@render children?.()}</H2>

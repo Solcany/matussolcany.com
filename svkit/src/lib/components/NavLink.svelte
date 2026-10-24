@@ -6,7 +6,7 @@
 	<a
 		{href}
 		aria-current={active ? 'page' : undefined}
-		class={['inline-block font-body text-body text-ink hover:text-accent focus-visible:text-accent', active && 'underline']}
+		class={['inline-block font-body text-body text-ink hover:text-accent hover:underline focus-visible:text-accent focus-visible:underline', active && 'underline']}
 	>
 		{@render children?.()}
 	</a>

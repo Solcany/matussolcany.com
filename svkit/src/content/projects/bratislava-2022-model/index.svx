@@ -10,7 +10,7 @@ competencies:
 is_showcased: true
 is_listed: true
 showcase_column: 1
-showcase_column_position: 1
+showcase_column_position: 2 
 description: Presenting interlaced infrastructures of a city
 thumbnail_alt: a photo of the lit up physical city model with multiple plastic urban elements highlighted in green, orange and purple
 ---

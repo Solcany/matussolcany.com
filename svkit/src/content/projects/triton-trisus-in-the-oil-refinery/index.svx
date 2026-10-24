@@ -12,7 +12,7 @@ competencies:
 is_showcased: true
 is_listed: true
 showcase_column: 1
-showcase_column_position: 2
+showcase_column_position: 1 
 description: Multiple perspectives on the events of a cyber attack
 thumbnail_alt: Screenshot of the Triton/Trisus website. White text on the left, black background, illustrated Triton/Trisus flag rendered as a grid of characters on the right
 ---

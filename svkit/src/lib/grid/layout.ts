@@ -11,6 +11,7 @@ export type Cell = {
 	velocity: Point;
 	angle: number;
 	alpha: number;
+	stretch: number;
 	parent: Point[];
 	children: Point[][];
 };
@@ -62,6 +63,7 @@ export function createLayout(width: number, height: number, firstTrigger: number
 				velocity: { x: 0, y: 0 },
 				angle: 0,
 				alpha: 0,
+				stretch: 0,
 				parent: square(),
 				children: Array.from({ length: NESTED_SQUARES }, square)
 			});

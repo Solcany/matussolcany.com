@@ -12,6 +12,7 @@ import {
 	MAX_ANGLE,
 	MAX_TWIST,
 	PULL,
+	PULLED_BIAS,
 	RADIUS_RATIO,
 	RELEASE,
 	SETTLED_ANGLE,
@@ -52,7 +53,13 @@ function schedule(layout: Layout, time: number, random: () => number) {
 	layout.nextTrigger = time + TRIGGER_INTERVAL.min + random() * (TRIGGER_INTERVAL.max - TRIGGER_INTERVAL.min);
 	if (layout.triggers.length >= MAX_ACTIVE) return;
 	const idle = layout.cells.filter((cell) => !layout.triggers.some((trigger) => trigger.cell === cell));
-	layout.triggers.push({ cell: idle[Math.floor(random() * idle.length)], born: time });
+	layout.triggers.push({ cell: pick(idle, random), born: time });
+}
+
+function pick(cells: Cell[], random: () => number) {
+	const weights = cells.map((cell) => 1 + PULLED_BIAS * cell.stretch);
+	let roll = random() * weights.reduce((sum, weight) => sum + weight, 0);
+	return cells.find((_, i) => (roll -= weights[i]) < 0) ?? cells[cells.length - 1];
 }
 
 function entersSquare(square: Point[], corner: number, towards: Point) {
@@ -161,8 +168,8 @@ export function step(layout: Layout, time: number, delta: number, random: () => 
 			winding = Math.max(winding, pull * wind);
 		}
 		const sliding = moveCell(cell, targetX, targetY, frames);
-		const stretch = Math.min(1, distance(cell.pos, cell.origin) / maxStretch);
-		const turning = shapeCell(cell, influence, own, winding, stretch, frames);
+		cell.stretch = Math.min(1, distance(cell.pos, cell.origin) / maxStretch);
+		const turning = shapeCell(cell, influence, own, winding, cell.stretch, frames);
 		moving ||= sliding || turning;
 	}
 

@@ -7,7 +7,7 @@ categories:
 competencies:
   - interaction and graphic design
   - web development
-is_showcased: true
+is_showcased: false 
 is_listed: true
 showcase_column: 0
 showcase_column_position: 2
