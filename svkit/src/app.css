@@ -13,10 +13,12 @@
 
   --color-*: initial;
   --color-ink: #000;
-  --color-paper: #fff;
+  --color-paper: #f1f1f1;
   --color-accent:  #285ff7; 
   --color-muted: #5c5c5c;
   --color-line: #c5c5c5;
+  --color-frame: transparent;
+  --color-highlight: #cdd9ff;
 
   --font-display: "Author", avenir, sans-serif;
   --font-body: "Satoshi", avenir, sans-serif;
@@ -31,10 +33,12 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-ink: #000;
-    --color-paper: #a6a6a6; /* #a9abb0; */
-    --color-accent: #082878;
-    --color-muted: #333;
-    --color-line: #383838;
+    --color-ink: #fff;
+    --color-paper: #0b0b0e; 
+    --color-accent: #285ff7;
+    --color-muted: #d4d4d4;
+    --color-line: #c1c1c1;
+    --color-frame: #272727;
+    --color-highlight: #1c3a8f;
   }
 }

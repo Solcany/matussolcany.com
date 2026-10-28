@@ -1,3 +1,14 @@
 ---
 title: 404 - No such page
 ---
+
+<script>
+	import { Img } from '#lib';
+</script>
+
+<Img
+	src="./404.jpg"
+	alt="A grainy black and white photo of a blank white wall, with a glimpse of a dim room and a wooden table at its left edge"
+	sizes="(min-width: 60em) 50vw, 100vw"
+	loading="eager"
+/>

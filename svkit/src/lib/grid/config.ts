@@ -65,7 +65,7 @@ export const SETTLED_ANGLE = 0.001;
 // Thickness of the lines connecting neighbouring diamonds.
 export const LATTICE_WIDTH = 0.4;
 // Thickness of the diamond and spiral outlines.
-export const OUTLINE_WIDTH = 0.6;
+export const OUTLINE_WIDTH = 0.4;
 // Fill opacity below which a cell's fill is skipped.
 export const VISIBLE_ALPHA = 0.005;
 

@@ -1,9 +1,13 @@
 <script lang="ts">
 	import { H1, Main } from '#lib';
+	import NotFound from '../../content/404.svx';
 
 	let { data } = $props();
 </script>
 
 <Main class="mt-8 w-full px-4 xl:px-20 pt-4 pb-8">
-	<H1>{data.title}</H1>
+	<div class="lg:w-1/2">
+		<H1 class="mb-4">{data.title}</H1>
+		<NotFound />
+	</div>
 </Main>
