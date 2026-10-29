@@ -1,10 +1,7 @@
-fonts/
+node_modules/
+.svelte-kit/
+build/
 private_static/
-public/
-content/Teaching/
-*.otf
-*.ttf
 .DS_Store
 .claude
-node_modules/
-hugo_stats.json
+svkit/

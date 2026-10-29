@@ -1,6 +1,0 @@
-{{ $url :=  (.Get "url") }}
-{{ $caption := (.Get "caption") }}
-
-{{if (ne $url nil) }}
-<a class="block pb-1" href="{{ $url }}"> {{ $url }}</a>
-{{ end }}

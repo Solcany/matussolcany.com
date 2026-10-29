@@ -1,3 +1,0 @@
-{{ if not (isset $.Page.Params "competencies") }}
-    {{ errorf "Missing competencies array in the front matter. You should add competencies array in the front matter of the project: %q" $.Page.Params.title}}
-{{ end }}
