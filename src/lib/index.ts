@@ -13,6 +13,7 @@ export { default as H3 } from './components/H3.svelte';
 export { default as H4 } from './components/H4.svelte';
 export { default as Img } from './components/Img.svelte';
 export { default as Lead } from './components/Lead.svelte';
+export { default as Lightbox } from './components/Lightbox.svelte';
 export { default as Li } from './components/Li.svelte';
 export { default as LinkList } from './components/LinkList.svelte';
 export { default as LinkListItem } from './components/LinkListItem.svelte';

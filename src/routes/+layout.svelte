@@ -1,7 +1,7 @@
 <script lang="ts">
 	import '../app.css';
 	import { page } from '$app/state';
-	import { EmailLink, FooterItem, Nav, NavLink, SiteFooter, SiteHeader, SiteTitle } from '#lib';
+	import { EmailLink, FooterItem, Lightbox, Nav, NavLink, SiteFooter, SiteHeader, SiteTitle } from '#lib';
 	import { errorTitle } from '#lib/errors.ts';
 	import { nav, site } from '#lib/site.ts';
 
@@ -45,3 +45,5 @@
 	<FooterItem><EmailLink address={site.email} /></FooterItem>
 	<FooterItem end>{site.author} © {year}</FooterItem>
 </SiteFooter>
+
+<Lightbox />

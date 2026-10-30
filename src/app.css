@@ -3,13 +3,15 @@
 @custom-variant js (.js &);
 @custom-variant loaded (.js &.loaded);
 
-@theme {
-  --default-font-family: var(--font-body);
-
+@theme static {
   --breakpoint-*: initial;
   --breakpoint-sm: 30em;
   --breakpoint-lg: 60em;
   --breakpoint-xl: 80rem;
+}
+
+@theme {
+  --default-font-family: var(--font-body);
 
   --color-*: initial;
   --color-ink: #000;
@@ -19,6 +21,7 @@
   --color-line: #c5c5c5;
   --color-frame: transparent;
   --color-highlight: #cdd9ff;
+  --color-backdrop: #000;
 
   --font-display: "Author", avenir, sans-serif;
   --font-body: "Satoshi", avenir, sans-serif;
@@ -27,6 +30,7 @@
   --text-display: 24px;
   --text-display-sm: 20px;
   --text-body: 18px;
+  --text-nav: 20px;
 
   --leading-body: 1.15;
 }
@@ -40,5 +44,6 @@
     --color-line: #c1c1c1;
     --color-frame: #272727;
     --color-highlight: #1c3a8f;
+    --color-backdrop: #0b0b0e;
   }
 }
