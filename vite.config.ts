@@ -26,7 +26,11 @@ export default defineConfig({
 				mediaImports()
 			],
 			prerender: {
-				entries: ['*', '/404']
+				entries: ['*', '/404'],
+				handleHttpError: ({ path, message }) => {
+					if (path.startsWith('/fonts/')) return;
+					throw new Error(message);
+				}
 			}
 		})
 	],

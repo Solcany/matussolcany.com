@@ -5,3 +5,4 @@ private_static/
 .DS_Store
 .claude
 svkit/
+static/fonts/
