@@ -1,5 +1,5 @@
 ---
-title: 404 - No such page
+title: 404, no such page
 ---
 
 <script>

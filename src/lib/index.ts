@@ -18,6 +18,7 @@ export { default as Li } from './components/Li.svelte';
 export { default as LinkList } from './components/LinkList.svelte';
 export { default as LinkListItem } from './components/LinkListItem.svelte';
 export { default as Main } from './components/Main.svelte';
+export { default as MissingUrl } from './components/MissingUrl.svelte';
 export { default as Nav } from './components/Nav.svelte';
 export { default as NavLink } from './components/NavLink.svelte';
 export { default as P } from './components/P.svelte';
